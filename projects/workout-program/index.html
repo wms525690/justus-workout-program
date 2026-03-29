@@ -13,6 +13,9 @@
 
   <!-- ========== HERO SECTION ========== -->
   <header class="hero">
+    <div class="hero-bg">
+      <img src="../assets-images/UtahTechStadiumPic.jpg" alt="" class="hero-bg-img">
+    </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-badge">UTAH TECH FOOTBALL</div>
@@ -22,7 +25,7 @@
       </div>
       <h1 class="hero-name">JUSTUS PLATTS</h1>
       <p class="hero-subtitle">QB &middot; College Football Prep Program</p>
-      <p class="hero-tagline">Build the foundation. Protect the body. Own the position.</p>
+      <p class="hero-tagline">Discipline weighs ounces. Regret weighs <strong>TONS</strong>.</p>
       <div class="hero-stats">
         <div class="stat">
           <span class="stat-value" id="weekNumber">1</span>
@@ -63,6 +66,14 @@
         <span class="nav-icon">&#9679;</span>
         Rehab / Prehab
       </button>
+      <button class="nav-btn" data-section="plyos">
+        <span class="nav-icon">&#9679;</span>
+        Plyos
+      </button>
+      <button class="nav-btn" data-section="warmups">
+        <span class="nav-icon">&#9679;</span>
+        Warm Ups
+      </button>
     </div>
   </nav>
 
@@ -77,11 +88,11 @@
         <p class="section-desc">Master these three fundamentals. Every session starts here.</p>
       </div>
 
-      <!-- Foot Mechanics -->
+      <!-- Foot Position / Mechanics -->
       <div class="category-block">
         <div class="category-title">
           <span class="category-icon">&#128099;</span>
-          <h3>Foot Mechanics</h3>
+          <h3>Foot Position / Mechanics</h3>
         </div>
         <div class="exercise-list" id="big3-feet">
           <div class="exercise-card" data-id="b3-f1">
@@ -128,13 +139,13 @@
         </div>
       </div>
 
-      <!-- Rib Cage / Bracing -->
+      <!-- Bracing / Breathing -->
       <div class="category-block">
         <div class="category-title">
           <span class="category-icon">&#129516;</span>
-          <h3>Rib Cage / Bracing</h3>
+          <h3>Bracing / Breathing</h3>
         </div>
-        <div class="exercise-list" id="big3-ribs">
+        <div class="exercise-list" id="big3-brace">
           <div class="exercise-card" data-id="b3-r1">
             <div class="exercise-check">
               <input type="checkbox" id="b3-r1-check">
@@ -176,16 +187,7 @@
             </div>
             <button class="exercise-note-btn" title="Add note">&#128221;</button>
           </div>
-        </div>
-      </div>
 
-      <!-- Breathing Mechanics -->
-      <div class="category-block">
-        <div class="category-title">
-          <span class="category-icon">&#127788;&#65039;</span>
-          <h3>Breathing Mechanics</h3>
-        </div>
-        <div class="exercise-list" id="big3-breath">
           <div class="exercise-card" data-id="b3-b1">
             <div class="exercise-check">
               <input type="checkbox" id="b3-b1-check">
@@ -223,6 +225,57 @@
               <h4>Box Breathing (4-4-4-4)</h4>
               <p class="exercise-details">1 set &middot; 2 minutes</p>
               <p class="exercise-cue">Cue: 4s inhale, 4s hold, 4s exhale, 4s hold. Calm the system down.</p>
+              <a href="#" class="video-link" target="_blank">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Neck / Shoulder Position -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#128170;</span>
+          <h3>Neck / Shoulder Position</h3>
+        </div>
+        <div class="exercise-list" id="big3-neck">
+          <div class="exercise-card" data-id="b3-n1">
+            <div class="exercise-check">
+              <input type="checkbox" id="b3-n1-check">
+              <label for="b3-n1-check" class="checkmark"></label>
+            </div>
+            <div class="exercise-info">
+              <h4>Chin Tuck (Deep Neck Flexor Activation)</h4>
+              <p class="exercise-details">3 sets &middot; 10 reps &middot; 5s hold</p>
+              <p class="exercise-cue">Cue: Make a double chin. Pull the back of your skull straight back. Keep eyes level.</p>
+              <a href="#" class="video-link" target="_blank">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+
+          <div class="exercise-card" data-id="b3-n2">
+            <div class="exercise-check">
+              <input type="checkbox" id="b3-n2-check">
+              <label for="b3-n2-check" class="checkmark"></label>
+            </div>
+            <div class="exercise-info">
+              <h4>Wall Slide (Scapular Upward Rotation)</h4>
+              <p class="exercise-details">2 sets &middot; 10 reps</p>
+              <p class="exercise-cue">Cue: Back flat on wall. Elbows and wrists stay in contact. Slide up slow, squeeze at top.</p>
+              <a href="#" class="video-link" target="_blank">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+
+          <div class="exercise-card" data-id="b3-n3">
+            <div class="exercise-check">
+              <input type="checkbox" id="b3-n3-check">
+              <label for="b3-n3-check" class="checkmark"></label>
+            </div>
+            <div class="exercise-info">
+              <h4>Prone Y-T-W Raises</h4>
+              <p class="exercise-details">2 sets &middot; 8 reps each position</p>
+              <p class="exercise-cue">Cue: Thumbs up, squeeze shoulder blades. Low trap and mid trap activation. No shrugging.</p>
               <a href="#" class="video-link" target="_blank">&#9654; Watch video</a>
             </div>
             <button class="exercise-note-btn" title="Add note">&#128221;</button>
@@ -270,6 +323,34 @@
         <div class="placeholder-icon">&#9889;</div>
         <h3>Coming Soon</h3>
         <p>ACL rehab/prehab protocols, lower back strengthening, and knee stability work tailored to Justus's injury history and playing style.</p>
+      </div>
+    </section>
+
+    <!-- PLYOS -->
+    <section class="program-section" id="section-plyos">
+      <div class="section-header">
+        <div class="section-number">05</div>
+        <h2>Plyos</h2>
+        <p class="section-desc">Explosive power and reactive strength. Train the nervous system to fire fast.</p>
+      </div>
+      <div class="placeholder-message">
+        <div class="placeholder-icon">&#128640;</div>
+        <h3>Coming Soon</h3>
+        <p>Jump progressions, bounding, reactive drills, and plyometric protocols built for a quarterback who needs to be explosive in and out of the pocket.</p>
+      </div>
+    </section>
+
+    <!-- WARM UPS -->
+    <section class="program-section" id="section-warmups">
+      <div class="section-header">
+        <div class="section-number">06</div>
+        <h2>Warm Ups</h2>
+        <p class="section-desc">Prime the body before every session. Activate, mobilize, and get ready to work.</p>
+      </div>
+      <div class="placeholder-message">
+        <div class="placeholder-icon">&#128293;</div>
+        <h3>Coming Soon</h3>
+        <p>Dynamic warm-up sequences, activation circuits, and movement prep routines to use before training or throwing sessions.</p>
       </div>
     </section>
 
