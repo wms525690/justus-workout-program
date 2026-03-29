@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justus Platts | College Football Prep Program</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== HERO SECTION ========== -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">UTAH TECH FOOTBALL</div>
+      <div class="hero-photo">
+        <img src="../assets-images/Justus Image.jpg" alt="Justus Platts" id="heroPhoto">
+        <div class="hero-photo-ring"></div>
+      </div>
+      <h1 class="hero-name">JUSTUS PLATTS</h1>
+      <p class="hero-subtitle">QB &middot; College Football Prep Program</p>
+      <p class="hero-tagline">Build the foundation. Protect the body. Own the position.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value" id="weekNumber">1</span>
+          <span class="stat-label">Current Week</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="completionRate">0%</span>
+          <span class="stat-label">This Week</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="streakCount">0</span>
+          <span class="stat-label">Day Streak</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll to start</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="program-nav" id="programNav">
+    <div class="nav-inner">
+      <button class="nav-btn active" data-section="big3">
+        <span class="nav-icon">&#9679;</span>
+        The Big 3
+      </button>
+      <button class="nav-btn" data-section="mobility">
+        <span class="nav-icon">&#9679;</span>
+        Mobility
+      </button>
+      <button class="nav-btn" data-section="armcare">
+        <span class="nav-icon">&#9679;</span>
+        Arm Care
+      </button>
+      <button class="nav-btn" data-section="rehab">
+        <span class="nav-icon">&#9679;</span>
+        Rehab / Prehab
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== PROGRAM SECTIONS ========== -->
+  <main class="program-content">
+
+    <!-- THE BIG 3 CHECKLIST -->
+    <section class="program-section active" id="section-big3">
+      <div class="section-header">
+        <div class="section-number">01</div>
+        <h2>The Big 3 Checklist</h2>
+        <p class="section-desc">Master these three fundamentals. Every session starts here.</p>
+      </div>
+
+      <!-- Foot Mechanics -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#128099;</span>
+          <h3>Foot Mechanics</h3>
+        </div>
+        <div class="exercise-list" id="big3-feet">
+          <div class="exercise-card" data-id="b3-f1">
+            <div class="exercise-check">
+              <input type="checkbox" id="b3-f1-check">
+              <label for="b3-f1-check" class="checkmark"></label>
+            </div>
+            <div class="exercise-info">
+              <h4>Short Foot Activation</h4>
+              <p class="exercise-details">3 sets &middot; 10 reps each foot &middot; 5s hold</p>
+              <p class="exercise-cue">Cue: Pull the ball of your foot toward your heel without curling toes. Build your arch.</p>
+              <a href="#" class="video-link" target="_blank">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+
+          <div class="exercise-card" data-id="b3-f2">
+            <div class="exercise-check">
+              <input type="checkbox" id="b3-f2-check">
+              <label for="b3-f2-check" class="checkmark"></label>
+            </div>
+            <div class="exercise-info">
+              <h4>Toe Yoga (Splay &amp; Isolate)</h4>
+              <p class="exercise-details">2 sets &middot; 8 reps &middot; Big toe up / little toes down, then switch</p>
+              <p class="exercise-cue">Cue: Control each toe independently. Slow is the goal.</p>
+              <a href="#" class="video-link" target="_blank">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+
+          <div class="exercise-card" data-id="b3-f3">
+            <div class="exercise-check">
+              <input type="checkbox" id="b3-f3-check">
+              <label for="b3-f3-check" class="checkmark"></label>
+            </div>
+            <div class="exercise-info">
+              <h4>Tripod Foot Stance Balance</h4>
+              <p class="exercise-details">2 sets &middot; 30s each foot</p>
+              <p class="exercise-cue">Cue: Weight even across big toe, little toe, and heel. Stay stacked.</p>
+              <a href="#" class="video-link" target="_blank">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rib Cage / Bracing -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#129516;</span>
+          <h3>Rib Cage / Bracing</h3>
+        </div>
+        <div class="exercise-list" id="big3-ribs">
+          <div class="exercise-card" data-id="b3-r1">
+            <div class="exercise-check">
+              <input type="checkbox" id="b3-r1-check">
+              <label for="b3-r1-check" class="checkmark"></label>
+            </div>
+            <div class="exercise-info">
+              <h4>Dead Bug (Rib Cage Lock)</h4>
+              <p class="exercise-details">3 sets &middot; 8 reps each side</p>
+              <p class="exercise-cue">Cue: Ribs stay down. Low back stays flat. Move slow.</p>
+              <a href="#" class="video-link" target="_blank">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+
+          <div class="exercise-card" data-id="b3-r2">
+            <div class="exercise-check">
+              <input type="checkbox" id="b3-r2-check">
+              <label for="b3-r2-check" class="checkmark"></label>
+            </div>
+            <div class="exercise-info">
+              <h4>90/90 Hip Lift with Balloon (or exhale)</h4>
+              <p class="exercise-details">2 sets &middot; 5 breaths</p>
+              <p class="exercise-cue">Cue: Hamstrings on. Exhale fully to drop the ribs. Feel the abs lock in.</p>
+              <a href="#" class="video-link" target="_blank">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+
+          <div class="exercise-card" data-id="b3-r3">
+            <div class="exercise-check">
+              <input type="checkbox" id="b3-r3-check">
+              <label for="b3-r3-check" class="checkmark"></label>
+            </div>
+            <div class="exercise-info">
+              <h4>Bear Crawl Hold (Knees 1" Off Ground)</h4>
+              <p class="exercise-details">3 sets &middot; 20s hold</p>
+              <p class="exercise-cue">Cue: Brace like someone's about to hit you. Breathe through the brace.</p>
+              <a href="#" class="video-link" target="_blank">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Breathing Mechanics -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#127788;&#65039;</span>
+          <h3>Breathing Mechanics</h3>
+        </div>
+        <div class="exercise-list" id="big3-breath">
+          <div class="exercise-card" data-id="b3-b1">
+            <div class="exercise-check">
+              <input type="checkbox" id="b3-b1-check">
+              <label for="b3-b1-check" class="checkmark"></label>
+            </div>
+            <div class="exercise-info">
+              <h4>Crocodile Breathing (Prone)</h4>
+              <p class="exercise-details">2 sets &middot; 8 breaths</p>
+              <p class="exercise-cue">Cue: Belly pushes into the floor on inhale. Expand into the sides and back. Slow exhale.</p>
+              <a href="#" class="video-link" target="_blank">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+
+          <div class="exercise-card" data-id="b3-b2">
+            <div class="exercise-check">
+              <input type="checkbox" id="b3-b2-check">
+              <label for="b3-b2-check" class="checkmark"></label>
+            </div>
+            <div class="exercise-info">
+              <h4>360 Breathing (Seated, Band Around Ribs)</h4>
+              <p class="exercise-details">2 sets &middot; 8 breaths</p>
+              <p class="exercise-cue">Cue: Breathe into the band in all directions -- front, sides, and back. No chest rise.</p>
+              <a href="#" class="video-link" target="_blank">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+
+          <div class="exercise-card" data-id="b3-b3">
+            <div class="exercise-check">
+              <input type="checkbox" id="b3-b3-check">
+              <label for="b3-b3-check" class="checkmark"></label>
+            </div>
+            <div class="exercise-info">
+              <h4>Box Breathing (4-4-4-4)</h4>
+              <p class="exercise-details">1 set &middot; 2 minutes</p>
+              <p class="exercise-cue">Cue: 4s inhale, 4s hold, 4s exhale, 4s hold. Calm the system down.</p>
+              <a href="#" class="video-link" target="_blank">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOBILITY -->
+    <section class="program-section" id="section-mobility">
+      <div class="section-header">
+        <div class="section-number">02</div>
+        <h2>Mobility</h2>
+        <p class="section-desc">Passive stretching + active end-range strength. Build range you can own.</p>
+      </div>
+      <div class="placeholder-message">
+        <div class="placeholder-icon">&#128679;</div>
+        <h3>Coming Soon</h3>
+        <p>We're building this section out. Exercises will include passive holds, active mobility drills, and CARS (Controlled Articular Rotations) for every major joint.</p>
+      </div>
+    </section>
+
+    <!-- ARM CARE -->
+    <section class="program-section" id="section-armcare">
+      <div class="section-header">
+        <div class="section-number">03</div>
+        <h2>Arm Care</h2>
+        <p class="section-desc">Protect the arm. Rotator cuff health, scapular control, and throwing longevity.</p>
+      </div>
+      <div class="placeholder-message">
+        <div class="placeholder-icon">&#128170;</div>
+        <h3>Coming Soon</h3>
+        <p>Rotator cuff strengthening, band work, scapular stability drills, and arm care protocols designed for a quarterback's demands.</p>
+      </div>
+    </section>
+
+    <!-- REHAB / PREHAB -->
+    <section class="program-section" id="section-rehab">
+      <div class="section-header">
+        <div class="section-number">04</div>
+        <h2>Rehab / Prehab</h2>
+        <p class="section-desc">Targeted work for the lower back and knees. Build resilience where it matters most.</p>
+      </div>
+      <div class="placeholder-message">
+        <div class="placeholder-icon">&#9889;</div>
+        <h3>Coming Soon</h3>
+        <p>ACL rehab/prehab protocols, lower back strengthening, and knee stability work tailored to Justus's injury history and playing style.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== NOTES MODAL ========== -->
+  <div class="modal-overlay" id="notesModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modalTitle">Exercise Notes</h3>
+        <button class="modal-close" id="modalClose">&times;</button>
+      </div>
+      <div class="modal-body">
+        <label for="modalNoteInput">How did this feel? Any pain, tightness, or wins?</label>
+        <textarea id="modalNoteInput" rows="4" placeholder="Type your notes here..."></textarea>
+        <div class="modal-rating">
+          <span>Difficulty:</span>
+          <div class="rating-buttons">
+            <button class="rating-btn" data-rating="easy">Easy</button>
+            <button class="rating-btn" data-rating="right">Just Right</button>
+            <button class="rating-btn" data-rating="hard">Hard</button>
+            <button class="rating-btn" data-rating="pain">Pain/Discomfort</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-save" id="modalSave">Save Note</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <p>Built for Justus Platts &middot; Utah Tech Trailblazers &middot; 2026</p>
+    <p class="footer-small">Program by Max Sherwin</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
