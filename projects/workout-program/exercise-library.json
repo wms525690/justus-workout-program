@@ -5,13 +5,33 @@
     "totalExercises": 105,
     "difficultyScale": "1=foundational, 2=developing, 3=intermediate, 4=advanced, 5=elite/sport-specific",
     "focusTags": [
-      "core", "obliques", "breathing/diaphragm", "anti-extension", "anti-rotation",
-      "shoulders", "rotator-cuff", "scapular-stabilizers", "posterior-deltoid",
-      "neck/cervical", "lower-back/lumbar", "thoracic-spine",
-      "glutes", "glute-medius", "hamstrings", "quads", "VMO",
-      "hip-flexors", "hip-rotators", "adductors",
-      "calves/ankles", "feet/intrinsic", "proprioception",
-      "full-body", "CNS-activation", "landing-mechanics", "rotational-power"
+      "core",
+      "obliques",
+      "breathing/diaphragm",
+      "anti-extension",
+      "anti-rotation",
+      "shoulders",
+      "rotator-cuff",
+      "scapular-stabilizers",
+      "posterior-deltoid",
+      "neck/cervical",
+      "lower-back/lumbar",
+      "thoracic-spine",
+      "glutes",
+      "glute-medius",
+      "hamstrings",
+      "quads",
+      "VMO",
+      "hip-flexors",
+      "hip-rotators",
+      "adductors",
+      "calves/ankles",
+      "feet/intrinsic",
+      "proprioception",
+      "full-body",
+      "CNS-activation",
+      "landing-mechanics",
+      "rotational-power"
     ]
   },
   "categories": {
@@ -22,8 +42,13 @@
           "id": "foot-01",
           "name": "Toe Yoga (Isolation Drill)",
           "difficulty": 1,
-          "primaryFocus": ["feet/intrinsic"],
-          "secondaryFocus": ["proprioception"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "feet/intrinsic"
+          ],
+          "secondaryFocus": [
+            "proprioception"
+          ],
           "prescription": "2 sets, 8-10 reps each pattern per foot",
           "cue": "Think of your toes as piano keys. Lift big toe while pressing four little toes down, then reverse. Move independently, not as a block.",
           "prerequisites": [],
@@ -34,8 +59,13 @@
           "id": "foot-02",
           "name": "Short Foot Exercise (Foot Doming)",
           "difficulty": 1,
-          "primaryFocus": ["feet/intrinsic"],
-          "secondaryFocus": ["calves/ankles"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "feet/intrinsic"
+          ],
+          "secondaryFocus": [
+            "calves/ankles"
+          ],
           "prescription": "3 sets, 10 reps each foot, 5s hold",
           "cue": "Pull ball of foot toward heel without curling toes. Imagine picking up a marble with your arch, not your toes. Toes stay long and relaxed.",
           "prerequisites": [],
@@ -46,11 +76,20 @@
           "id": "foot-03",
           "name": "Tripod Foot Stance (Static Hold)",
           "difficulty": 2,
-          "primaryFocus": ["feet/intrinsic", "proprioception"],
-          "secondaryFocus": ["calves/ankles", "glutes"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "feet/intrinsic",
+            "proprioception"
+          ],
+          "secondaryFocus": [
+            "calves/ankles",
+            "glutes"
+          ],
           "prescription": "2 sets, 30-60s each foot",
           "cue": "Three points of a triangle -- heel, big toe knuckle, pinky toe knuckle -- equal pressure. Maintain domed arch.",
-          "prerequisites": ["foot-02"],
+          "prerequisites": [
+            "foot-02"
+          ],
           "videoLink": "",
           "notes": "This IS the foot position during plant foot strike on every throw. Non-negotiable."
         },
@@ -58,11 +97,18 @@
           "id": "foot-04",
           "name": "Towel Scrunches with Toe Spread",
           "difficulty": 2,
-          "primaryFocus": ["feet/intrinsic"],
-          "secondaryFocus": ["calves/ankles"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "feet/intrinsic"
+          ],
+          "secondaryFocus": [
+            "calves/ankles"
+          ],
           "prescription": "2 sets, 10-12 reps each foot",
           "cue": "Grip, pull, spread. Think of your foot like a hand -- open and close it with control.",
-          "prerequisites": ["foot-01"],
+          "prerequisites": [
+            "foot-01"
+          ],
           "videoLink": "",
           "notes": "Builds gripping strength needed for traction in cleats on variable surfaces."
         },
@@ -70,11 +116,20 @@
           "id": "foot-05",
           "name": "Single-Leg Calf Raise with Tripod Focus",
           "difficulty": 3,
-          "primaryFocus": ["calves/ankles"],
-          "secondaryFocus": ["feet/intrinsic", "proprioception"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "calves/ankles"
+          ],
+          "secondaryFocus": [
+            "feet/intrinsic",
+            "proprioception"
+          ],
           "prescription": "3 sets, 10-12 reps each foot, 3s up / 3s down",
           "cue": "Rise straight up like an elevator, not a rollercoaster. If the ankle wobbles at the top, you went too high -- own the range you can control.",
-          "prerequisites": ["foot-03", "foot-02"],
+          "prerequisites": [
+            "foot-03",
+            "foot-02"
+          ],
           "videoLink": "",
           "notes": "Replicates push-off mechanics of back foot during a throw."
         },
@@ -82,11 +137,18 @@
           "id": "foot-06",
           "name": "Banded Ankle 4-Way",
           "difficulty": 3,
-          "primaryFocus": ["calves/ankles"],
-          "secondaryFocus": ["feet/intrinsic"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "calves/ankles"
+          ],
+          "secondaryFocus": [
+            "feet/intrinsic"
+          ],
           "prescription": "2 sets, 10-15 reps each direction per foot",
           "cue": "Move from the ankle, not the knee. Keep the shin quiet. Control the return -- don't let the band snap you back.",
-          "prerequisites": ["foot-03"],
+          "prerequisites": [
+            "foot-03"
+          ],
           "videoLink": "",
           "notes": "Builds multi-directional ankle resilience. QBs sustain ankle injuries from uneven pocket surfaces and off-platform throws."
         },
@@ -94,11 +156,19 @@
           "id": "foot-07",
           "name": "Single-Leg Balance on Foam Pad (Eyes Closed)",
           "difficulty": 3,
-          "primaryFocus": ["proprioception"],
-          "secondaryFocus": ["feet/intrinsic", "calves/ankles"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "proprioception"
+          ],
+          "secondaryFocus": [
+            "feet/intrinsic",
+            "calves/ankles"
+          ],
           "prescription": "2 sets, 30-60s each foot",
           "cue": "When you close your eyes, your foot becomes your eyes. Let it feel and react. Stay soft at the knee and ankle.",
-          "prerequisites": ["foot-03"],
+          "prerequisites": [
+            "foot-03"
+          ],
           "videoLink": "",
           "notes": "Simulates proprioceptive demand of throwing while attention is directed upfield."
         },
@@ -106,11 +176,22 @@
           "id": "foot-08",
           "name": "Single-Leg Hop to Stick (Multi-Direction)",
           "difficulty": 4,
-          "primaryFocus": ["calves/ankles", "landing-mechanics"],
-          "secondaryFocus": ["feet/intrinsic", "glutes", "proprioception"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "calves/ankles",
+            "landing-mechanics"
+          ],
+          "secondaryFocus": [
+            "feet/intrinsic",
+            "glutes",
+            "proprioception"
+          ],
           "prescription": "3 sets, 5 reps each direction per foot",
           "cue": "Land like you're landing on thin ice -- quiet and controlled. Own the landing before you move on. If you can't stick it, shorten the distance.",
-          "prerequisites": ["foot-05", "foot-07"],
+          "prerequisites": [
+            "foot-05",
+            "foot-07"
+          ],
           "videoLink": "",
           "notes": "Directly mimics plant-foot strike when throwing on the move. Rotational variant mirrors rollout throw pivot.",
           "aclCaution": true
@@ -119,11 +200,21 @@
           "id": "foot-09",
           "name": "Lateral Band Walk with Short Foot Engagement",
           "difficulty": 4,
-          "primaryFocus": ["glute-medius", "feet/intrinsic"],
-          "secondaryFocus": ["calves/ankles", "hip-rotators"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "glute-medius",
+            "feet/intrinsic"
+          ],
+          "secondaryFocus": [
+            "calves/ankles",
+            "hip-rotators"
+          ],
           "prescription": "2 sets, 10-15 steps each direction",
           "cue": "Band around forefoot. The band will try to collapse your arch inward on every step. Fight it. Keep the dome alive. Stay low in your hips.",
-          "prerequisites": ["foot-02", "foot-06"],
+          "prerequisites": [
+            "foot-02",
+            "foot-06"
+          ],
           "videoLink": "",
           "notes": "Lateral pocket movement with foot integrity -- shuffle and slide footwork QBs use constantly."
         },
@@ -131,11 +222,23 @@
           "id": "foot-10",
           "name": "Single-Leg RDL to Overhead Press (Barefoot)",
           "difficulty": 5,
-          "primaryFocus": ["glutes", "hamstrings"],
-          "secondaryFocus": ["feet/intrinsic", "shoulders", "core"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "glutes",
+            "hamstrings"
+          ],
+          "secondaryFocus": [
+            "feet/intrinsic",
+            "shoulders",
+            "core"
+          ],
           "prescription": "3 sets, 6-8 reps each side",
           "cue": "Your foot is the foundation of a skyscraper. If the base shifts, everything above crumbles. Press through the three points and keep the dome.",
-          "prerequisites": ["foot-05", "foot-07", "foot-08"],
+          "prerequisites": [
+            "foot-05",
+            "foot-07",
+            "foot-08"
+          ],
           "videoLink": "",
           "notes": "Full kinetic chain demand of an off-platform throw -- single-leg base, hip hinge, overhead delivery."
         },
@@ -143,11 +246,21 @@
           "id": "foot-11",
           "name": "Reactive Drop Landing to Throw (Single-Leg)",
           "difficulty": 5,
-          "primaryFocus": ["landing-mechanics", "feet/intrinsic"],
-          "secondaryFocus": ["calves/ankles", "proprioception", "shoulders"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "landing-mechanics",
+            "feet/intrinsic"
+          ],
+          "secondaryFocus": [
+            "calves/ankles",
+            "proprioception",
+            "shoulders"
+          ],
           "prescription": "3 sets, 4-5 reps each foot",
           "cue": "Absorb, stabilize, deliver. Three things in under one second. If the throw is wild, your foot didn't get quiet fast enough.",
-          "prerequisites": ["foot-08"],
+          "prerequisites": [
+            "foot-08"
+          ],
           "videoLink": "",
           "notes": "Ultimate expression of the progression. Replicates throwing off a reset, scramble, or off-platform situation.",
           "aclCaution": true
@@ -156,11 +269,22 @@
           "id": "foot-12",
           "name": "Multi-Directional Agility Ladder with Perturbation",
           "difficulty": 5,
-          "primaryFocus": ["feet/intrinsic", "CNS-activation"],
-          "secondaryFocus": ["calves/ankles", "proprioception", "core"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "feet/intrinsic",
+            "CNS-activation"
+          ],
+          "secondaryFocus": [
+            "calves/ankles",
+            "proprioception",
+            "core"
+          ],
           "prescription": "3 sets, 20-30s per pattern",
           "cue": "The ladder is the pocket. The pushes are pass rushers. Your feet stay precise no matter what your upper body is dealing with.",
-          "prerequisites": ["foot-08", "foot-09"],
+          "prerequisites": [
+            "foot-08",
+            "foot-09"
+          ],
           "videoLink": "",
           "notes": "Highest-fidelity simulation of pocket movement under duress with cognitive load."
         }
@@ -173,8 +297,13 @@
           "id": "brace-01",
           "name": "Crocodile Breathing (Prone)",
           "difficulty": 1,
-          "primaryFocus": ["breathing/diaphragm"],
-          "secondaryFocus": ["thoracic-spine"],
+          "breathingType": "passive",
+          "primaryFocus": [
+            "breathing/diaphragm"
+          ],
+          "secondaryFocus": [
+            "thoracic-spine"
+          ],
           "prescription": "2 sets, 8 breaths",
           "cue": "Belly pushes into the floor on inhale. Expand into the sides and back. Slow exhale.",
           "prerequisites": [],
@@ -185,8 +314,15 @@
           "id": "brace-02",
           "name": "Supine 90/90 Hip Lift (Basic)",
           "difficulty": 1,
-          "primaryFocus": ["breathing/diaphragm", "core"],
-          "secondaryFocus": ["hamstrings", "obliques"],
+          "breathingType": "passive",
+          "primaryFocus": [
+            "breathing/diaphragm",
+            "core"
+          ],
+          "secondaryFocus": [
+            "hamstrings",
+            "obliques"
+          ],
           "prescription": "2 sets, 5 breaths",
           "cue": "Feet flat on wall, knees/hips at 90. Exhale fully to drop the ribs. Pause 3s at bottom of exhale. Inhale through nose without losing rib position.",
           "prerequisites": [],
@@ -197,8 +333,13 @@
           "id": "brace-03",
           "name": "Supine Diaphragmatic Breathing with Hand Feedback",
           "difficulty": 1,
-          "primaryFocus": ["breathing/diaphragm"],
-          "secondaryFocus": ["core"],
+          "breathingType": "passive",
+          "primaryFocus": [
+            "breathing/diaphragm"
+          ],
+          "secondaryFocus": [
+            "core"
+          ],
           "prescription": "2 sets, 8 breaths",
           "cue": "One hand on chest, one on belly. Inhale 4 counts -- belly rises, chest stays still. Exhale 6-8 counts through pursed lips. The exhale is the money.",
           "prerequisites": [],
@@ -209,11 +350,21 @@
           "id": "brace-04",
           "name": "Dead Bug -- Arms Only (Breathing Focus)",
           "difficulty": 2,
-          "primaryFocus": ["anti-extension", "core"],
-          "secondaryFocus": ["breathing/diaphragm", "hip-flexors"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "anti-extension",
+            "core"
+          ],
+          "secondaryFocus": [
+            "breathing/diaphragm",
+            "hip-flexors"
+          ],
           "prescription": "3 sets, 8 reps each arm",
           "cue": "Low back glued to floor. Exhale and lock ribs down. Reach one arm overhead without back arching. If back lifts, you've lost it -- reset.",
-          "prerequisites": ["brace-01", "brace-03"],
+          "prerequisites": [
+            "brace-01",
+            "brace-03"
+          ],
           "videoLink": "",
           "notes": "First integration of breathing under movement demand."
         },
@@ -221,11 +372,21 @@
           "id": "brace-05",
           "name": "90/90 Hip Lift with Ball Squeeze and Reach",
           "difficulty": 2,
-          "primaryFocus": ["core", "obliques"],
-          "secondaryFocus": ["hamstrings", "adductors", "shoulders"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "core",
+            "obliques"
+          ],
+          "secondaryFocus": [
+            "hamstrings",
+            "adductors",
+            "shoulders"
+          ],
           "prescription": "2 sets, 5 breaths",
           "cue": "Squeeze ball between knees, lift hips slightly, exhale fully and reach arms to ceiling. Breathe in without losing position. Feel hamstrings and inner thighs, not low back.",
-          "prerequisites": ["brace-02"],
+          "prerequisites": [
+            "brace-02"
+          ],
           "videoLink": "",
           "notes": "Progresses the 90/90. Trains oblique slings and ZOA with shoulder flexion under rib control."
         },
@@ -233,11 +394,20 @@
           "id": "brace-06",
           "name": "Quadruped Breathing (All-Fours Belly Breathing)",
           "difficulty": 2,
-          "primaryFocus": ["breathing/diaphragm", "core"],
-          "secondaryFocus": ["scapular-stabilizers", "thoracic-spine"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "breathing/diaphragm",
+            "core"
+          ],
+          "secondaryFocus": [
+            "scapular-stabilizers",
+            "thoracic-spine"
+          ],
           "prescription": "2 sets, 8 breaths",
           "cue": "Hands under shoulders, knees under hips. Let belly hang. Breathe into belly and sides -- a partner should see your flanks expand. No low back sag or rounding.",
-          "prerequisites": ["brace-01"],
+          "prerequisites": [
+            "brace-01"
+          ],
           "videoLink": "",
           "notes": "360-degree expansion against gravity. Bridges prone breathing to more demanding positions."
         },
@@ -245,11 +415,20 @@
           "id": "brace-07",
           "name": "Dead Bug -- Contralateral Arms and Legs",
           "difficulty": 3,
-          "primaryFocus": ["anti-extension", "core"],
-          "secondaryFocus": ["hip-flexors", "breathing/diaphragm"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "anti-extension",
+            "core"
+          ],
+          "secondaryFocus": [
+            "hip-flexors",
+            "breathing/diaphragm"
+          ],
           "prescription": "3 sets, 8 reps each side, 3s out / 3s back",
           "cue": "Exhale, lock ribs down. Extend opposite arm and leg simultaneously. The moment your back arches, you're done with that set. Quality over quantity.",
-          "prerequisites": ["brace-04"],
+          "prerequisites": [
+            "brace-04"
+          ],
           "videoLink": "",
           "notes": "Full dead bug. Cross-body coordination under anti-extension demand."
         },
@@ -257,11 +436,21 @@
           "id": "brace-08",
           "name": "Bear Crawl Hold (Static)",
           "difficulty": 3,
-          "primaryFocus": ["core", "anti-extension"],
-          "secondaryFocus": ["shoulders", "quads", "breathing/diaphragm"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "core",
+            "anti-extension"
+          ],
+          "secondaryFocus": [
+            "shoulders",
+            "quads",
+            "breathing/diaphragm"
+          ],
           "prescription": "3 sets, 20s hold (3-5 breaths per hold)",
           "cue": "From all fours, tuck toes and lift knees 1 inch off ground. Hold. Breathe. If you're shaking, good -- breathe through it.",
-          "prerequisites": ["brace-06"],
+          "prerequisites": [
+            "brace-06"
+          ],
           "videoLink": "",
           "notes": "Teaches maintaining a brace while breathing -- exactly what the pocket demands."
         },
@@ -269,11 +458,20 @@
           "id": "brace-09",
           "name": "Half-Kneeling Pallof Press with Breath Hold",
           "difficulty": 3,
-          "primaryFocus": ["anti-rotation", "obliques"],
-          "secondaryFocus": ["core", "hip-flexors"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "anti-rotation",
+            "obliques"
+          ],
+          "secondaryFocus": [
+            "core",
+            "hip-flexors"
+          ],
           "prescription": "3 sets, 8 reps each side, full breath cycle per rep",
           "cue": "Inhale and brace 360. Press band out on exhale. Hold arms-extended for a full breath cycle. Do not let the band rotate you.",
-          "prerequisites": ["brace-07"],
+          "prerequisites": [
+            "brace-07"
+          ],
           "videoLink": "",
           "notes": "Anti-rotation under breathing demand. Directly applicable to pocket poise."
         },
@@ -281,11 +479,21 @@
           "id": "brace-10",
           "name": "Bear Crawl -- Slow Forward/Backward",
           "difficulty": 4,
-          "primaryFocus": ["core", "anti-extension"],
-          "secondaryFocus": ["shoulders", "hip-flexors", "breathing/diaphragm"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "core",
+            "anti-extension"
+          ],
+          "secondaryFocus": [
+            "shoulders",
+            "hip-flexors",
+            "breathing/diaphragm"
+          ],
           "prescription": "3 sets, 20 yards forward / 20 yards backward",
           "cue": "Opposite hand and foot move together. Knees 1 inch off ground the entire time. A cup of water on your back should not spill. Nasal breathing only.",
-          "prerequisites": ["brace-08"],
+          "prerequisites": [
+            "brace-08"
+          ],
           "videoLink": "",
           "notes": "Dynamic core stability under locomotion. If you have to mouth-breathe, slow down."
         },
@@ -293,11 +501,20 @@
           "id": "brace-11",
           "name": "Dead Bug with Band Resistance (Contralateral)",
           "difficulty": 4,
-          "primaryFocus": ["anti-extension", "core"],
-          "secondaryFocus": ["shoulders", "hip-flexors"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "anti-extension",
+            "core"
+          ],
+          "secondaryFocus": [
+            "shoulders",
+            "hip-flexors"
+          ],
           "prescription": "3 sets, 8 reps each side",
           "cue": "Band looped around one foot and opposite hand. Exhale, lock it down, then extend. The band wants to pull you into extension -- do not let it.",
-          "prerequisites": ["brace-07"],
+          "prerequisites": [
+            "brace-07"
+          ],
           "videoLink": "",
           "notes": "Where bracing becomes a skill, not just an exercise."
         },
@@ -305,11 +522,22 @@
           "id": "brace-12",
           "name": "Turkish Get-Up -- Bottom Segment (Floor to Elbow)",
           "difficulty": 4,
-          "primaryFocus": ["core", "shoulders"],
-          "secondaryFocus": ["hip-rotators", "breathing/diaphragm", "thoracic-spine"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "core",
+            "shoulders"
+          ],
+          "secondaryFocus": [
+            "hip-rotators",
+            "breathing/diaphragm",
+            "thoracic-spine"
+          ],
           "prescription": "2 sets, 3 reps each side",
           "cue": "Breathe and brace before every transition. Each position is a checkpoint -- pause, breathe, own it, then move. If you rush, you missed the point.",
-          "prerequisites": ["brace-09", "brace-08"],
+          "prerequisites": [
+            "brace-09",
+            "brace-08"
+          ],
           "videoLink": "",
           "notes": "Multi-plane core stability under asymmetric loading."
         },
@@ -317,11 +545,20 @@
           "id": "brace-13",
           "name": "Bear Crawl with Perturbation (Partner Push)",
           "difficulty": 5,
-          "primaryFocus": ["core", "anti-rotation"],
-          "secondaryFocus": ["shoulders", "breathing/diaphragm"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "core",
+            "anti-rotation"
+          ],
+          "secondaryFocus": [
+            "shoulders",
+            "breathing/diaphragm"
+          ],
           "prescription": "3 sets, 15-20s",
           "cue": "Bear crawl while partner gives random pushes from side, front, or top. Stay low, keep breathing, do not collapse. This is pocket presence training for your core.",
-          "prerequisites": ["brace-10"],
+          "prerequisites": [
+            "brace-10"
+          ],
           "videoLink": "",
           "notes": "Simulates chaotic force environment of a collapsing pocket."
         },
@@ -329,11 +566,21 @@
           "id": "brace-14",
           "name": "Tall Kneeling Overhead Med Ball Catch and Throw",
           "difficulty": 5,
-          "primaryFocus": ["core", "rotational-power"],
-          "secondaryFocus": ["shoulders", "breathing/diaphragm"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "core",
+            "rotational-power"
+          ],
+          "secondaryFocus": [
+            "shoulders",
+            "breathing/diaphragm"
+          ],
           "prescription": "3 sets, 8-10 reps",
           "cue": "Catch high, exhale hard on the throw. Your core is the link between the ground and the ball. If you flare, you leak power.",
-          "prerequisites": ["brace-09", "brace-12"],
+          "prerequisites": [
+            "brace-09",
+            "brace-12"
+          ],
           "videoLink": "",
           "notes": "Ballistic brace under reactive loading. Tests the breath-brace-throw sequence."
         },
@@ -341,11 +588,22 @@
           "id": "brace-15",
           "name": "Single-Leg Stance Cable Chop with Breath Tempo",
           "difficulty": 5,
-          "primaryFocus": ["obliques", "anti-rotation"],
-          "secondaryFocus": ["core", "feet/intrinsic", "calves/ankles"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "obliques",
+            "anti-rotation"
+          ],
+          "secondaryFocus": [
+            "core",
+            "feet/intrinsic",
+            "calves/ankles"
+          ],
           "prescription": "3 sets, 8 reps each side",
           "cue": "Stand on one leg. Inhale at top of chop, exhale forcefully as you pull down and across. Every rep is a breath. If you lose balance, the core lost the argument.",
-          "prerequisites": ["brace-09", "foot-07"],
+          "prerequisites": [
+            "brace-09",
+            "foot-07"
+          ],
           "videoLink": "",
           "notes": "Throwing a football is a single-leg rotational power event. This trains the breath-brace-rotate sequence."
         }
@@ -358,7 +616,10 @@
           "id": "neck-01",
           "name": "Supine Chin Tuck (Deep Neck Flexor Activation)",
           "difficulty": 1,
-          "primaryFocus": ["neck/cervical"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "neck/cervical"
+          ],
           "secondaryFocus": [],
           "prescription": "3 sets, 10 reps, 5-10s hold",
           "cue": "Lying face up, draw chin straight back into the floor -- double chin. Feel a gentle contraction deep in the front of your neck. Keep jaw relaxed.",
@@ -370,11 +631,16 @@
           "id": "neck-02",
           "name": "Deep Neck Flexor Endurance Hold",
           "difficulty": 1,
-          "primaryFocus": ["neck/cervical"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "neck/cervical"
+          ],
           "secondaryFocus": [],
           "prescription": "3 sets, 10s hold",
           "cue": "Chin tuck, then lift head barely off the surface -- thickness of a sheet of paper. If front strap muscles bulge, you've gone too far. Reset lighter.",
-          "prerequisites": ["neck-01"],
+          "prerequisites": [
+            "neck-01"
+          ],
           "videoLink": "",
           "notes": "Builds cervical endurance and motor control. Should be performed daily."
         },
@@ -382,8 +648,13 @@
           "id": "neck-03",
           "name": "Seated Wall Slide (Scapular Upward Rotation)",
           "difficulty": 1,
-          "primaryFocus": ["scapular-stabilizers"],
-          "secondaryFocus": ["thoracic-spine"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "scapular-stabilizers"
+          ],
+          "secondaryFocus": [
+            "thoracic-spine"
+          ],
           "prescription": "2 sets, 10 reps",
           "cue": "Back and head against wall, arms in goalpost position. Slide arms overhead -- wrists, elbows, and low back stay pinned to wall. The limitation is the point.",
           "prerequisites": [],
@@ -394,11 +665,20 @@
           "id": "neck-04",
           "name": "Prone Y-T-W Raises (Floor)",
           "difficulty": 2,
-          "primaryFocus": ["scapular-stabilizers"],
-          "secondaryFocus": ["rotator-cuff", "posterior-deltoid", "thoracic-spine"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "scapular-stabilizers"
+          ],
+          "secondaryFocus": [
+            "rotator-cuff",
+            "posterior-deltoid",
+            "thoracic-spine"
+          ],
           "prescription": "2 sets, 8-10 reps each position",
           "cue": "Lie face down with chin tuck. Thumbs up for Y and T. For W, elbows bent at 90 pulled toward hips, externally rotate hands to ceiling. Hold 3-5s. Light and controlled.",
-          "prerequisites": ["neck-01"],
+          "prerequisites": [
+            "neck-01"
+          ],
           "videoLink": "",
           "notes": "Y = lower trap, T = middle trap, W = external rotators and rhomboids. No shrugging."
         },
@@ -406,11 +686,19 @@
           "id": "neck-05",
           "name": "Quadruped Chin Tuck with Neck Isometrics",
           "difficulty": 2,
-          "primaryFocus": ["neck/cervical"],
-          "secondaryFocus": ["core", "scapular-stabilizers"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "neck/cervical"
+          ],
+          "secondaryFocus": [
+            "core",
+            "scapular-stabilizers"
+          ],
           "prescription": "2 sets, 5 reps each direction, 5s hold",
           "cue": "Pack your neck with a chin tuck. Partner applies gentle pressure in 4 directions. Resist and maintain position. Think steel rod from tailbone to crown.",
-          "prerequisites": ["neck-01"],
+          "prerequisites": [
+            "neck-01"
+          ],
           "videoLink": "",
           "notes": "Deep neck flexors under anti-gravity load with cervical co-contraction."
         },
@@ -418,11 +706,19 @@
           "id": "neck-06",
           "name": "Standing Wall Slide with Foam Roller",
           "difficulty": 2,
-          "primaryFocus": ["scapular-stabilizers"],
-          "secondaryFocus": ["thoracic-spine", "rotator-cuff"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "scapular-stabilizers"
+          ],
+          "secondaryFocus": [
+            "thoracic-spine",
+            "rotator-cuff"
+          ],
           "prescription": "2 sets, 10-12 reps",
           "cue": "Face wall, forearms on roller. Slide up while pressing into wall and protracting shoulder blades. Feel muscles along side of rib cage engage. Control descent 3s.",
-          "prerequisites": ["neck-03"],
+          "prerequisites": [
+            "neck-03"
+          ],
           "videoLink": "",
           "notes": "Serratus anterior focus. Critical for scapular upward rotation during throwing."
         },
@@ -430,11 +726,21 @@
           "id": "neck-07",
           "name": "Half-Kneeling Banded Neck Isometric with Pallof Hold",
           "difficulty": 3,
-          "primaryFocus": ["neck/cervical", "anti-rotation"],
-          "secondaryFocus": ["core", "hip-flexors"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "neck/cervical",
+            "anti-rotation"
+          ],
+          "secondaryFocus": [
+            "core",
+            "hip-flexors"
+          ],
           "prescription": "3 sets, 10-15s per side",
           "cue": "Band around forehead pulling laterally + Pallof press from opposite direction. Resist both forces. Neck stays neutral, arms stay centered.",
-          "prerequisites": ["neck-05", "brace-09"],
+          "prerequisites": [
+            "neck-05",
+            "brace-09"
+          ],
           "videoLink": "",
           "notes": "Trains neck and core to stabilize against competing rotational forces -- exactly like the pocket."
         },
@@ -442,11 +748,20 @@
           "id": "neck-08",
           "name": "Prone Y-T-W on Incline Bench with Light Dumbbells",
           "difficulty": 3,
-          "primaryFocus": ["scapular-stabilizers"],
-          "secondaryFocus": ["posterior-deltoid", "rotator-cuff", "thoracic-spine"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "scapular-stabilizers"
+          ],
+          "secondaryFocus": [
+            "posterior-deltoid",
+            "rotator-cuff",
+            "thoracic-spine"
+          ],
           "prescription": "2 sets, 10-12 reps each position, 2-3 lb DBs",
           "cue": "Chest-down on 30-45 degree bench with chin tuck. Depress shoulder blades -- pull them into back pockets -- THEN raise. If upper traps fire first, weight is too heavy.",
-          "prerequisites": ["neck-04"],
+          "prerequisites": [
+            "neck-04"
+          ],
           "videoLink": "",
           "notes": "Loaded scapular stability. Key error: shrugging upper traps toward ears."
         },
@@ -454,11 +769,18 @@
           "id": "neck-09",
           "name": "Tall Kneeling Banded Neck Flexion/Extension with Perturbations",
           "difficulty": 4,
-          "primaryFocus": ["neck/cervical"],
-          "secondaryFocus": ["core"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "neck/cervical"
+          ],
+          "secondaryFocus": [
+            "core"
+          ],
           "prescription": "3 sets, 20-30s",
           "cue": "Band around head, partner applies quick unpredictable tugs. React and stabilize -- do not pre-brace. This trains reflexive stabilization for absorbing hits.",
-          "prerequisites": ["neck-07"],
+          "prerequisites": [
+            "neck-07"
+          ],
           "videoLink": "",
           "notes": "Dynamic cervical stability against unpredictable forces. Requires no cervical instability or recent concussion history."
         },
@@ -466,11 +788,21 @@
           "id": "neck-10",
           "name": "Overhead Carry with Packed Neck (Bottoms-Up KB)",
           "difficulty": 4,
-          "primaryFocus": ["scapular-stabilizers", "shoulders"],
-          "secondaryFocus": ["neck/cervical", "core"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "scapular-stabilizers",
+            "shoulders"
+          ],
+          "secondaryFocus": [
+            "neck/cervical",
+            "core"
+          ],
           "prescription": "3 sets, 20-30 yards each side, 8-15 lbs",
           "cue": "KB bottoms-up, locked out overhead. Pack neck with chin tuck. Walk slowly. Shoulder blade must be glued to ribcage -- if it wings or you lose neck position, weight is too heavy.",
-          "prerequisites": ["neck-06", "neck-05"],
+          "prerequisites": [
+            "neck-06",
+            "neck-05"
+          ],
           "videoLink": "",
           "notes": "Integrated overhead scapular + neck endurance under load."
         },
@@ -478,11 +810,16 @@
           "id": "neck-11",
           "name": "Standing 4-Way Neck Machine (Eccentric Emphasis)",
           "difficulty": 5,
-          "primaryFocus": ["neck/cervical"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "neck/cervical"
+          ],
           "secondaryFocus": [],
           "prescription": "3 sets, 10-12 reps each direction, 2s concentric / 4-5s eccentric",
           "cue": "Concentric 2s, hold 1s, eccentric 4-5s. The slow eccentric is where neck injury resilience is built. Start conservatively -- neck responds to volume and consistency, not max load.",
-          "prerequisites": ["neck-09"],
+          "prerequisites": [
+            "neck-09"
+          ],
           "videoLink": "",
           "notes": "Critical for concussion risk reduction. Must be supervised by strength staff. Build over weeks."
         },
@@ -490,11 +827,21 @@
           "id": "neck-12",
           "name": "Drop Step to Throw with Perturbation",
           "difficulty": 5,
-          "primaryFocus": ["neck/cervical", "scapular-stabilizers"],
-          "secondaryFocus": ["core", "full-body"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "neck/cervical",
+            "scapular-stabilizers"
+          ],
+          "secondaryFocus": [
+            "core",
+            "full-body"
+          ],
           "prescription": "3 sets, 5 reps",
           "cue": "3-step drop, coach applies light push to torso/head as you set and throw. Maintain eye level, packed neck, clean scapular mechanics through the throw. If head dips or elbow drops, reduce intensity.",
-          "prerequisites": ["neck-09", "neck-10"],
+          "prerequisites": [
+            "neck-09",
+            "neck-10"
+          ],
           "videoLink": "",
           "notes": "Full kinetic chain integration. Late-stage return-to-sport or in-season performance drill."
         }
@@ -507,8 +854,14 @@
           "id": "mob-01",
           "name": "Supine 90/90 Hip Breathing",
           "difficulty": 1,
-          "primaryFocus": ["breathing/diaphragm", "hip-flexors"],
-          "secondaryFocus": ["lower-back/lumbar"],
+          "breathingType": "passive",
+          "primaryFocus": [
+            "breathing/diaphragm",
+            "hip-flexors"
+          ],
+          "secondaryFocus": [
+            "lower-back/lumbar"
+          ],
           "prescription": "2 sets, 8 breaths",
           "cue": "Feet flat on wall, knees/hips at 90. Inhale through nose to expand lower ribs laterally. Exhale fully, feel low back press gently into floor.",
           "prerequisites": [],
@@ -519,7 +872,10 @@
           "id": "mob-02",
           "name": "Ankle Dorsiflexion Half-Kneeling Wall Stretch",
           "difficulty": 1,
-          "primaryFocus": ["calves/ankles"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "calves/ankles"
+          ],
           "secondaryFocus": [],
           "prescription": "2 sets, 10-12 reps each foot",
           "cue": "Half-kneeling, front foot 3-4 inches from wall. Drive knee over pinky toe without heel lifting. Hold 2s, return, repeat.",
@@ -531,8 +887,13 @@
           "id": "mob-03",
           "name": "Open Book Thoracic Rotation (Side-lying)",
           "difficulty": 1,
-          "primaryFocus": ["thoracic-spine"],
-          "secondaryFocus": ["shoulders"],
+          "breathingType": "passive",
+          "primaryFocus": [
+            "thoracic-spine"
+          ],
+          "secondaryFocus": [
+            "shoulders"
+          ],
           "prescription": "2 sets, 8 reps each side, 3s hold at end range",
           "cue": "Knees stacked and pinned at 90 to lock out the lumbar spine. Reach top arm across and let gravity open the chest. Follow hand with eyes.",
           "prerequisites": [],
@@ -543,8 +904,14 @@
           "id": "mob-04",
           "name": "Hip CARS (Standing)",
           "difficulty": 2,
-          "primaryFocus": ["hip-rotators"],
-          "secondaryFocus": ["glute-medius", "core"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "hip-rotators"
+          ],
+          "secondaryFocus": [
+            "glute-medius",
+            "core"
+          ],
           "prescription": "2 sets, 3-5 reps each direction per hip",
           "cue": "Stand tall, brace everything except working hip. Lift knee up, rotate it out, extend behind you, then reverse. Circle as large as possible with no pelvis or spine compensation.",
           "prerequisites": [],
@@ -555,8 +922,14 @@
           "id": "mob-05",
           "name": "Shoulder CARS (Standing)",
           "difficulty": 2,
-          "primaryFocus": ["shoulders", "rotator-cuff"],
-          "secondaryFocus": ["scapular-stabilizers"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "shoulders",
+            "rotator-cuff"
+          ],
+          "secondaryFocus": [
+            "scapular-stabilizers"
+          ],
           "prescription": "2 sets, 3-5 reps each direction per arm",
           "cue": "Make a fist, tense the arm. Raise forward and overhead, rotate behind, bring down by your side. Biggest, slowest circle you can manage. If you lose control, that's your current edge.",
           "prerequisites": [],
@@ -567,8 +940,13 @@
           "id": "mob-06",
           "name": "Half-Kneeling Adductor Rockback",
           "difficulty": 2,
-          "primaryFocus": ["adductors"],
-          "secondaryFocus": ["hip-rotators"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "adductors"
+          ],
+          "secondaryFocus": [
+            "hip-rotators"
+          ],
           "prescription": "2 sets, 8-10 reps each side",
           "cue": "One knee down, opposite leg extended straight to the side, foot flat. Sit hips back toward heel keeping chest tall. Deep inner-thigh stretch on extended leg.",
           "prerequisites": [],
@@ -579,8 +957,14 @@
           "id": "mob-07",
           "name": "Quadruped T-Spine CARS",
           "difficulty": 2,
-          "primaryFocus": ["thoracic-spine"],
-          "secondaryFocus": ["obliques", "core"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "thoracic-spine"
+          ],
+          "secondaryFocus": [
+            "obliques",
+            "core"
+          ],
           "prescription": "2 sets, 5 reps each direction per side, 5s each direction",
           "cue": "Hand behind head, elbow down. Rotate elbow under body toward opposite knee, then reverse and open toward ceiling. Lumbar spine and hips should not move at all.",
           "prerequisites": [],
@@ -591,11 +975,20 @@
           "id": "mob-08",
           "name": "90/90 Hip Switch (Shinbox)",
           "difficulty": 3,
-          "primaryFocus": ["hip-rotators"],
-          "secondaryFocus": ["adductors", "glutes", "core"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "hip-rotators"
+          ],
+          "secondaryFocus": [
+            "adductors",
+            "glutes",
+            "core"
+          ],
           "prescription": "2 sets, 8-10 reps",
           "cue": "Both knees at 90. Windshield-wiper knees side to side. Get both knees to floor on each side, chest tall, feet planted. Hands off floor if possible.",
-          "prerequisites": ["mob-04"],
+          "prerequisites": [
+            "mob-04"
+          ],
           "videoLink": "",
           "notes": "Hip IR and ER simultaneously. Minimum 25-30 degrees IR required. No medial knee pain."
         },
@@ -603,11 +996,20 @@
           "id": "mob-09",
           "name": "Half-Kneeling Arm Bar with Rotation",
           "difficulty": 3,
-          "primaryFocus": ["shoulders", "thoracic-spine"],
-          "secondaryFocus": ["rotator-cuff", "core"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "shoulders",
+            "thoracic-spine"
+          ],
+          "secondaryFocus": [
+            "rotator-cuff",
+            "core"
+          ],
           "prescription": "2 sets, 5-6 reps each side",
           "cue": "Light KB bottoms-up, press overhead from half-kneeling. Slowly rotate torso away from bell with arm locked out. Bell should not wobble.",
-          "prerequisites": ["mob-05"],
+          "prerequisites": [
+            "mob-05"
+          ],
           "videoLink": "",
           "notes": "Shoulder stability through range combined with thoracic rotation under load."
         },
@@ -615,8 +1017,16 @@
           "id": "mob-10",
           "name": "World's Greatest Stretch (with Rotation)",
           "difficulty": 3,
-          "primaryFocus": ["hip-flexors", "thoracic-spine"],
-          "secondaryFocus": ["adductors", "calves/ankles", "hamstrings"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "hip-flexors",
+            "thoracic-spine"
+          ],
+          "secondaryFocus": [
+            "adductors",
+            "calves/ankles",
+            "hamstrings"
+          ],
           "prescription": "2 sets, 5-6 reps each side",
           "cue": "Deep lunge, hands inside front foot. Drop back hip toward floor. Rotate inside arm to ceiling, follow with eyes. Hold 2 breaths, return, repeat.",
           "prerequisites": [],
@@ -627,11 +1037,18 @@
           "id": "mob-11",
           "name": "90/90 Lift-Off (Hip IR/ER End-Range Strength)",
           "difficulty": 4,
-          "primaryFocus": ["hip-rotators"],
-          "secondaryFocus": ["glute-medius"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "hip-rotators"
+          ],
+          "secondaryFocus": [
+            "glute-medius"
+          ],
           "prescription": "2 sets, 5 reps each position per side, 5s hold",
           "cue": "In 90/90, lift back knee 1-2 inches using only hip IR -- no leaning, no hands. Then lift front knee using hip ER. These are humbling -- small movement is fine.",
-          "prerequisites": ["mob-08"],
+          "prerequisites": [
+            "mob-08"
+          ],
           "videoLink": "",
           "notes": "Isometric end-range strength. Builds strength where you're most vulnerable. Key for QB stride mechanics."
         },
@@ -639,11 +1056,21 @@
           "id": "mob-12",
           "name": "Loaded Cossack Squat",
           "difficulty": 4,
-          "primaryFocus": ["adductors", "hip-rotators"],
-          "secondaryFocus": ["calves/ankles", "glutes"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "adductors",
+            "hip-rotators"
+          ],
+          "secondaryFocus": [
+            "calves/ankles",
+            "glutes"
+          ],
           "prescription": "3 sets, 6-8 reps each side",
           "cue": "Goblet-hold KB. Shift laterally into deep side lunge, sit as low as possible over bent leg, straight leg stays extended with toes up. Chest tall throughout.",
-          "prerequisites": ["mob-06", "mob-08"],
+          "prerequisites": [
+            "mob-06",
+            "mob-08"
+          ],
           "videoLink": "",
           "notes": "Deep hip flexion, abduction, and adductor length under load."
         },
@@ -651,11 +1078,19 @@
           "id": "mob-13",
           "name": "Sleeper Stretch to Prone Shoulder CARS Combo",
           "difficulty": 4,
-          "primaryFocus": ["shoulders", "rotator-cuff"],
-          "secondaryFocus": ["scapular-stabilizers"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "shoulders",
+            "rotator-cuff"
+          ],
+          "secondaryFocus": [
+            "scapular-stabilizers"
+          ],
           "prescription": "2 sets, 30s stretch + 3 CARS reps each side",
           "cue": "Side-lying, bottom arm at 90. Gently press hand toward floor for posterior capsule stretch (30s). Then prone -- full shoulder CARS hovering arm just off floor through entire arc.",
-          "prerequisites": ["mob-05"],
+          "prerequisites": [
+            "mob-05"
+          ],
           "videoLink": "",
           "notes": "Passive then active combo. Targets posterior shoulder capsule -- often restricted in throwers."
         },
@@ -663,11 +1098,23 @@
           "id": "mob-14",
           "name": "Standing Bow (Hip Extension + Shoulder Flexion End-Range Hold)",
           "difficulty": 5,
-          "primaryFocus": ["hip-flexors", "shoulders"],
-          "secondaryFocus": ["core", "hamstrings", "proprioception"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "hip-flexors",
+            "shoulders"
+          ],
+          "secondaryFocus": [
+            "core",
+            "hamstrings",
+            "proprioception"
+          ],
           "prescription": "2 sets, 10s hold each side",
           "cue": "Single-leg, hinge and extend free leg behind while reaching arms overhead. Push back foot away as hard as you can and reach arms further -- maximal tension at both end ranges. You should be shaking.",
-          "prerequisites": ["mob-04", "mob-05", "foot-07"],
+          "prerequisites": [
+            "mob-04",
+            "mob-05",
+            "foot-07"
+          ],
           "videoLink": "",
           "notes": "Simultaneous hip extension and shoulder flexion end-range control. Full-body tension."
         },
@@ -675,11 +1122,23 @@
           "id": "mob-15",
           "name": "Turkish Get-Up (Full, Slow Tempo)",
           "difficulty": 5,
-          "primaryFocus": ["full-body", "shoulders"],
-          "secondaryFocus": ["core", "hip-rotators", "thoracic-spine"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "full-body",
+            "shoulders"
+          ],
+          "secondaryFocus": [
+            "core",
+            "hip-rotators",
+            "thoracic-spine"
+          ],
           "prescription": "2-3 reps per side",
           "cue": "Moderate KB. Each position is a checkpoint -- pause 2s at every transition. Bell arm locked out and stacked over shoulder at all times. Eyes on bell until standing. One sloppy rep means weight is too heavy.",
-          "prerequisites": ["mob-09", "mob-11", "brace-12"],
+          "prerequisites": [
+            "mob-09",
+            "mob-11",
+            "brace-12"
+          ],
           "videoLink": "",
           "notes": "Gold standard integration. Tests shoulder stability, hip transitions, T-spine extension in one continuous movement."
         }
@@ -692,8 +1151,13 @@
           "id": "arm-01",
           "name": "Standing Band External Rotation at 0 Degrees",
           "difficulty": 1,
-          "primaryFocus": ["rotator-cuff"],
-          "secondaryFocus": ["posterior-deltoid"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "rotator-cuff"
+          ],
+          "secondaryFocus": [
+            "posterior-deltoid"
+          ],
           "prescription": "2-3 sets, 15 reps each arm",
           "cue": "Elbow pinned to side at 90. Rotate forearm outward against band. Wrist neutral, squeeze shoulder blade back slightly. Control the return.",
           "prerequisites": [],
@@ -704,8 +1168,14 @@
           "id": "arm-02",
           "name": "Band Pull-Aparts",
           "difficulty": 1,
-          "primaryFocus": ["posterior-deltoid", "scapular-stabilizers"],
-          "secondaryFocus": ["rotator-cuff"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "posterior-deltoid",
+            "scapular-stabilizers"
+          ],
+          "secondaryFocus": [
+            "rotator-cuff"
+          ],
           "prescription": "2-3 sets, 15-20 reps",
           "cue": "Light band at shoulder height, arms straight. Pull apart by squeezing shoulder blades together until band touches chest. Keep ribs down -- no back arch.",
           "prerequisites": [],
@@ -716,8 +1186,14 @@
           "id": "arm-03",
           "name": "Prone Y-T-W Raises",
           "difficulty": 1,
-          "primaryFocus": ["scapular-stabilizers"],
-          "secondaryFocus": ["rotator-cuff", "posterior-deltoid"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "scapular-stabilizers"
+          ],
+          "secondaryFocus": [
+            "rotator-cuff",
+            "posterior-deltoid"
+          ],
           "prescription": "2 sets, 8-10 reps each letter, bodyweight or 2-3 lb DBs",
           "cue": "Face down. Y=arms at 120 degrees thumbs up. T=arms straight out thumbs up. W=elbows to hips, externally rotate hands up. Hold 2-3s each.",
           "prerequisites": [],
@@ -728,11 +1204,18 @@
           "id": "arm-04",
           "name": "Sidelying External Rotation (Dumbbell)",
           "difficulty": 2,
-          "primaryFocus": ["rotator-cuff"],
-          "secondaryFocus": ["posterior-deltoid"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "rotator-cuff"
+          ],
+          "secondaryFocus": [
+            "posterior-deltoid"
+          ],
           "prescription": "2-3 sets, 12-15 reps, 3-5 lbs",
           "cue": "Lie on non-throwing side. Towel between elbow and rib cage. Elbow at 90. Rotate forearm toward ceiling. If you need momentum, weight is too heavy.",
-          "prerequisites": ["arm-01"],
+          "prerequisites": [
+            "arm-01"
+          ],
           "videoLink": "",
           "notes": "Precision ER work. Isolates infraspinatus and teres minor better than standing variations."
         },
@@ -740,8 +1223,13 @@
           "id": "arm-05",
           "name": "Standing Band Internal Rotation",
           "difficulty": 2,
-          "primaryFocus": ["rotator-cuff"],
-          "secondaryFocus": ["shoulders"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "rotator-cuff"
+          ],
+          "secondaryFocus": [
+            "shoulders"
+          ],
           "prescription": "2-3 sets, 15 reps each arm",
           "cue": "Band anchored at elbow height. Elbow at 90 pinned to side. Rotate forearm inward across body. Control eccentric.",
           "prerequisites": [],
@@ -752,8 +1240,13 @@
           "id": "arm-06",
           "name": "Wall Slides (Serratus Anterior Focus)",
           "difficulty": 2,
-          "primaryFocus": ["scapular-stabilizers"],
-          "secondaryFocus": ["rotator-cuff"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "scapular-stabilizers"
+          ],
+          "secondaryFocus": [
+            "rotator-cuff"
+          ],
           "prescription": "2-3 sets, 10-12 reps",
           "cue": "Face wall, forearms flat. Slide arms up while pressing into wall and protracting shoulder blades. Feel serratus engage along rib cage side. Control descent.",
           "prerequisites": [],
@@ -764,11 +1257,20 @@
           "id": "arm-07",
           "name": "90/90 External Rotation (Thrower's Position)",
           "difficulty": 3,
-          "primaryFocus": ["rotator-cuff"],
-          "secondaryFocus": ["scapular-stabilizers", "posterior-deltoid"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "rotator-cuff"
+          ],
+          "secondaryFocus": [
+            "scapular-stabilizers",
+            "posterior-deltoid"
+          ],
           "prescription": "2-3 sets, 10-12 reps, band or light DB",
           "cue": "Arm at 90 abduction, elbow at 90 -- cocking phase position. Rotate forearm back and up, return with control. Shoulder blade pinched back.",
-          "prerequisites": ["arm-01", "arm-04"],
+          "prerequisites": [
+            "arm-01",
+            "arm-04"
+          ],
           "videoLink": "",
           "notes": "Most sport-specific rotator cuff position for QBs. Thrower's Ten staple."
         },
@@ -776,11 +1278,19 @@
           "id": "arm-08",
           "name": "Prone Horizontal Abduction at 90 (Full Can)",
           "difficulty": 3,
-          "primaryFocus": ["posterior-deltoid", "scapular-stabilizers"],
-          "secondaryFocus": ["rotator-cuff"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "posterior-deltoid",
+            "scapular-stabilizers"
+          ],
+          "secondaryFocus": [
+            "rotator-cuff"
+          ],
           "prescription": "2-3 sets, 10-12 reps, 3-5 lb DB",
           "cue": "Face down on bench, arm hanging. Raise arm to shoulder height with thumb to ceiling (full can). Squeeze shoulder blade at top.",
-          "prerequisites": ["arm-03"],
+          "prerequisites": [
+            "arm-03"
+          ],
           "videoLink": "",
           "notes": "Core Thrower's Ten exercise. Full can position safer than empty can for supraspinatus tendon."
         },
@@ -788,11 +1298,19 @@
           "id": "arm-09",
           "name": "Band ER/IR at 90/90 with Rhythmic Stabilization",
           "difficulty": 4,
-          "primaryFocus": ["rotator-cuff"],
-          "secondaryFocus": ["scapular-stabilizers", "proprioception"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "rotator-cuff"
+          ],
+          "secondaryFocus": [
+            "scapular-stabilizers",
+            "proprioception"
+          ],
           "prescription": "2-3 sets, 20-30s",
           "cue": "90/90 throwing position holding a ball. Partner applies quick unpredictable pushes. Resist and maintain. Trains reflexive stabilization that protects shoulder during throwing.",
-          "prerequisites": ["arm-07"],
+          "prerequisites": [
+            "arm-07"
+          ],
           "videoLink": "",
           "notes": "Perturbation training. Ideally done with a partner or athletic trainer."
         },
@@ -800,11 +1318,21 @@
           "id": "arm-10",
           "name": "Turkish Get-Up (Partial or Full)",
           "difficulty": 4,
-          "primaryFocus": ["shoulders", "scapular-stabilizers"],
-          "secondaryFocus": ["core", "hip-rotators"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "shoulders",
+            "scapular-stabilizers"
+          ],
+          "secondaryFocus": [
+            "core",
+            "hip-rotators"
+          ],
           "prescription": "2-3 reps per side, start 8-15 lbs",
           "cue": "Arm stays vertical and packed throughout. Start with no weight, then a shoe balanced on fist, then light KB. Shoulder stabilizes through multiple planes.",
-          "prerequisites": ["arm-07", "arm-06"],
+          "prerequisites": [
+            "arm-07",
+            "arm-06"
+          ],
           "videoLink": "",
           "notes": "Among the best integrated shoulder stability exercises. Also appears in mobility and bracing categories."
         },
@@ -812,11 +1340,21 @@
           "id": "arm-11",
           "name": "Jaeger Band Long-Toss Simulation Series",
           "difficulty": 5,
-          "primaryFocus": ["rotator-cuff", "shoulders"],
-          "secondaryFocus": ["core", "hip-rotators"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "rotator-cuff",
+            "shoulders"
+          ],
+          "secondaryFocus": [
+            "core",
+            "hip-rotators"
+          ],
           "prescription": "2-3 sets, 10 reps per pattern",
           "cue": "Anchor J-Band behind you. Simulate full throwing motion against resistance -- stride, hip rotation, arm acceleration, follow-through. Emphasis on proper arm slot and smooth kinetic chain, NOT pulling hard.",
-          "prerequisites": ["arm-07", "arm-09"],
+          "prerequisites": [
+            "arm-07",
+            "arm-09"
+          ],
           "videoLink": "",
           "notes": "Capstone of the Jaeger arm care system. Mimics throwing motion under resistance. Must have healthy, pain-free shoulders."
         },
@@ -824,11 +1362,21 @@
           "id": "arm-12",
           "name": "Plyometric Ball Throws (90/90 and Overhead)",
           "difficulty": 5,
-          "primaryFocus": ["rotator-cuff", "posterior-deltoid"],
-          "secondaryFocus": ["core", "scapular-stabilizers"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "rotator-cuff",
+            "posterior-deltoid"
+          ],
+          "secondaryFocus": [
+            "core",
+            "scapular-stabilizers"
+          ],
           "prescription": "2 sets, 15-20 reps with 1-2 lb plyo ball",
           "cue": "Rapid throw-catch-throw against rebounder or wall. Key is rapid eccentric loading that trains posterior cuff deceleration. NOT a heavy medicine ball.",
-          "prerequisites": ["arm-09", "arm-07"],
+          "prerequisites": [
+            "arm-09",
+            "arm-07"
+          ],
           "videoLink": "",
           "notes": "Trains deceleration forces of throwing (7000+ deg/sec IR). High-stress -- not daily. Never on heavy throwing days."
         }
@@ -841,7 +1389,11 @@
           "id": "rehab-01",
           "name": "Quadriceps Setting (Quad Set)",
           "difficulty": 1,
-          "primaryFocus": ["quads", "VMO"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "quads",
+            "VMO"
+          ],
           "secondaryFocus": [],
           "prescription": "3 sets, 10 reps, 5s hold",
           "cue": "Press back of knee flat into floor, tighten top of thigh, hold 5s. Kneecap should glide slightly upward.",
@@ -853,8 +1405,13 @@
           "id": "rehab-02",
           "name": "Prone Hip Extension (Glute Squeeze)",
           "difficulty": 1,
-          "primaryFocus": ["glutes"],
-          "secondaryFocus": ["lower-back/lumbar"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "glutes"
+          ],
+          "secondaryFocus": [
+            "lower-back/lumbar"
+          ],
           "prescription": "3 sets, 10 reps each leg",
           "cue": "Lying face down, squeeze one glute and lift leg 2-3 inches. Hip bones stay pressed into ground -- no low back arching.",
           "prerequisites": [],
@@ -865,7 +1422,10 @@
           "id": "rehab-03",
           "name": "McGill Curl-Up",
           "difficulty": 1,
-          "primaryFocus": ["core"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "core"
+          ],
           "secondaryFocus": [],
           "prescription": "3 sets, 8-10s hold, 5-6 reps",
           "cue": "One knee bent, one straight. Hands under low back arch. Lift only head and shoulders -- chest is a stiff board. No neck flexion.",
@@ -877,8 +1437,13 @@
           "id": "rehab-04",
           "name": "Side-Lying Clamshell",
           "difficulty": 2,
-          "primaryFocus": ["glute-medius"],
-          "secondaryFocus": ["hip-rotators"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "glute-medius"
+          ],
+          "secondaryFocus": [
+            "hip-rotators"
+          ],
           "prescription": "3 sets, 15 reps each side, 3s eccentric",
           "cue": "Heels together, knees stacked. Open top knee without rolling pelvis back. Feel it deep in side of hip, not TFL on the front.",
           "prerequisites": [],
@@ -889,8 +1454,15 @@
           "id": "rehab-05",
           "name": "Bird-Dog (McGill Big 3)",
           "difficulty": 2,
-          "primaryFocus": ["lower-back/lumbar", "core"],
-          "secondaryFocus": ["glutes", "shoulders"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "lower-back/lumbar",
+            "core"
+          ],
+          "secondaryFocus": [
+            "glutes",
+            "shoulders"
+          ],
           "prescription": "3 sets, 8 reps each side, 8-10s hold",
           "cue": "Hands and knees, extend opposite arm and leg without ANY pelvis or shoulder rotation. Imagine cup of water on low back. Don't let it sag.",
           "prerequisites": [],
@@ -901,8 +1473,14 @@
           "id": "rehab-06",
           "name": "Double-Leg Glute Bridge",
           "difficulty": 2,
-          "primaryFocus": ["glutes", "hamstrings"],
-          "secondaryFocus": ["core"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "glutes",
+            "hamstrings"
+          ],
+          "secondaryFocus": [
+            "core"
+          ],
           "prescription": "3 sets, 12-15 reps, 3s hold at top",
           "cue": "Drive through heels, squeeze glutes at top. Straight line from knees to shoulders. Do NOT hyperextend low back at top.",
           "prerequisites": [],
@@ -913,8 +1491,14 @@
           "id": "rehab-07",
           "name": "Side Plank (McGill Big 3)",
           "difficulty": 3,
-          "primaryFocus": ["obliques", "lower-back/lumbar"],
-          "secondaryFocus": ["glute-medius"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "obliques",
+            "lower-back/lumbar"
+          ],
+          "secondaryFocus": [
+            "glute-medius"
+          ],
           "prescription": "3 sets, 10-20s per side",
           "cue": "Elbow under shoulder, feet stacked or staggered. Lift hips, hold straight line. Squeeze bottom-side glute. Breathe normally. Start from knees if needed.",
           "prerequisites": [],
@@ -925,11 +1509,20 @@
           "id": "rehab-08",
           "name": "Single-Leg Glute Bridge",
           "difficulty": 3,
-          "primaryFocus": ["glutes", "hamstrings"],
-          "secondaryFocus": ["core", "lower-back/lumbar"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "glutes",
+            "hamstrings"
+          ],
+          "secondaryFocus": [
+            "core",
+            "lower-back/lumbar"
+          ],
           "prescription": "3 sets, 10 reps each leg",
           "cue": "Extend one leg, drive through planted heel. Hips MUST stay level -- no dropping on free side. If pelvis rotates, you're not ready.",
-          "prerequisites": ["rehab-06"],
+          "prerequisites": [
+            "rehab-06"
+          ],
           "videoLink": "",
           "notes": "Unilateral. Goal: less than 10% side-to-side asymmetry."
         },
@@ -937,8 +1530,13 @@
           "id": "rehab-09",
           "name": "Lateral Band Walk (Monster Walk)",
           "difficulty": 3,
-          "primaryFocus": ["glute-medius"],
-          "secondaryFocus": ["hip-rotators"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "glute-medius"
+          ],
+          "secondaryFocus": [
+            "hip-rotators"
+          ],
           "prescription": "3 sets, 15 steps each direction",
           "cue": "Mini-band above ankles, quarter-squat position, chest up. Step laterally maintaining band tension. Toes forward, not turned out.",
           "prerequisites": [],
@@ -949,8 +1547,14 @@
           "id": "rehab-10",
           "name": "Pallof Press (Anti-Rotation)",
           "difficulty": 3,
-          "primaryFocus": ["anti-rotation", "core"],
-          "secondaryFocus": ["shoulders"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "anti-rotation",
+            "core"
+          ],
+          "secondaryFocus": [
+            "shoulders"
+          ],
           "prescription": "3 sets, 10 reps each side, 3s hold extended",
           "cue": "Stand perpendicular to cable/band at chest height. Press handle out from sternum. Band tries to rotate you -- resist. No hip shift or trunk rotation.",
           "prerequisites": [],
@@ -961,11 +1565,22 @@
           "id": "rehab-11",
           "name": "Single-Leg Romanian Deadlift",
           "difficulty": 4,
-          "primaryFocus": ["hamstrings", "glutes"],
-          "secondaryFocus": ["lower-back/lumbar", "calves/ankles", "proprioception"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "hamstrings",
+            "glutes"
+          ],
+          "secondaryFocus": [
+            "lower-back/lumbar",
+            "calves/ankles",
+            "proprioception"
+          ],
           "prescription": "3 sets, 8 reps each leg",
           "cue": "Slight bend in stance knee. Hinge at hip, free leg reaches behind as counterbalance. Flat back -- broomstick from head to heel. DB in opposite hand.",
-          "prerequisites": ["rehab-06", "rehab-08"],
+          "prerequisites": [
+            "rehab-06",
+            "rehab-08"
+          ],
           "videoLink": "",
           "notes": "Excellent for ACL prevention once baseline strength established. Start bodyweight with wall fingertip touch.",
           "aclCaution": true
@@ -974,11 +1589,20 @@
           "id": "rehab-12",
           "name": "Bulgarian Split Squat",
           "difficulty": 4,
-          "primaryFocus": ["quads", "glutes"],
-          "secondaryFocus": ["VMO", "hip-flexors"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "quads",
+            "glutes"
+          ],
+          "secondaryFocus": [
+            "VMO",
+            "hip-flexors"
+          ],
           "prescription": "3 sets, 8-10 reps each leg",
           "cue": "Rear foot elevated on bench. Lower back knee toward floor. Front shin stays roughly vertical. Drive up through front heel. Trunk upright.",
-          "prerequisites": ["rehab-06"],
+          "prerequisites": [
+            "rehab-06"
+          ],
           "videoLink": "",
           "notes": "Monitor for anterior knee pain, clicking, or instability. Start bodyweight, progress to goblet, then DBs. Avoid if knee effusion present.",
           "aclCaution": true
@@ -987,11 +1611,19 @@
           "id": "rehab-13",
           "name": "Nordic Hamstring Curl (Eccentric)",
           "difficulty": 4,
-          "primaryFocus": ["hamstrings"],
-          "secondaryFocus": ["calves/ankles"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "hamstrings"
+          ],
+          "secondaryFocus": [
+            "calves/ankles"
+          ],
           "prescription": "3 sets, 5-6 reps",
           "cue": "Kneel on pad, ankles anchored, arms crossed. Lower yourself toward ground as SLOWLY as possible. Catch with hands and push back up. If you can do more than 6 with good form, slow down.",
-          "prerequisites": ["rehab-06", "rehab-08"],
+          "prerequisites": [
+            "rehab-06",
+            "rehab-08"
+          ],
           "videoLink": "",
           "notes": "Strongest evidence base of any single exercise for hamstring injury prevention. FIFA 11+ ACL prevention staple. Not if active hamstring graft donor site."
         },
@@ -999,11 +1631,22 @@
           "id": "rehab-14",
           "name": "Single-Leg Drop Landing to Stick",
           "difficulty": 5,
-          "primaryFocus": ["landing-mechanics", "quads"],
-          "secondaryFocus": ["calves/ankles", "glute-medius", "proprioception"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "landing-mechanics",
+            "quads"
+          ],
+          "secondaryFocus": [
+            "calves/ankles",
+            "glute-medius",
+            "proprioception"
+          ],
           "prescription": "3 sets, 5 reps each leg from 6-inch box",
           "cue": "Step off box onto one leg. Land softly -- quiet feet. Knee tracks over second toe. No valgus collapse. Stick 3 full seconds.",
-          "prerequisites": ["rehab-11", "rehab-12"],
+          "prerequisites": [
+            "rehab-11",
+            "rehab-12"
+          ],
           "videoLink": "",
           "notes": "Essential return-to-sport test but must not be introduced prematurely. Valgus collapse on landing IS the ACL injury mechanism. Have a qualified person observe.",
           "aclCaution": true
@@ -1012,11 +1655,21 @@
           "id": "rehab-15",
           "name": "Rotational Medicine Ball Scoop Toss",
           "difficulty": 5,
-          "primaryFocus": ["rotational-power", "obliques"],
-          "secondaryFocus": ["hip-rotators", "core", "lower-back/lumbar"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "rotational-power",
+            "obliques"
+          ],
+          "secondaryFocus": [
+            "hip-rotators",
+            "core",
+            "lower-back/lumbar"
+          ],
           "prescription": "3 sets, 8 reps each side",
           "cue": "Athletic stance, med ball at back hip. Drive rotation from the hips -- NOT the low back. Lumbar stays stable while T-spine and hips generate rotation. Release into wall.",
-          "prerequisites": ["rehab-10"],
+          "prerequisites": [
+            "rehab-10"
+          ],
           "videoLink": "",
           "notes": "QB low back pain often comes from generating rotation through lumbar spine instead of hips and T-spine. This trains the separation."
         }
@@ -1029,8 +1682,13 @@
           "id": "plyo-01",
           "name": "Double-Leg Pogo Hops (Ankle Bounces)",
           "difficulty": 1,
-          "primaryFocus": ["calves/ankles"],
-          "secondaryFocus": ["feet/intrinsic"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "calves/ankles"
+          ],
+          "secondaryFocus": [
+            "feet/intrinsic"
+          ],
           "prescription": "3 sets, 15-20 reps",
           "cue": "Stay tall, stiff ankles, minimize ground contact time. Bounce like a pogo stick, not a squat.",
           "prerequisites": [],
@@ -1041,8 +1699,15 @@
           "id": "plyo-02",
           "name": "Box Step-Ups with Hold (6-8 inch box)",
           "difficulty": 1,
-          "primaryFocus": ["quads", "glutes"],
-          "secondaryFocus": ["VMO", "proprioception"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "quads",
+            "glutes"
+          ],
+          "secondaryFocus": [
+            "VMO",
+            "proprioception"
+          ],
           "prescription": "3 sets, 8-10 reps each leg",
           "cue": "Drive through heel of top foot, stand tall at top, hold 2s. Control the descent -- no dropping.",
           "prerequisites": [],
@@ -1053,11 +1718,20 @@
           "id": "plyo-03",
           "name": "Squat Jump with Stick Landing",
           "difficulty": 2,
-          "primaryFocus": ["quads", "glutes"],
-          "secondaryFocus": ["landing-mechanics", "calves/ankles"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "quads",
+            "glutes"
+          ],
+          "secondaryFocus": [
+            "landing-mechanics",
+            "calves/ankles"
+          ],
           "prescription": "3 sets, 6-8 reps, 3s freeze on landing",
           "cue": "Load the hips, explode up, land soft with knees tracking over toes -- freeze 3 seconds. Quiet feet.",
-          "prerequisites": ["plyo-02"],
+          "prerequisites": [
+            "plyo-02"
+          ],
           "videoLink": "",
           "notes": "The stick on landing teaches deceleration control. Do NOT progress to continuous jumping until stick landings are consistently quiet. Watch for knee valgus.",
           "aclCaution": true
@@ -1066,8 +1740,15 @@
           "id": "plyo-04",
           "name": "Lateral Bound to Stick (Bilateral to Bilateral)",
           "difficulty": 2,
-          "primaryFocus": ["glute-medius", "adductors"],
-          "secondaryFocus": ["landing-mechanics", "calves/ankles"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "glute-medius",
+            "adductors"
+          ],
+          "secondaryFocus": [
+            "landing-mechanics",
+            "calves/ankles"
+          ],
           "prescription": "3 sets, 6-8 reps each direction",
           "cue": "Push off outside foot, land on both feet with soft knees, absorb and freeze. Start with small distances (12-18 inches).",
           "prerequisites": [],
@@ -1079,11 +1760,20 @@
           "id": "plyo-05",
           "name": "Box Jump with Step-Down (16-20 inch)",
           "difficulty": 3,
-          "primaryFocus": ["quads", "glutes"],
-          "secondaryFocus": ["calves/ankles", "CNS-activation"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "quads",
+            "glutes"
+          ],
+          "secondaryFocus": [
+            "calves/ankles",
+            "CNS-activation"
+          ],
           "prescription": "3 sets, 5 reps",
           "cue": "Swing arms, jump UP not forward, land softly on top with full foot contact. Step down -- do NOT jump down.",
-          "prerequisites": ["plyo-03"],
+          "prerequisites": [
+            "plyo-03"
+          ],
           "videoLink": "",
           "notes": "Jumping UP onto a box reduces landing forces vs flat ground. Always step down. Start conservative box height.",
           "aclCaution": true
@@ -1092,11 +1782,21 @@
           "id": "plyo-06",
           "name": "Single-Leg Hop to Stick Landing",
           "difficulty": 3,
-          "primaryFocus": ["quads", "glutes"],
-          "secondaryFocus": ["landing-mechanics", "proprioception", "calves/ankles"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "quads",
+            "glutes"
+          ],
+          "secondaryFocus": [
+            "landing-mechanics",
+            "proprioception",
+            "calves/ankles"
+          ],
           "prescription": "3 sets, 5 reps each leg, 3s freeze",
           "cue": "Small hop forward, land on same leg, absorb through hip and knee, freeze 3 seconds. Knee stays over second toe.",
-          "prerequisites": ["plyo-03"],
+          "prerequisites": [
+            "plyo-03"
+          ],
           "videoLink": "",
           "notes": "Critical ACL rehab milestone. Start very small (6-12 inches). Compare landing quality between legs. Asymmetry means more time at this level.",
           "aclCaution": true
@@ -1105,8 +1805,15 @@
           "id": "plyo-07",
           "name": "Medicine Ball Rotational Slam",
           "difficulty": 3,
-          "primaryFocus": ["rotational-power", "core"],
-          "secondaryFocus": ["hip-rotators", "thoracic-spine"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "rotational-power",
+            "core"
+          ],
+          "secondaryFocus": [
+            "hip-rotators",
+            "thoracic-spine"
+          ],
           "prescription": "3 sets, 8 reps each side, 6-10 lb ball",
           "cue": "Load the back hip, rotate explosively through the core, slam into ground in front of lead foot. This is your throwing power generator.",
           "prerequisites": [],
@@ -1117,11 +1824,20 @@
           "id": "plyo-08",
           "name": "Drop Landing from Box (12-20 inch, progressive)",
           "difficulty": 4,
-          "primaryFocus": ["landing-mechanics", "quads"],
-          "secondaryFocus": ["calves/ankles", "proprioception"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "landing-mechanics",
+            "quads"
+          ],
+          "secondaryFocus": [
+            "calves/ankles",
+            "proprioception"
+          ],
           "prescription": "3 sets, 5 reps, start at 12 inches",
           "cue": "Step off box -- do not jump off. Land on both feet simultaneously, absorb into quarter squat, freeze. Silent landing.",
-          "prerequisites": ["plyo-05"],
+          "prerequisites": [
+            "plyo-05"
+          ],
           "videoLink": "",
           "notes": "Significantly higher ground reaction forces than box jumps. Deliberate stress test for reconstructed knee. ANY pain, apprehension, or asymmetry = regress.",
           "aclCaution": true
@@ -1130,11 +1846,22 @@
           "id": "plyo-09",
           "name": "Lateral Single-Leg Bound (Skater Hop) with Stick",
           "difficulty": 4,
-          "primaryFocus": ["glute-medius", "landing-mechanics"],
-          "secondaryFocus": ["calves/ankles", "proprioception", "hip-rotators"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "glute-medius",
+            "landing-mechanics"
+          ],
+          "secondaryFocus": [
+            "calves/ankles",
+            "proprioception",
+            "hip-rotators"
+          ],
           "prescription": "3 sets, 5 reps each direction, 2s stick between reps",
           "cue": "Push off laterally, land on opposite foot, sink and stabilize -- hold 2 seconds before next rep. Wide and controlled, not fast.",
-          "prerequisites": ["plyo-04", "plyo-06"],
+          "prerequisites": [
+            "plyo-04",
+            "plyo-06"
+          ],
           "videoLink": "",
           "notes": "Combines single-leg landing with lateral force vectors. Stick between reps is non-negotiable at this stage. Continuous skater hops are Level 5.",
           "aclCaution": true
@@ -1143,11 +1870,21 @@
           "id": "plyo-10",
           "name": "Depth Jump to Sprint (16-20 inch box)",
           "difficulty": 5,
-          "primaryFocus": ["CNS-activation", "quads"],
-          "secondaryFocus": ["calves/ankles", "glutes", "hamstrings"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "CNS-activation",
+            "quads"
+          ],
+          "secondaryFocus": [
+            "calves/ankles",
+            "glutes",
+            "hamstrings"
+          ],
           "prescription": "3-4 sets, 3 reps max",
           "cue": "Step off box, spend as LITTLE time on the ground as possible, explode into 5-yard sprint. Think 'hot ground.' Minimize amortization phase.",
-          "prerequisites": ["plyo-08"],
+          "prerequisites": [
+            "plyo-08"
+          ],
           "videoLink": "",
           "notes": "Highest-impact drill. Ground reaction forces 4-7x bodyweight. Full return-to-sport clearance required. Never perform fatigued. Very low volume.",
           "aclCaution": true
@@ -1156,11 +1893,21 @@
           "id": "plyo-11",
           "name": "Reactive Lateral Shuffle to Sprint",
           "difficulty": 5,
-          "primaryFocus": ["CNS-activation", "glute-medius"],
-          "secondaryFocus": ["calves/ankles", "proprioception", "quads"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "CNS-activation",
+            "glute-medius"
+          ],
+          "secondaryFocus": [
+            "calves/ankles",
+            "proprioception",
+            "quads"
+          ],
           "prescription": "3 sets, 5 reps",
           "cue": "Shuffle laterally in athletic stance. On visual cue, plant and explode into 5-yard sprint. Stay low in hips during shuffle.",
-          "prerequisites": ["plyo-09"],
+          "prerequisites": [
+            "plyo-09"
+          ],
           "videoLink": "",
           "notes": "Unplanned cutting/COD is the primary ACL injury mechanism. Start with PLANNED direction changes, then progress to reactive. QB pocket movement and scramble patterns depend on this.",
           "aclCaution": true
@@ -1169,11 +1916,21 @@
           "id": "plyo-12",
           "name": "Single-Leg Box Jump (12-16 inch)",
           "difficulty": 5,
-          "primaryFocus": ["quads", "glutes"],
-          "secondaryFocus": ["calves/ankles", "CNS-activation"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "quads",
+            "glutes"
+          ],
+          "secondaryFocus": [
+            "calves/ankles",
+            "CNS-activation"
+          ],
           "prescription": "3 sets, 3-4 reps each leg",
           "cue": "Drive free knee up, explode off one leg, land on BOTH feet on top of box. Always land bilaterally on top -- single-leg component is takeoff only. Step down.",
-          "prerequisites": ["plyo-06", "plyo-05"],
+          "prerequisites": [
+            "plyo-06",
+            "plyo-05"
+          ],
           "videoLink": "",
           "notes": "Elite-level. Landing should always be bilateral to reduce single-leg impact. Only after demonstrated symmetry in all lower-level single-leg tests.",
           "aclCaution": true
@@ -1187,8 +1944,14 @@
           "id": "warm-01",
           "name": "Walking Knee Hugs",
           "difficulty": 1,
-          "primaryFocus": ["hip-flexors", "glutes"],
-          "secondaryFocus": ["proprioception"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "hip-flexors",
+            "glutes"
+          ],
+          "secondaryFocus": [
+            "proprioception"
+          ],
           "prescription": "10-12 reps each leg walking",
           "cue": "Pull knee to chest, stand tall on plant leg, squeeze glute of stance leg. Walk forward with each rep.",
           "prerequisites": [],
@@ -1199,8 +1962,15 @@
           "id": "warm-02",
           "name": "Leg Swings (Front-to-Back and Lateral)",
           "difficulty": 1,
-          "primaryFocus": ["hip-flexors", "hamstrings"],
-          "secondaryFocus": ["adductors", "hip-rotators"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "hip-flexors",
+            "hamstrings"
+          ],
+          "secondaryFocus": [
+            "adductors",
+            "hip-rotators"
+          ],
           "prescription": "10-12 reps each direction per leg",
           "cue": "Keep swinging leg straight, brace core, let ROM increase gradually. No forcing end range.",
           "prerequisites": [],
@@ -1211,8 +1981,14 @@
           "id": "warm-03",
           "name": "Glute Bridge (Two-Leg)",
           "difficulty": 1,
-          "primaryFocus": ["glutes"],
-          "secondaryFocus": ["core", "hamstrings"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "glutes"
+          ],
+          "secondaryFocus": [
+            "core",
+            "hamstrings"
+          ],
           "prescription": "2 sets, 10-12 reps, 2s hold at top",
           "cue": "Drive through heels, squeeze glutes hard at top for 2 seconds. Don't hyperextend low back.",
           "prerequisites": [],
@@ -1223,11 +1999,19 @@
           "id": "warm-04",
           "name": "Band Walk (Lateral Mini-Band Shuffle)",
           "difficulty": 2,
-          "primaryFocus": ["glute-medius"],
-          "secondaryFocus": ["hip-rotators", "calves/ankles"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "glute-medius"
+          ],
+          "secondaryFocus": [
+            "hip-rotators",
+            "calves/ankles"
+          ],
           "prescription": "2 sets, 10 steps each direction",
           "cue": "Quarter-squat, keep band tension at all times, push knees out. Don't let them cave. 10 steps each direction.",
-          "prerequisites": ["warm-03"],
+          "prerequisites": [
+            "warm-03"
+          ],
           "videoLink": "",
           "notes": "Glute medius activation before any lower body or throwing work."
         },
@@ -1235,8 +2019,15 @@
           "id": "warm-05",
           "name": "Inchworm to World's Greatest Stretch",
           "difficulty": 2,
-          "primaryFocus": ["hamstrings", "thoracic-spine"],
-          "secondaryFocus": ["shoulders", "hip-flexors"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "hamstrings",
+            "thoracic-spine"
+          ],
+          "secondaryFocus": [
+            "shoulders",
+            "hip-flexors"
+          ],
           "prescription": "5-6 reps total",
           "cue": "Walk hands out to push-up position, step one foot outside the hand, rotate same-side arm to sky, hold 2s, return and walk hands back.",
           "prerequisites": [],
@@ -1247,8 +2038,14 @@
           "id": "warm-06",
           "name": "Lateral Lunge to Overhead Reach",
           "difficulty": 2,
-          "primaryFocus": ["adductors"],
-          "secondaryFocus": ["thoracic-spine", "hip-rotators"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "adductors"
+          ],
+          "secondaryFocus": [
+            "thoracic-spine",
+            "hip-rotators"
+          ],
           "prescription": "8-10 reps each side",
           "cue": "Push hips back as you step laterally, trailing leg stays straight. Reach both arms overhead at bottom to open T-spine.",
           "prerequisites": [],
@@ -1259,11 +2056,19 @@
           "id": "warm-07",
           "name": "Single-Leg Glute Bridge",
           "difficulty": 3,
-          "primaryFocus": ["glutes", "hamstrings"],
-          "secondaryFocus": ["core"],
+          "breathingType": "sub-max",
+          "primaryFocus": [
+            "glutes",
+            "hamstrings"
+          ],
+          "secondaryFocus": [
+            "core"
+          ],
           "prescription": "2 sets, 8 reps each leg",
           "cue": "Extend one leg straight, drive through heel of working leg. Hips stay level -- no rotation or sag on unsupported side.",
-          "prerequisites": ["warm-03"],
+          "prerequisites": [
+            "warm-03"
+          ],
           "videoLink": "",
           "notes": "Unilateral glute activation. Good bridge between activation and dynamic work."
         },
@@ -1271,8 +2076,14 @@
           "id": "warm-08",
           "name": "A-Skip / High Knee Skip",
           "difficulty": 3,
-          "primaryFocus": ["hip-flexors", "CNS-activation"],
-          "secondaryFocus": ["calves/ankles"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "hip-flexors",
+            "CNS-activation"
+          ],
+          "secondaryFocus": [
+            "calves/ankles"
+          ],
           "prescription": "2 sets, 20 yards",
           "cue": "Drive knee up aggressively, strike ground with stiff ankle. Opposite arm drives forward. Torso tall and rhythmic.",
           "prerequisites": [],
@@ -1283,11 +2094,20 @@
           "id": "warm-09",
           "name": "Lateral Bound to Stick (Single-Leg Landing)",
           "difficulty": 4,
-          "primaryFocus": ["glute-medius", "landing-mechanics"],
-          "secondaryFocus": ["calves/ankles", "proprioception"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "glute-medius",
+            "landing-mechanics"
+          ],
+          "secondaryFocus": [
+            "calves/ankles",
+            "proprioception"
+          ],
           "prescription": "2 sets, 5 reps each direction, 2s freeze",
           "cue": "Push off laterally, land softly on outside leg, freeze 2 seconds. Knee tracks over toe, no wobble.",
-          "prerequisites": ["warm-04"],
+          "prerequisites": [
+            "warm-04"
+          ],
           "videoLink": "",
           "notes": "Dynamic warm-up progression. Also appears in plyos category.",
           "aclCaution": true
@@ -1296,8 +2116,15 @@
           "id": "warm-10",
           "name": "Medicine Ball Rotational Scoop Toss",
           "difficulty": 4,
-          "primaryFocus": ["rotational-power", "hip-rotators"],
-          "secondaryFocus": ["core", "thoracic-spine"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "rotational-power",
+            "hip-rotators"
+          ],
+          "secondaryFocus": [
+            "core",
+            "thoracic-spine"
+          ],
           "prescription": "2 sets, 5 reps each side",
           "cue": "Load back hip, rotate explosively from ground up, release ball. Arms follow hips -- don't muscle it with shoulders.",
           "prerequisites": [],
@@ -1308,11 +2135,20 @@
           "id": "warm-11",
           "name": "Reactive Drop Step to Sprint (3-Step Drop Simulation)",
           "difficulty": 5,
-          "primaryFocus": ["CNS-activation", "hip-flexors"],
-          "secondaryFocus": ["calves/ankles", "hamstrings"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "CNS-activation",
+            "hip-flexors"
+          ],
+          "secondaryFocus": [
+            "calves/ankles",
+            "hamstrings"
+          ],
           "prescription": "3 sets, 3 reps",
           "cue": "Start under center. On cue, 3-step drop at max speed, plant, drive forward into 10-yard sprint. Focus on explosive hip snap at plant.",
-          "prerequisites": ["warm-08"],
+          "prerequisites": [
+            "warm-08"
+          ],
           "videoLink": "",
           "notes": "QB-specific CNS activation. Late-stage warm-up only after full general warm-up."
         },
@@ -1320,11 +2156,21 @@
           "id": "warm-12",
           "name": "Single-Leg Rotational Med Ball Slam",
           "difficulty": 5,
-          "primaryFocus": ["core", "rotational-power"],
-          "secondaryFocus": ["proprioception", "calves/ankles"],
+          "breathingType": "dynamic",
+          "primaryFocus": [
+            "core",
+            "rotational-power"
+          ],
+          "secondaryFocus": [
+            "proprioception",
+            "calves/ankles"
+          ],
           "prescription": "2 sets, 4 reps each side",
           "cue": "Balance on drive leg, load rotation away from target, rotate and slam. Stay balanced on one leg throughout -- if falling off, regress to two feet.",
-          "prerequisites": ["warm-10", "warm-09"],
+          "prerequisites": [
+            "warm-10",
+            "warm-09"
+          ],
           "videoLink": "",
           "notes": "Highest CNS demand warm-up exercise. Only when all lower levels are automatic."
         }
