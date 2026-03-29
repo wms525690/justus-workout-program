@@ -154,8 +154,8 @@
   var modalClose = document.getElementById('modalClose');
   var modalSave = document.getElementById('modalSave');
   var ratingButtons = document.querySelectorAll('.rating-btn');
-  var modalReps = document.getElementById('modalReps');
-  var modalTime = document.getElementById('modalTime');
+  var setRepsInputs = document.querySelectorAll('.set-reps');
+  var setTimeInputs = document.querySelectorAll('.set-time');
   var activeExerciseId = null;
   var activeRating = null;
 
@@ -169,10 +169,11 @@
       modalInput.value = state.notes[activeExerciseId] || '';
       activeRating = state.ratings[activeExerciseId] || null;
 
-      // Restore actuals
-      var actual = state.actuals[activeExerciseId] || {};
-      modalReps.value = actual.reps || '';
-      modalTime.value = actual.time || '';
+      // Restore actuals per set
+      var actual = state.actuals[activeExerciseId] || { sets: [] };
+      var sets = actual.sets || [];
+      setRepsInputs.forEach(function (input, i) { input.value = (sets[i] && sets[i].reps) || ''; });
+      setTimeInputs.forEach(function (input, i) { input.value = (sets[i] && sets[i].time) || ''; });
 
       ratingButtons.forEach(function (rb) {
         rb.classList.toggle('selected', rb.dataset.rating === activeRating);
@@ -215,10 +216,14 @@
     state.notes[activeExerciseId] = noteText;
     state.ratings[activeExerciseId] = activeRating;
 
-    // Save actuals
-    var repsVal = modalReps.value ? parseInt(modalReps.value, 10) : null;
-    var timeVal = modalTime.value ? parseInt(modalTime.value, 10) : null;
-    state.actuals[activeExerciseId] = { reps: repsVal, time: timeVal };
+    // Save actuals per set
+    var sets = [];
+    setRepsInputs.forEach(function (input, i) {
+      var r = input.value ? parseInt(input.value, 10) : null;
+      var t = setTimeInputs[i].value ? parseInt(setTimeInputs[i].value, 10) : null;
+      sets.push({ reps: r, time: t });
+    });
+    state.actuals[activeExerciseId] = { sets: sets };
 
     saveLocalState(state);
     syncToFirestore();
@@ -226,7 +231,8 @@
     var card = document.querySelector('[data-id="' + activeExerciseId + '"]');
     if (card) {
       var noteBtn = card.querySelector('.exercise-note-btn');
-      noteBtn.classList.toggle('has-note', noteText.length > 0 || !!activeRating || !!repsVal || !!timeVal);
+      var hasSetData = sets.some(function (s) { return s.reps || s.time; });
+      noteBtn.classList.toggle('has-note', noteText.length > 0 || !!activeRating || hasSetData);
     }
 
     closeModal();
@@ -245,7 +251,8 @@
       if (id) {
         var noteBtn = card.querySelector('.exercise-note-btn');
         if (noteBtn) {
-          var hasActual = state.actuals[id] && (state.actuals[id].reps || state.actuals[id].time);
+          var actualData = state.actuals[id];
+          var hasActual = actualData && actualData.sets && actualData.sets.some(function (s) { return s && (s.reps || s.time); });
           noteBtn.classList.toggle('has-note', !!(state.notes[id] || state.ratings[id] || hasActual));
         }
       }
