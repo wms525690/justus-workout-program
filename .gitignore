@@ -1,0 +1,4 @@
+.env
+CLAUDE2.local.md
+.claude2/settings.local.json
+node_modules/
