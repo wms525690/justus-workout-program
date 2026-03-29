@@ -364,8 +364,20 @@
         <button class="modal-close" id="modalClose">&times;</button>
       </div>
       <div class="modal-body">
-        <label for="modalNoteInput">How did this feel? Any pain, tightness, or wins?</label>
-        <textarea id="modalNoteInput" rows="4" placeholder="Type your notes here..."></textarea>
+        <div class="modal-actual">
+          <label>What did you actually complete?</label>
+          <div class="actual-inputs">
+            <div class="actual-field">
+              <input type="number" id="modalReps" min="0" placeholder="--">
+              <span>reps</span>
+            </div>
+            <span class="actual-or">or</span>
+            <div class="actual-field">
+              <input type="number" id="modalTime" min="0" placeholder="--">
+              <span>seconds</span>
+            </div>
+          </div>
+        </div>
         <div class="modal-rating">
           <span>Difficulty:</span>
           <div class="rating-buttons">
@@ -375,6 +387,8 @@
             <button class="rating-btn" data-rating="pain">Pain/Discomfort</button>
           </div>
         </div>
+        <label for="modalNoteInput">Any pain, tightness, or questions about exercise?</label>
+        <textarea id="modalNoteInput" rows="3" placeholder="Type your notes here..."></textarea>
       </div>
       <div class="modal-footer">
         <button class="btn-save" id="modalSave">Save Note</button>

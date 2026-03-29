@@ -27,9 +27,9 @@
   function loadLocalState() {
     try {
       var saved = localStorage.getItem(STORAGE_KEY);
-      return saved ? JSON.parse(saved) : { checks: {}, notes: {}, ratings: {} };
+      return saved ? JSON.parse(saved) : { checks: {}, notes: {}, ratings: {}, actuals: {} };
     } catch (e) {
-      return { checks: {}, notes: {}, ratings: {} };
+      return { checks: {}, notes: {}, ratings: {}, actuals: {} };
     }
   }
 
@@ -46,6 +46,7 @@
       checks: state.checks,
       notes: state.notes,
       ratings: state.ratings,
+      actuals: state.actuals,
       lastUpdated: new Date().toISOString()
     }, { merge: true }).catch(function (err) {
       console.warn('Firestore sync failed, data saved locally:', err);
@@ -60,6 +61,7 @@
         state.checks = Object.assign({}, state.checks, remote.checks || {});
         state.notes = Object.assign({}, state.notes, remote.notes || {});
         state.ratings = Object.assign({}, state.ratings, remote.ratings || {});
+        state.actuals = Object.assign({}, state.actuals, remote.actuals || {});
         saveLocalState(state);
         restoreUI();
       } else {
@@ -79,6 +81,7 @@
           state.checks = remote.checks || {};
           state.notes = remote.notes || {};
           state.ratings = remote.ratings || {};
+          state.actuals = remote.actuals || {};
           saveLocalState(state);
           restoreUI();
         }
@@ -151,6 +154,8 @@
   var modalClose = document.getElementById('modalClose');
   var modalSave = document.getElementById('modalSave');
   var ratingButtons = document.querySelectorAll('.rating-btn');
+  var modalReps = document.getElementById('modalReps');
+  var modalTime = document.getElementById('modalTime');
   var activeExerciseId = null;
   var activeRating = null;
 
@@ -164,20 +169,30 @@
       modalInput.value = state.notes[activeExerciseId] || '';
       activeRating = state.ratings[activeExerciseId] || null;
 
+      // Restore actuals
+      var actual = state.actuals[activeExerciseId] || {};
+      modalReps.value = actual.reps || '';
+      modalTime.value = actual.time || '';
+
       ratingButtons.forEach(function (rb) {
         rb.classList.toggle('selected', rb.dataset.rating === activeRating);
       });
 
       modal.classList.add('open');
-      modalInput.focus();
     });
   });
 
   ratingButtons.forEach(function (rb) {
     rb.addEventListener('click', function () {
-      activeRating = rb.dataset.rating;
-      ratingButtons.forEach(function (b) { b.classList.remove('selected'); });
-      rb.classList.add('selected');
+      // Toggle off if clicking the already-selected rating
+      if (activeRating === rb.dataset.rating) {
+        activeRating = null;
+        rb.classList.remove('selected');
+      } else {
+        activeRating = rb.dataset.rating;
+        ratingButtons.forEach(function (b) { b.classList.remove('selected'); });
+        rb.classList.add('selected');
+      }
     });
   });
 
@@ -198,16 +213,20 @@
 
     var noteText = modalInput.value.trim();
     state.notes[activeExerciseId] = noteText;
-    if (activeRating) {
-      state.ratings[activeExerciseId] = activeRating;
-    }
+    state.ratings[activeExerciseId] = activeRating;
+
+    // Save actuals
+    var repsVal = modalReps.value ? parseInt(modalReps.value, 10) : null;
+    var timeVal = modalTime.value ? parseInt(modalTime.value, 10) : null;
+    state.actuals[activeExerciseId] = { reps: repsVal, time: timeVal };
+
     saveLocalState(state);
     syncToFirestore();
 
     var card = document.querySelector('[data-id="' + activeExerciseId + '"]');
     if (card) {
       var noteBtn = card.querySelector('.exercise-note-btn');
-      noteBtn.classList.toggle('has-note', noteText.length > 0 || !!activeRating);
+      noteBtn.classList.toggle('has-note', noteText.length > 0 || !!activeRating || !!repsVal || !!timeVal);
     }
 
     closeModal();
@@ -226,7 +245,8 @@
       if (id) {
         var noteBtn = card.querySelector('.exercise-note-btn');
         if (noteBtn) {
-          noteBtn.classList.toggle('has-note', !!(state.notes[id] || state.ratings[id]));
+          var hasActual = state.actuals[id] && (state.actuals[id].reps || state.actuals[id].time);
+          noteBtn.classList.toggle('has-note', !!(state.notes[id] || state.ratings[id] || hasActual));
         }
       }
     });

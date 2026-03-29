@@ -612,6 +612,61 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/* Actual completion inputs */
+.modal-actual {
+  margin-bottom: 1rem;
+}
+
+.actual-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.4rem;
+}
+
+.actual-field {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.actual-field input {
+  width: 70px;
+  background: var(--gray-900);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.5rem 0.6rem;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+
+.actual-field input::-webkit-inner-spin-button,
+.actual-field input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.actual-field input:focus {
+  outline: none;
+  border-color: var(--red);
+}
+
+.actual-field span {
+  font-size: 0.8rem;
+  color: var(--gray-400);
+}
+
+.actual-or {
+  font-size: 0.75rem;
+  color: var(--gray-600);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 .modal-body textarea {
   width: 100%;
   background: var(--gray-900);
