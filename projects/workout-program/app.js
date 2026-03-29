@@ -38,6 +38,11 @@
   }
 
   var state = loadLocalState();
+  // Ensure all state fields exist (handles old localStorage format)
+  if (!state.actuals) state.actuals = {};
+  if (!state.checks) state.checks = {};
+  if (!state.notes) state.notes = {};
+  if (!state.ratings) state.ratings = {};
 
   // Sync to Firestore
   function syncToFirestore() {
