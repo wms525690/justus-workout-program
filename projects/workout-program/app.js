@@ -500,20 +500,50 @@
     setEl('statsAvgCompletion', avgCompletion + '%');
     setEl('statsCurrentStreak', calcStreak());
 
-    // Daily breakdown grid
+    // Daily breakdown grid — per-tab bars for each day
+    var sectionExCounts = {};
+    checkboxes.forEach(function (cb) {
+      var card = cb.closest('.exercise-card');
+      var sk = getSectionKey(card.dataset.id);
+      sectionExCounts[sk] = (sectionExCounts[sk] || 0) + 1;
+    });
+
     var dayGrid = document.getElementById('statsDayGrid');
     if (dayGrid) {
       dayGrid.innerHTML = '';
       completionPerDay.forEach(function (day) {
-        var pct = day.total > 0 ? Math.round((day.count / day.total) * 100) : 0;
         var isToday = day.date === todayKey();
         var isFuture = day.date > todayKey();
+        var dayData = allState[day.date];
+        var dayChecks = (dayData && dayData.checks) ? dayData.checks : {};
+
+        // Count completed per section for this day
+        var daySectionDone = {};
+        Object.keys(dayChecks).forEach(function (exId) {
+          if (dayChecks[exId]) {
+            var sk = getSectionKey(exId);
+            daySectionDone[sk] = (daySectionDone[sk] || 0) + 1;
+          }
+        });
+
         var div = document.createElement('div');
         div.className = 'stats-day-card' + (isToday ? ' today' : '') + (isFuture ? ' future' : '');
-        div.innerHTML =
-          '<div class="stats-day-name">' + formatDate(day.date) + '</div>' +
-          '<div class="stats-day-bar-track"><div class="stats-day-bar-fill" style="width:' + (isFuture ? 0 : pct) + '%"></div></div>' +
-          '<div class="stats-day-pct">' + (isFuture ? '—' : day.count + '/' + day.total) + '</div>';
+
+        var barsHtml = '<div class="stats-day-name">' + formatDate(day.date) + '</div>';
+        var sectionOrder = ['b3', 'mob', 'ac', 'rp'];
+        sectionOrder.forEach(function (sk) {
+          var done = daySectionDone[sk] || 0;
+          var total = sectionExCounts[sk] || 0;
+          var pct = total > 0 ? Math.round((done / total) * 100) : 0;
+          barsHtml +=
+            '<div class="stats-day-section-row">' +
+              '<div class="stats-day-section-label">' + sectionMap[sk] + '</div>' +
+              '<div class="stats-day-bar-track"><div class="stats-day-bar-fill section-' + sk + '" style="width:' + (isFuture ? 0 : pct) + '%"></div></div>' +
+              '<div class="stats-day-pct">' + (isFuture ? '—' : done + '/' + total) + '</div>' +
+            '</div>';
+        });
+
+        div.innerHTML = barsHtml;
         dayGrid.appendChild(div);
       });
     }
