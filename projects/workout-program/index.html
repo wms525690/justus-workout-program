@@ -70,9 +70,9 @@
         <span class="nav-icon">&#9679;</span>
         Plyos
       </button>
-      <button class="nav-btn" data-section="warmups">
+      <button class="nav-btn" data-section="stats">
         <span class="nav-icon">&#9679;</span>
-        Warm Ups
+        Stats
       </button>
     </div>
   </nav>
@@ -1049,17 +1049,82 @@
       </div>
     </section>
 
-    <!-- WARM UPS -->
-    <section class="program-section" id="section-warmups">
+    <!-- STATS -->
+    <section class="program-section" id="section-stats">
       <div class="section-header">
         <div class="section-number">06</div>
-        <h2>Warm Ups</h2>
-        <p class="section-desc">Prime the body before every session. Activate, mobilize, and get ready to work.</p>
+        <h2>Weekly Stats</h2>
+        <p class="section-desc">Your training data, tracked automatically. Review your week, spot trends, and keep building.</p>
       </div>
-      <div class="placeholder-message">
-        <div class="placeholder-icon">&#128293;</div>
-        <h3>Coming Soon</h3>
-        <p>Dynamic warm-up sequences, activation circuits, and movement prep routines to use before training or throwing sessions.</p>
+
+      <!-- Week Navigation -->
+      <div class="stats-week-nav">
+        <button class="stats-week-btn" id="statsPrevWeek">&#9664;</button>
+        <span class="stats-week-label" id="statsWeekLabel">This Week</span>
+        <button class="stats-week-btn" id="statsNextWeek">&#9654;</button>
+      </div>
+
+      <!-- Weekly Summary Cards -->
+      <div class="stats-summary">
+        <div class="stats-card">
+          <div class="stats-card-value" id="statsDaysActive">0</div>
+          <div class="stats-card-label">Days Active</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-card-value" id="statsTotalChecks">0</div>
+          <div class="stats-card-label">Exercises Done</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-card-value" id="statsAvgCompletion">0%</div>
+          <div class="stats-card-label">Avg Completion</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-card-value" id="statsCurrentStreak">0</div>
+          <div class="stats-card-label">Day Streak</div>
+        </div>
+      </div>
+
+      <!-- Daily Breakdown -->
+      <div class="stats-daily-breakdown">
+        <h3 class="stats-section-title">Daily Breakdown</h3>
+        <div class="stats-day-grid" id="statsDayGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Exercise Volume Detail -->
+      <div class="stats-volume-detail">
+        <h3 class="stats-section-title">Exercise Volume by Day</h3>
+        <div class="stats-volume-day-tabs" id="statsVolumeTabs">
+          <!-- Populated by JS: one tab per day -->
+        </div>
+        <div class="stats-volume-list" id="statsVolumeList">
+          <!-- Populated by JS: exercise name + total reps/time -->
+        </div>
+      </div>
+
+      <!-- Section Breakdown -->
+      <div class="stats-section-breakdown">
+        <h3 class="stats-section-title">By Section</h3>
+        <div class="stats-bars" id="statsSectionBars">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Difficulty Trends -->
+      <div class="stats-difficulty">
+        <h3 class="stats-section-title">Difficulty Ratings This Week</h3>
+        <div class="stats-rating-summary" id="statsRatingSummary">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Pain/Discomfort Flags -->
+      <div class="stats-flags">
+        <h3 class="stats-section-title">Pain / Discomfort Flags</h3>
+        <div class="stats-flag-list" id="statsFlagList">
+          <p class="stats-empty">No pain flags this week. Keep it up.</p>
+        </div>
       </div>
     </section>
 
