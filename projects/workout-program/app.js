@@ -592,10 +592,6 @@
       });
     }
 
-    // Exercise volume by day
-    activeVolumeDay = null;
-    renderVolumeTabs(weekDays);
-
     // Weekly Targets
     var targetsEl = document.getElementById('statsWeeklyTargets');
     if (targetsEl) {
