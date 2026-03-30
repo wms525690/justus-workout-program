@@ -578,8 +578,7 @@
     activeVolumeDay = null;
     renderVolumeTabs(weekDays);
 
-    // Weekly Targets — multiplier per section (total completions target = exercises * multiplier, rounded up)
-    var weeklyTargetMultipliers = { b3: 3.5, mob: 2.5, ac: 2, rp: 2 };
+    // Weekly Targets
     var targetsEl = document.getElementById('statsWeeklyTargets');
     if (targetsEl) {
       targetsEl.innerHTML = '';
