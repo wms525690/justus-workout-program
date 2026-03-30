@@ -451,6 +451,7 @@
     var sectionTotals = {};
     var ratingCounts = { easy: 0, right: 0, hard: 0, pain: 0 };
     var painFlags = [];
+    var touchedExercises = {}; // track unique exercises completed at least once
 
     weekDays.forEach(function (dayStr) {
       var dayData = allState[dayStr];
@@ -466,11 +467,12 @@
       totalChecksWeek += dayCount;
       completionPerDay.push({ date: dayStr, count: dayCount, total: totalExercises });
 
-      // Section breakdown
+      // Section breakdown + unique exercise tracking
       Object.keys(dayChecks).forEach(function (exId) {
         if (dayChecks[exId]) {
           var sk = getSectionKey(exId);
           sectionTotals[sk] = (sectionTotals[sk] || 0) + 1;
+          touchedExercises[exId] = true;
         }
       });
 
@@ -492,12 +494,43 @@
       });
     });
 
-    var avgCompletion = daysActive > 0 ? Math.round(totalChecksWeek / (daysActive * totalExercises) * 100) : 0;
+    // % of unique exercises touched at least once this week
+    var touchedCount = Object.keys(touchedExercises).length;
+    var touchedPct = totalExercises > 0 ? Math.round((touchedCount / totalExercises) * 100) : 0;
+
+    // Target pace: what % of weekly targets should be done by now vs what's actually done
+    var weeklyTargetMultipliers = { b3: 3.5, mob: 2.5, ac: 2, rp: 2 };
+    var sectionExCounts = {};
+    checkboxes.forEach(function (cb) {
+      var card = cb.closest('.exercise-card');
+      var sk = getSectionKey(card.dataset.id);
+      sectionExCounts[sk] = (sectionExCounts[sk] || 0) + 1;
+    });
+
+    // How far through the week are we? (days elapsed including today / 7)
+    var today = todayKey();
+    var daysElapsed = 0;
+    for (var di = 0; di < weekDays.length; di++) {
+      if (weekDays[di] <= today) daysElapsed++;
+    }
+    // For past weeks, full 7 days
+    if (statsWeekOffset < 0) daysElapsed = 7;
+    var weekFraction = daysElapsed / 7;
+
+    var totalTarget = 0;
+    var totalDone = 0;
+    var sectionOrder = ['b3', 'mob', 'ac', 'rp'];
+    sectionOrder.forEach(function (sk) {
+      totalTarget += Math.ceil((sectionExCounts[sk] || 0) * (weeklyTargetMultipliers[sk] || 2));
+      totalDone += (sectionTotals[sk] || 0);
+    });
+    var expectedByNow = Math.round(totalTarget * weekFraction);
+    var onPacePct = expectedByNow > 0 ? Math.round((totalDone / expectedByNow) * 100) : (totalDone > 0 ? 100 : 0);
 
     // Update summary cards
     setEl('statsDaysActive', daysActive + '/7');
-    setEl('statsTotalChecks', totalChecksWeek);
-    setEl('statsAvgCompletion', avgCompletion + '%');
+    setEl('statsTotalChecks', touchedPct + '%');
+    setEl('statsAvgCompletion', Math.min(onPacePct, 999) + '%');
     setEl('statsCurrentStreak', calcStreak());
 
     // Daily breakdown grid — per-tab bars for each day
