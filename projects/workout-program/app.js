@@ -758,6 +758,18 @@
     });
   }
 
+  // ---------- Video Links (mobile fix) ----------
+  document.querySelectorAll('.video-link').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var href = link.getAttribute('href');
+      if (href && href.indexOf('http') === 0) {
+        e.preventDefault();
+        e.stopPropagation();
+        window.open(href, '_blank');
+      }
+    });
+  });
+
   // ---------- Boot ----------
   initFirestore();
 
