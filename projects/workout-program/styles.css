@@ -848,8 +848,8 @@ body {
     grid-template-columns: 70px 1fr 40px;
   }
 
-  .stats-bar-row {
-    grid-template-columns: 90px 1fr 60px;
+  .stats-target-row {
+    grid-template-columns: 85px 1fr 55px;
   }
 
   .stats-rating-summary {
