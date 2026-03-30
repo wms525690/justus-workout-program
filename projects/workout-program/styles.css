@@ -1018,17 +1018,32 @@ body {
     text-align: left;
   }
 
+  .exercise-card {
+    flex-direction: column;
+    padding-bottom: 12px !important;
+  }
+
+  .exercise-card > .exercise-check {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .exercise-card > .exercise-info {
+    padding-left: 2.5rem;
+  }
+
+  .exercise-card > .exercise-note-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
   .week-tracker {
     position: static;
     margin-top: 8px;
     width: 100%;
-    justify-content: flex-start;
-    flex-basis: 100%;
-  }
-
-  .exercise-card {
-    flex-wrap: wrap;
-    padding-bottom: 12px !important;
+    padding-left: 2.5rem;
   }
 }
 
