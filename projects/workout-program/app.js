@@ -124,6 +124,19 @@
 
   // Load from Firestore
   function initFirestore() {
+    // If a reset was triggered, wipe Firestore before loading
+    if (needsFirestoreReset) {
+      needsFirestoreReset = false;
+      DOC_REF.set({ days: {}, lastUpdated: new Date().toISOString() }).then(function () {
+        firestoreReady = true;
+        console.log('Firestore reset complete');
+      }).catch(function (err) {
+        console.warn('Firestore reset failed:', err);
+        firestoreReady = false;
+      });
+      return;
+    }
+
     DOC_REF.get().then(function (snapshot) {
       if (snapshot.exists) {
         var remote = snapshot.data();
