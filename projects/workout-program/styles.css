@@ -1019,6 +1019,7 @@ body {
   }
 
   .exercise-card {
+    position: relative;
     flex-direction: column;
     padding-bottom: 12px !important;
   }
