@@ -1021,17 +1021,14 @@ body {
   .week-tracker {
     position: static;
     margin-top: 8px;
+    width: 100%;
     justify-content: flex-start;
+    flex-basis: 100%;
   }
 
   .exercise-card {
     flex-wrap: wrap;
     padding-bottom: 12px !important;
-  }
-
-  .exercise-info {
-    min-width: 0;
-    flex: 1 1 100%;
   }
 }
 
