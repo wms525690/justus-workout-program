@@ -58,13 +58,12 @@
   // ---------- State ----------
   var STORAGE_KEY = 'justus-workout-program';
 
-  // One-time data reset v2 — fresh start 2026-03-30
-  var needsFirestoreReset = false;
-  if (!localStorage.getItem('jw-reset-v3')) {
+  // One-time data reset — fresh start 2026-03-30 (Firestore wiped server-side)
+  if (!localStorage.getItem('jw-reset-v4')) {
     localStorage.removeItem(STORAGE_KEY);
-    localStorage.setItem('jw-reset-v3', '1');
-    needsFirestoreReset = true;
+    localStorage.setItem('jw-reset-v4', '1');
   }
+  var needsFirestoreReset = false;
 
   function emptyDay() {
     return { checks: {}, notes: {}, ratings: {}, actuals: {} };
