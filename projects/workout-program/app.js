@@ -770,6 +770,72 @@
     });
   });
 
+  // ---------- PIN Lock ----------
+  var PIN_CODE = '1234';
+  var PIN_SESSION_KEY = 'jw-pin-unlocked';
+
+  var pinLockBtn = document.getElementById('pinLockBtn');
+  var pinOverlay = document.getElementById('pinOverlay');
+  var pinInput = document.getElementById('pinInput');
+  var pinError = document.getElementById('pinError');
+  var pinSubmit = document.getElementById('pinSubmit');
+  var pinCancel = document.getElementById('pinCancel');
+
+  function unlockApp() {
+    document.body.classList.remove('app-locked');
+    sessionStorage.setItem(PIN_SESSION_KEY, '1');
+    pinLockBtn.innerHTML = '&#128275;';
+    pinLockBtn.classList.add('unlocked');
+    pinLockBtn.title = 'Editing unlocked';
+  }
+
+  function lockApp() {
+    document.body.classList.add('app-locked');
+    sessionStorage.removeItem(PIN_SESSION_KEY);
+    pinLockBtn.innerHTML = '&#128274;';
+    pinLockBtn.classList.remove('unlocked');
+    pinLockBtn.title = 'Unlock editing';
+  }
+
+  if (sessionStorage.getItem(PIN_SESSION_KEY) === '1') {
+    unlockApp();
+  }
+
+  pinLockBtn.addEventListener('click', function () {
+    if (!document.body.classList.contains('app-locked')) {
+      lockApp();
+      return;
+    }
+    pinOverlay.classList.add('open');
+    pinInput.value = '';
+    pinError.classList.remove('visible');
+    setTimeout(function () { pinInput.focus(); }, 100);
+  });
+
+  pinSubmit.addEventListener('click', function () {
+    if (pinInput.value === PIN_CODE) {
+      pinOverlay.classList.remove('open');
+      unlockApp();
+    } else {
+      pinError.classList.add('visible');
+      pinInput.value = '';
+      pinInput.focus();
+      setTimeout(function () { pinError.classList.remove('visible'); }, 2000);
+    }
+  });
+
+  pinInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') pinSubmit.click();
+  });
+
+  pinCancel.addEventListener('click', function () {
+    pinOverlay.classList.remove('open');
+  });
+
+  pinOverlay.addEventListener('click', function (e) {
+    if (e.target === pinOverlay) pinOverlay.classList.remove('open');
+  });
+
   // ---------- Boot ----------
   initFirestore();
 
