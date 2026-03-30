@@ -771,7 +771,7 @@
   });
 
   // ---------- PIN Lock ----------
-  var PIN_CODE = '1234';
+  var PIN_CODE = '6969';
   var PIN_SESSION_KEY = 'jw-pin-unlocked';
 
   var pinLockBtn = document.getElementById('pinLockBtn');
