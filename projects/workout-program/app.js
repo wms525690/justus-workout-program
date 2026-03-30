@@ -556,13 +556,6 @@
     var sectionBars = document.getElementById('statsSectionBars');
     if (sectionBars) {
       sectionBars.innerHTML = '';
-      // Max possible per section per week (section exercise count * 7 days)
-      var sectionExCounts = {};
-      checkboxes.forEach(function (cb) {
-        var card = cb.closest('.exercise-card');
-        var sk = getSectionKey(card.dataset.id);
-        sectionExCounts[sk] = (sectionExCounts[sk] || 0) + 1;
-      });
 
       Object.keys(sectionMap).forEach(function (sk) {
         var done = sectionTotals[sk] || 0;
