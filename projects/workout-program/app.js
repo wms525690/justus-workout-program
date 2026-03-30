@@ -534,13 +534,6 @@
     setEl('statsCurrentStreak', calcStreak());
 
     // Daily breakdown grid — per-tab bars for each day
-    var sectionExCounts = {};
-    checkboxes.forEach(function (cb) {
-      var card = cb.closest('.exercise-card');
-      var sk = getSectionKey(card.dataset.id);
-      sectionExCounts[sk] = (sectionExCounts[sk] || 0) + 1;
-    });
-
     var dayGrid = document.getElementById('statsDayGrid');
     if (dayGrid) {
       dayGrid.innerHTML = '';
