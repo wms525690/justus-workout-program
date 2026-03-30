@@ -58,6 +58,12 @@
   // ---------- State ----------
   var STORAGE_KEY = 'justus-workout-program';
 
+  // One-time data reset (remove after deploy)
+  if (!localStorage.getItem('jw-reset-v1')) {
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.setItem('jw-reset-v1', '1');
+  }
+
   function emptyDay() {
     return { checks: {}, notes: {}, ratings: {}, actuals: {} };
   }
