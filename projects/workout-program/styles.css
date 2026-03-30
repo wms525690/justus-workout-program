@@ -1335,8 +1335,7 @@ body.app-locked .exercise-card .checkmark {
 }
 
 body.app-locked .exercise-note-btn {
-  pointer-events: none;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 body.app-locked .rating-btn,
