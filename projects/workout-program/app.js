@@ -60,9 +60,9 @@
 
   // One-time data reset v2 — fresh start 2026-03-30
   var needsFirestoreReset = false;
-  if (!localStorage.getItem('jw-reset-v2')) {
+  if (!localStorage.getItem('jw-reset-v3')) {
     localStorage.removeItem(STORAGE_KEY);
-    localStorage.setItem('jw-reset-v2', '1');
+    localStorage.setItem('jw-reset-v3', '1');
     needsFirestoreReset = true;
   }
 
