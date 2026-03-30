@@ -1327,3 +1327,152 @@ body {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* ---------- PIN Lock ---------- */
+body.app-locked .exercise-card .checkmark {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+body.app-locked .exercise-note-btn {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+body.app-locked .rating-btn,
+body.app-locked .set-reps,
+body.app-locked .set-time,
+body.app-locked #modalNoteInput,
+body.app-locked #modalSave {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.pin-lock-btn {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 1000;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  background: var(--gray-800);
+  color: var(--white);
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.pin-lock-btn:hover {
+  border-color: var(--red);
+}
+
+.pin-lock-btn.unlocked {
+  border-color: var(--success);
+  opacity: 0.5;
+}
+
+.pin-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+}
+
+.pin-overlay.open {
+  display: flex;
+}
+
+.pin-dialog {
+  background: var(--gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  width: 280px;
+  text-align: center;
+}
+
+.pin-dialog h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+  color: var(--white);
+}
+
+.pin-dialog input {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--gray-900);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-sm);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  text-align: center;
+  letter-spacing: 0.3em;
+  outline: none;
+  transition: var(--transition);
+}
+
+.pin-dialog input:focus {
+  border-color: var(--red);
+}
+
+.pin-error {
+  color: var(--danger, #ef4444);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  height: 1.2rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.pin-error.visible {
+  opacity: 1;
+}
+
+.pin-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.pin-cancel,
+.pin-submit {
+  flex: 1;
+  padding: 0.65rem;
+  border-radius: var(--radius-sm);
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.pin-cancel {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--gray-300);
+}
+
+.pin-cancel:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.pin-submit {
+  background: var(--red);
+  color: var(--white);
+}
+
+.pin-submit:hover {
+  background: var(--red-dark);
+}
