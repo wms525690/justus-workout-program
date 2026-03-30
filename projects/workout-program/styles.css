@@ -840,8 +840,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .stats-day-card {
-    grid-template-columns: 80px 1fr 50px;
+  .stats-day-section-row {
+    grid-template-columns: 70px 1fr 40px;
   }
 
   .stats-bar-row {
