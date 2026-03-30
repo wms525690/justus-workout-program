@@ -1207,6 +1207,21 @@
     <p class="footer-small">Program by Max Sherwin</p>
   </footer>
 
+  <!-- ========== PIN LOCK ========== -->
+  <button class="pin-lock-btn" id="pinLockBtn" title="Unlock editing">&#128274;</button>
+
+  <div class="pin-overlay" id="pinOverlay">
+    <div class="pin-dialog">
+      <h3>Enter PIN to Edit</h3>
+      <input type="password" id="pinInput" maxlength="6" placeholder="PIN" inputmode="numeric" autocomplete="off">
+      <p class="pin-error" id="pinError">Incorrect PIN</p>
+      <div class="pin-actions">
+        <button class="pin-cancel" id="pinCancel">Cancel</button>
+        <button class="pin-submit" id="pinSubmit">Unlock</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Firebase SDK (compat - works from file:// and https://) -->
   <script src="https://www.gstatic.com/firebasejs/12.11.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/12.11.0/firebase-firestore-compat.js"></script>
