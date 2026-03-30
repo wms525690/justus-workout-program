@@ -552,22 +552,38 @@
     activeVolumeDay = null;
     renderVolumeTabs(weekDays);
 
-    // Section breakdown bars
-    var sectionBars = document.getElementById('statsSectionBars');
-    if (sectionBars) {
-      sectionBars.innerHTML = '';
-
-      Object.keys(sectionMap).forEach(function (sk) {
+    // Weekly Targets — multiplier per section (total completions target = exercises * multiplier, rounded up)
+    var weeklyTargetMultipliers = { b3: 3.5, mob: 2.5, ac: 2, rp: 2 };
+    var targetsEl = document.getElementById('statsWeeklyTargets');
+    if (targetsEl) {
+      targetsEl.innerHTML = '';
+      var sectionOrder = ['b3', 'mob', 'ac', 'rp'];
+      sectionOrder.forEach(function (sk) {
+        var exCount = sectionExCounts[sk] || 0;
+        var target = Math.ceil(exCount * (weeklyTargetMultipliers[sk] || 2));
         var done = sectionTotals[sk] || 0;
-        var maxWeek = (sectionExCounts[sk] || 0) * daysActive;
-        var pct = maxWeek > 0 ? Math.round((done / maxWeek) * 100) : 0;
+        var pct = target > 0 ? Math.min(Math.round((done / target) * 100), 100) : 0;
+        var rawPct = target > 0 ? done / target : 0;
+
+        // Red-to-green gradient: 0% = red, 50% = yellow, 100% = green
+        var r, g;
+        if (rawPct <= 0.5) {
+          r = 220;
+          g = Math.round(180 * (rawPct / 0.5));
+        } else {
+          r = Math.round(220 * (1 - ((rawPct - 0.5) / 0.5)));
+          g = 180;
+        }
+        if (rawPct >= 1) { r = 50; g = 200; }
+        var barColor = 'rgb(' + r + ',' + g + ',50)';
+
         var div = document.createElement('div');
-        div.className = 'stats-bar-row';
+        div.className = 'stats-target-row';
         div.innerHTML =
-          '<div class="stats-bar-label">' + sectionMap[sk] + '</div>' +
-          '<div class="stats-bar-track"><div class="stats-bar-fill" style="width:' + pct + '%"></div></div>' +
-          '<div class="stats-bar-value">' + done + ' done</div>';
-        sectionBars.appendChild(div);
+          '<div class="stats-target-label">' + sectionMap[sk] + '</div>' +
+          '<div class="stats-target-bar-track"><div class="stats-target-bar-fill" style="width:' + pct + '%;background:' + barColor + '"></div></div>' +
+          '<div class="stats-target-value">' + done + ' / ' + target + '</div>';
+        targetsEl.appendChild(div);
       });
     }
 
