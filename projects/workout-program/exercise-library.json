@@ -610,7 +610,7 @@
       ]
     },
     "neck-shoulder-position": {
-      "label": "Neck / Shoulder Position",
+      "label": "Set the Scap and Neck",
       "exercises": [
         {
           "id": "neck-01",
