@@ -735,39 +735,43 @@ body {
   text-align: right;
 }
 
-/* Section breakdown bars */
-.stats-bar-row {
-  display: grid;
-  grid-template-columns: 120px 1fr 70px;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
+/* Weekly Targets */
+.stats-weekly-targets {
+  margin-bottom: 1.5rem;
 }
 
-.stats-bar-label {
+.stats-target-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 65px;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.stats-target-label {
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--gray-300);
 }
 
-.stats-bar-track {
-  height: 10px;
+.stats-target-bar-track {
+  height: 12px;
   background: rgba(255, 255, 255, 0.06);
-  border-radius: 5px;
+  border-radius: 6px;
   overflow: hidden;
 }
 
-.stats-bar-fill {
+.stats-target-bar-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--red), var(--red-dark));
-  border-radius: 5px;
-  transition: width 0.4s ease;
+  border-radius: 6px;
+  transition: width 0.4s ease, background 0.4s ease;
 }
 
-.stats-bar-value {
-  font-size: 0.8rem;
-  color: var(--gray-400);
+.stats-target-value {
+  font-size: 0.82rem;
+  color: var(--gray-300);
   text-align: right;
+  font-weight: 500;
 }
 
 /* Rating summary */
