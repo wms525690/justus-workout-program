@@ -359,9 +359,21 @@
   }
 
   function calcStreak() {
+    // Total work days all-time (any day with at least 1 check)
+    var total = 0;
+    Object.keys(allState).forEach(function (d) {
+      var dayData = allState[d];
+      if (dayData && dayData.checks) {
+        var anyChecked = Object.values(dayData.checks).some(Boolean);
+        if (anyChecked) total++;
+      }
+    });
+    return total;
+  }
+
+  function calcStreak_legacy() {
     var streak = 0;
     var d = todayKey();
-    // If today has at least 1 check, count it
     while (true) {
       var dayData = allState[d];
       if (dayData && dayData.checks) {
