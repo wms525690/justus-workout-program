@@ -537,6 +537,7 @@
     var touchedPct = totalExercises > 0 ? Math.round((touchedCount / totalExercises) * 100) : 0;
 
     // Target pace: what % of weekly targets should be done by now vs what's actually done
+    // EDIT THESE — times per week each section's exercises should be completed
     var weeklyTargetMultipliers = { b3: 3.5, mob: 2.5, ac: 2, rp: 2 };
     var sectionExCounts = {};
     checkboxes.forEach(function (cb) {
