@@ -857,6 +857,112 @@
     if (e.target === pinOverlay) pinOverlay.classList.remove('open');
   });
 
+  // ---------- Start / Finish Workout + Timer ----------
+  var activeWorkoutDay = null;
+  var workoutStartTime = null;
+  var workoutTimerInterval = null;
+
+  document.querySelectorAll('.start-workout-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var day = btn.dataset.day;
+      activeWorkoutDay = day;
+      workoutStartTime = Date.now();
+
+      // Show timer, hide start button, show finish button
+      btn.classList.add('active');
+      btn.textContent = 'Workout In Progress...';
+      var timerEl = document.getElementById('timer-' + day);
+      if (timerEl) timerEl.style.display = 'block';
+
+      var finishBtn = btn.closest('.program-section').querySelector('.finish-workout-btn');
+      if (finishBtn) finishBtn.style.display = 'block';
+
+      // Start timer
+      var timerValue = timerEl ? timerEl.querySelector('.timer-value') : null;
+      workoutTimerInterval = setInterval(function () {
+        var elapsed = Math.floor((Date.now() - workoutStartTime) / 1000);
+        var mins = Math.floor(elapsed / 60);
+        var secs = elapsed % 60;
+        if (timerValue) timerValue.textContent = mins + ':' + (secs < 10 ? '0' : '') + secs;
+      }, 1000);
+
+      // Save start time to state
+      state.workoutStart = state.workoutStart || {};
+      state.workoutStart[day] = workoutStartTime;
+      saveLocalState(allState);
+    });
+  });
+
+  document.querySelectorAll('.finish-workout-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var day = btn.dataset.day;
+      clearInterval(workoutTimerInterval);
+
+      var elapsed = workoutStartTime ? Math.floor((Date.now() - workoutStartTime) / 1000) : 0;
+      var mins = Math.floor(elapsed / 60);
+      var secs = elapsed % 60;
+      var timeStr = mins + ':' + (secs < 10 ? '0' : '') + secs;
+
+      // Show difficulty modal
+      var overlay = document.getElementById('finishOverlay');
+      var finishTimeEl = document.getElementById('finishTime');
+      var slider = document.getElementById('difficultySlider');
+      var valueEl = document.getElementById('difficultyValue');
+
+      if (finishTimeEl) finishTimeEl.textContent = 'Total time: ' + timeStr;
+      if (slider) slider.value = 5;
+      if (valueEl) valueEl.textContent = '5';
+      overlay.classList.add('open');
+      overlay.dataset.day = day;
+      overlay.dataset.elapsed = elapsed;
+    });
+  });
+
+  // Difficulty slider live update
+  var diffSlider = document.getElementById('difficultySlider');
+  var diffValue = document.getElementById('difficultyValue');
+  if (diffSlider && diffValue) {
+    diffSlider.addEventListener('input', function () {
+      diffValue.textContent = diffSlider.value;
+    });
+  }
+
+  // Save difficulty and close
+  var finishSave = document.getElementById('finishSave');
+  var finishOverlay = document.getElementById('finishOverlay');
+  if (finishSave) {
+    finishSave.addEventListener('click', function () {
+      var day = finishOverlay.dataset.day;
+      var elapsed = parseInt(finishOverlay.dataset.elapsed) || 0;
+      var difficulty = parseInt(diffSlider.value) || 5;
+
+      // Save to state
+      state.workouts = state.workouts || {};
+      state.workouts[day] = {
+        duration: elapsed,
+        difficulty: difficulty,
+        completedAt: new Date().toISOString()
+      };
+      saveLocalState(allState);
+      if (firestoreReady) syncToFirestore();
+
+      // Reset UI
+      finishOverlay.classList.remove('open');
+      var startBtn = document.querySelector('.start-workout-btn[data-day="' + day + '"]');
+      if (startBtn) {
+        startBtn.textContent = 'Workout Logged!';
+        startBtn.style.opacity = '0.5';
+      }
+      var timerEl = document.getElementById('timer-' + day);
+      if (timerEl) timerEl.style.display = 'none';
+      var finishBtn = document.querySelector('.finish-workout-btn[data-day="' + day + '"]');
+      if (finishBtn) finishBtn.style.display = 'none';
+
+      activeWorkoutDay = null;
+      workoutStartTime = null;
+    });
+  }
+
   // ---------- Boot ----------
   initFirestore();
 
