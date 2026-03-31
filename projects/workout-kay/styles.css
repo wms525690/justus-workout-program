@@ -196,7 +196,7 @@ body {
   position: absolute;
   inset: -6px;
   border-radius: 50%;
-  border: 2px solid rgba(137, 207, 240, 0.4);
+  border: 2px solid rgba(184, 169, 232, 0.4);
   animation: ringPulse 3s ease-in-out infinite;
 }
 
