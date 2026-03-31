@@ -77,113 +77,781 @@
   <!-- ========== PROGRAM SECTIONS ========== -->
   <main class="program-content">
 
-    <!--
-      ============================================================
-      EXERCISE SECTIONS — BUILD YOUR PROGRAM BELOW
-      ============================================================
-
-      RULES:
-      - Each section id must be "section-{data-section from nav}"
-      - Exercise card data-id prefixes determine stats grouping:
-          b3-   = The Big 3
-          mob-  = Mobility
-          ac-   = Arm Care
-          rp-   = Rehab / Prehab
-        (update getSectionKey() in app.js if you change these)
-      - Checkbox id must match data-id + "-check"
-      - Copy the exercise card template below for each exercise
-
-      EXERCISE CARD TEMPLATE:
-      ========================
-      <div class="exercise-card" data-id="PREFIX-ID">
-        <div class="exercise-check">
-          <input type="checkbox" id="PREFIX-ID-check">
-          <label for="PREFIX-ID-check" class="checkmark"></label>
-        </div>
-        <div class="exercise-info">
-          <h4>Exercise Name</h4>
-          <p class="exercise-details">Sets &middot; Reps &middot; Instructions</p>
-          <p class="exercise-cue">Cue: Coaching cues here.</p>
-          <a href="https://youtube.com/..." class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
-        </div>
-        <button class="exercise-note-btn" title="Add note">&#128221;</button>
-      </div>
-      ========================
-    -->
-
-    <!-- THE BIG 3 CHECKLIST -->
-    <section class="program-section active" id="section-big3">
+    <!-- ========== DAY 1: FULL BODY PULL (Lower Body Bias) ========== -->
+    <section class="program-section active" id="section-day1">
       <div class="section-header">
         <div class="section-number">01</div>
-        <h2>The Big 3 Checklist</h2>
-        <p class="section-desc">Master these three fundamentals. Every session starts here.</p>
+        <h2>Pull Day &mdash; Lower Body Bias</h2>
+        <p class="section-desc">Posterior chain focus. Earn the strength by warming up right.</p>
       </div>
 
-      <!-- Category: Foot Position -->
+      <button class="start-workout-btn" data-day="day1">Start Workout</button>
+      <div class="workout-timer" id="timer-day1" style="display:none;">
+        <span class="timer-icon">&#9201;</span> <span class="timer-value">0:00</span>
+      </div>
+
+      <!-- WARM-UP -->
       <div class="category-block">
         <div class="category-title">
-          <span class="category-icon">&#128099;</span>
-          <h3>Foot Position / Mechanics</h3>
+          <span class="category-icon">&#128293;</span>
+          <h3>Warm-Up</h3>
+          <span class="category-note">Skip this and the workout doesn't count.</span>
         </div>
         <div class="exercise-list">
-          <!-- ADD EXERCISES HERE (data-id prefix: b3-f) -->
+          <div class="exercise-card" data-id="d1-w1">
+            <div class="exercise-check"><input type="checkbox" id="d1-w1-check"><label for="d1-w1-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Hip CARS (Standing)</h4>
+              <p class="exercise-details">2 each hip</p>
+              <p class="exercise-cue">Cue: Biggest, slowest circles you can make. Feel every degree of rotation. Wake the hips up.</p>
+              <a href="javascript:void(0)" class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d1-w2">
+            <div class="exercise-check"><input type="checkbox" id="d1-w2-check"><label for="d1-w2-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Cossack Squat (Bodyweight)</h4>
+              <p class="exercise-details">2 &times; 5 each side</p>
+              <p class="exercise-cue">Cue: Sit deep to one side, straight leg stays extended. Feel the inner thigh stretch. Go slow.</p>
+              <a href="javascript:void(0)" class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d1-w3">
+            <div class="exercise-check"><input type="checkbox" id="d1-w3-check"><label for="d1-w3-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Single-Leg RDL &mdash; Bodyweight</h4>
+              <p class="exercise-details">2 &times; 5 each leg</p>
+              <p class="exercise-cue">Cue: Hinge at the hips, reach the back leg behind you. Hand on a wall if you need balance. Feel the hamstring stretch.</p>
+              <a href="javascript:void(0)" class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d1-w4">
+            <div class="exercise-check"><input type="checkbox" id="d1-w4-check"><label for="d1-w4-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Band Pull-Apart</h4>
+              <p class="exercise-details">2 &times; 15</p>
+              <p class="exercise-cue">Cue: Arms straight, pull the band apart by squeezing your shoulder blades together. Open the chest.</p>
+              <a href="javascript:void(0)" class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d1-w5">
+            <div class="exercise-check"><input type="checkbox" id="d1-w5-check"><label for="d1-w5-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Glute Bridge (Banded)</h4>
+              <p class="exercise-details">2 &times; 10</p>
+              <p class="exercise-cue">Cue: Band above the knees. Drive hips up, squeeze the glutes HARD at the top. Push the knees out against the band.</p>
+              <a href="javascript:void(0)" class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d1-w6">
+            <div class="exercise-check"><input type="checkbox" id="d1-w6-check"><label for="d1-w6-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Broad Jump to Stick</h4>
+              <p class="exercise-details">3 &times; 3</p>
+              <p class="exercise-cue">Cue: Jump forward, land soft, FREEZE for 3 seconds. The landing is the skill. Quiet feet.</p>
+              <a href="javascript:void(0)" class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
         </div>
       </div>
 
-      <!-- Category: Bracing / Breathing -->
-      <div class="category-block">
-        <div class="category-title">
-          <span class="category-icon">&#129516;</span>
-          <h3>Bracing / Breathing</h3>
-        </div>
-        <div class="exercise-list">
-          <!-- ADD EXERCISES HERE (data-id prefix: b3-br) -->
-        </div>
-      </div>
-
-      <!-- Category: Set the Scap and Neck -->
+      <!-- MAIN WORK -->
       <div class="category-block">
         <div class="category-title">
           <span class="category-icon">&#128170;</span>
-          <h3>Set the Scap and Neck</h3>
+          <h3>Main Work</h3>
         </div>
         <div class="exercise-list">
-          <!-- ADD EXERCISES HERE (data-id prefix: b3-n) -->
+          <!-- SUPERSET A -->
+          <div class="superset-group" data-group="A">
+            <div class="superset-label">Superset A</div>
+            <div class="exercise-card" data-id="d1-a1">
+              <div class="exercise-check"><input type="checkbox" id="d1-a1-check"><label for="d1-a1-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Reverse Lunge &mdash; Goblet</h4>
+                <p class="exercise-details">3 &times; 8 each leg</p>
+                <p class="exercise-cue">Cue: Hold the KB at your chest. Step back, lower slowly (3 seconds down). Front foot slightly elevated. Drive through the front heel to stand.</p>
+                <a href="javascript:void(0)" class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d1-a2">
+              <div class="exercise-check"><input type="checkbox" id="d1-a2-check"><label for="d1-a2-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Single-Arm DB Row (Bird-Dog Position)</h4>
+                <p class="exercise-details">3 &times; 10 each arm</p>
+                <p class="exercise-cue">Cue: One hand on the bench, extend the opposite leg behind you. Row the DB to your hip. Your core has to fight to keep you from rotating &mdash; that's the point.</p>
+                <a href="javascript:void(0)" class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+          </div>
+
+          <!-- SUPERSET B -->
+          <div class="superset-group" data-group="B">
+            <div class="superset-label">Superset B</div>
+            <div class="exercise-card" data-id="d1-b1">
+              <div class="exercise-check"><input type="checkbox" id="d1-b1-check"><label for="d1-b1-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Goblet Squat (Heel Elevated)</h4>
+                <p class="exercise-details">3 &times; 10</p>
+                <p class="exercise-cue">Cue: Heels on a small plate or wedge. Hold KB at chest. 3 seconds on the way down. Go as deep as you can with a tall chest.</p>
+                <a href="javascript:void(0)" class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d1-b2">
+              <div class="exercise-check"><input type="checkbox" id="d1-b2-check"><label for="d1-b2-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Iso Lunge Single-Arm DB Row</h4>
+                <p class="exercise-details">3 &times; 8 each arm</p>
+                <p class="exercise-cue">Cue: Hold a lunge position the entire time. Row with one arm while your legs and core hold you still. If you feel your legs burning &mdash; good, that's the bonus.</p>
+                <a href="javascript:void(0)" class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- ACCESSORY -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#9889;</span>
+          <h3>Accessory</h3>
+        </div>
+        <div class="exercise-list">
+          <!-- GIANT SET C -->
+          <div class="superset-group giant" data-group="C">
+            <div class="superset-label">Giant Set C</div>
+            <div class="exercise-card" data-id="d1-c1">
+              <div class="exercise-check"><input type="checkbox" id="d1-c1-check"><label for="d1-c1-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Single-Leg Glute Bridge</h4>
+                <p class="exercise-details">2 &times; 10 each leg</p>
+                <p class="exercise-cue">Cue: One foot planted, other leg up. Drive hips up, squeeze the glute at the top. If you feel it in your low back, reset your position.</p>
+                <a href="javascript:void(0)" class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d1-c2">
+              <div class="exercise-check"><input type="checkbox" id="d1-c2-check"><label for="d1-c2-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Face Pull (Band)</h4>
+                <p class="exercise-details">2 &times; 15</p>
+                <p class="exercise-cue">Cue: Pull the band to your face, elbows high. Finish by rotating your hands outward like you're showing off your biceps. Squeeze the shoulder blades.</p>
+                <a href="javascript:void(0)" class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d1-c3">
+              <div class="exercise-check"><input type="checkbox" id="d1-c3-check"><label for="d1-c3-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Pallof Press (Band)</h4>
+                <p class="exercise-details">2 &times; 8 each side</p>
+                <p class="exercise-cue">Cue: Band at chest height. Press your hands straight out. The band tries to twist you &mdash; don't let it. Hold arms extended for a beat, bring back in. That's one.</p>
+                <a href="javascript:void(0)" class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FINISHER -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#127937;</span>
+          <h3>Finisher</h3>
+        </div>
+        <div class="exercise-list">
+          <div class="exercise-card" data-id="d1-f1">
+            <div class="exercise-check"><input type="checkbox" id="d1-f1-check"><label for="d1-f1-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Suitcase Carry</h4>
+              <p class="exercise-details">2 &times; 30yd each hand</p>
+              <p class="exercise-cue">Cue: One KB in one hand. Walk tall &mdash; don't lean toward the weight. Your core and the arch of your foot are fighting the whole time. Switch hands, repeat.</p>
+              <a href="javascript:void(0)" class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="finish-workout-btn" data-day="day1" style="display:none;">Finish Workout</button>
     </section>
 
-    <!-- MOBILITY -->
-    <section class="program-section" id="section-mobility">
+    <!-- ========== DAY 2: FULL BODY PUSH (Upper Body Bias) ========== -->
+    <section class="program-section" id="section-day2">
       <div class="section-header">
         <div class="section-number">02</div>
-        <h2>Mobility</h2>
-        <p class="section-desc">CARS, active end-range strength, and balance integration.</p>
+        <h2>Push Day &mdash; Upper Body Bias</h2>
+        <p class="section-desc">Pressing strength. Core-loaded lower body. Get after it.</p>
       </div>
 
-      <!-- ADD CATEGORY BLOCKS + EXERCISES HERE (data-id prefix: mob-) -->
+      <button class="start-workout-btn" data-day="day2">Start Workout</button>
+      <div class="workout-timer" id="timer-day2" style="display:none;">
+        <span class="timer-icon">&#9201;</span> <span class="timer-value">0:00</span>
+      </div>
+
+      <!-- WARM-UP -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#128293;</span>
+          <h3>Warm-Up</h3>
+          <span class="category-note">Prime the shoulders and core before pressing.</span>
+        </div>
+        <div class="exercise-list">
+          <div class="exercise-card" data-id="d2-w1">
+            <div class="exercise-check"><input type="checkbox" id="d2-w1-check"><label for="d2-w1-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Ankle CARS</h4>
+              <p class="exercise-details">2 each ankle</p>
+              <p class="exercise-cue">Cue: Full circles in both directions. Slow and controlled. Feel every position in the rotation.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d2-w2">
+            <div class="exercise-check"><input type="checkbox" id="d2-w2-check"><label for="d2-w2-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Push-Up to Downward Dog</h4>
+              <p class="exercise-details">2 &times; 5</p>
+              <p class="exercise-cue">Cue: Do a push-up, then press your hips up into a pike stretch. Feel the hamstrings and shoulders open. Come back down, repeat.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d2-w3">
+            <div class="exercise-check"><input type="checkbox" id="d2-w3-check"><label for="d2-w3-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Split Squat (Iso Hold)</h4>
+              <p class="exercise-details">2 &times; 20s each leg</p>
+              <p class="exercise-cue">Cue: Hold the bottom of the split squat. Feel the stretch in the back hip flexor. Tall chest, ribs down.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d2-w4">
+            <div class="exercise-check"><input type="checkbox" id="d2-w4-check"><label for="d2-w4-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Dead Bug</h4>
+              <p class="exercise-details">2 &times; 8 each side</p>
+              <p class="exercise-cue">Cue: Low back glued to the floor. Extend opposite arm and leg slowly. The moment your back lifts, stop. Breathe through it.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d2-w5">
+            <div class="exercise-check"><input type="checkbox" id="d2-w5-check"><label for="d2-w5-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Scapula Push-Ups</h4>
+              <p class="exercise-details">2 &times; 10</p>
+              <p class="exercise-cue">Cue: Push-up position, arms locked. Let your chest sink between your shoulder blades, then push the ground away. No elbow bend. Feel the muscles on the side of your ribs.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d2-w6">
+            <div class="exercise-check"><input type="checkbox" id="d2-w6-check"><label for="d2-w6-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Lateral Skater Jumps</h4>
+              <p class="exercise-details">3 &times; 5 each side</p>
+              <p class="exercise-cue">Cue: Jump sideways, land on one foot, STICK IT. Hold 2 seconds. Light and quick. Quiet landing.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN WORK -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#128170;</span>
+          <h3>Main Work</h3>
+        </div>
+        <div class="exercise-list">
+          <div class="superset-group" data-group="A">
+            <div class="superset-label">Superset A</div>
+            <div class="exercise-card" data-id="d2-a1">
+              <div class="exercise-check"><input type="checkbox" id="d2-a1-check"><label for="d2-a1-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>DB Bench Press</h4>
+                <p class="exercise-details">3 &times; 10</p>
+                <p class="exercise-cue">Cue: Control down for 3 seconds, press up with control. Shoulder blades squeezed together the whole time. Don't bounce at the bottom.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d2-a2">
+              <div class="exercise-check"><input type="checkbox" id="d2-a2-check"><label for="d2-a2-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Step-Up (Offset &mdash; Single DB)</h4>
+                <p class="exercise-details">3 &times; 8 each leg</p>
+                <p class="exercise-cue">Cue: One DB in one hand (suitcase hold). Step up, drive through the top foot to full hip extension. Your core is fighting the offset &mdash; stay tall, don't lean.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+          </div>
+          <div class="superset-group" data-group="B">
+            <div class="superset-label">Superset B</div>
+            <div class="exercise-card" data-id="d2-b1">
+              <div class="exercise-check"><input type="checkbox" id="d2-b1-check"><label for="d2-b1-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Half-Kneeling DB Press</h4>
+                <p class="exercise-details">3 &times; 8 each arm</p>
+                <p class="exercise-cue">Cue: One knee down, same-side arm presses. Core stays locked &mdash; no leaning, no arching. The press starts from the brace.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d2-b2">
+              <div class="exercise-check"><input type="checkbox" id="d2-b2-check"><label for="d2-b2-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Walking Lunge (Hands Overhead)</h4>
+                <p class="exercise-details">3 &times; 8 each leg</p>
+                <p class="exercise-cue">Cue: Bodyweight, hands locked straight overhead. Every step your core has to fight to keep the ribs down while the arms stay up. That's the core work.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCESSORY -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#9889;</span>
+          <h3>Accessory</h3>
+        </div>
+        <div class="exercise-list">
+          <div class="superset-group giant" data-group="C">
+            <div class="superset-label">Giant Set C</div>
+            <div class="exercise-card" data-id="d2-c1">
+              <div class="exercise-check"><input type="checkbox" id="d2-c1-check"><label for="d2-c1-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Cable Tricep Pushdown</h4>
+                <p class="exercise-details">2 &times; 15</p>
+                <p class="exercise-cue">Cue: Elbows pinned to your sides. Full lockout at the bottom, slow back up. Light weight, feel the squeeze.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d2-c2">
+              <div class="exercise-check"><input type="checkbox" id="d2-c2-check"><label for="d2-c2-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Lateral DB Fly</h4>
+                <p class="exercise-details">2 &times; 12</p>
+                <p class="exercise-cue">Cue: Light weight. Lift the DBs out to the sides to shoulder height. Control the lower. Don't use momentum.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d2-c3">
+              <div class="exercise-check"><input type="checkbox" id="d2-c3-check"><label for="d2-c3-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Side Plank</h4>
+                <p class="exercise-details">2 &times; 20s each side</p>
+                <p class="exercise-cue">Cue: Elbow under shoulder, hips up, squeeze the bottom glute. Breathe. If your hips drop, the set is over.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FINISHER -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#127937;</span>
+          <h3>Finisher</h3>
+        </div>
+        <div class="exercise-list">
+          <div class="exercise-card" data-id="d2-f1">
+            <div class="exercise-check"><input type="checkbox" id="d2-f1-check"><label for="d2-f1-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Plank (Swiss Ball)</h4>
+              <p class="exercise-details">2 &times; 30s</p>
+              <p class="exercise-cue">Cue: Forearms on the ball. Squeeze everything &mdash; glutes, abs, quads. Breathe through the brace. The ball wants to move. Don't let it.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="finish-workout-btn" data-day="day2" style="display:none;">Finish Workout</button>
     </section>
 
-    <!-- ARM CARE -->
-    <section class="program-section" id="section-armcare">
+    <!-- ========== DAY 3: FULL BODY PULL (Upper Body Bias) ========== -->
+    <section class="program-section" id="section-day3">
       <div class="section-header">
         <div class="section-number">03</div>
-        <h2>Arm Care</h2>
-        <p class="section-desc">Rotator cuff health, scapular control, and throwing longevity.</p>
+        <h2>Pull Day &mdash; Upper Body Bias</h2>
+        <p class="section-desc">Build the back. Core-loaded lower body. Strong from behind.</p>
       </div>
 
-      <!-- ADD CATEGORY BLOCKS + EXERCISES HERE (data-id prefix: ac-) -->
+      <button class="start-workout-btn" data-day="day3">Start Workout</button>
+      <div class="workout-timer" id="timer-day3" style="display:none;">
+        <span class="timer-icon">&#9201;</span> <span class="timer-value">0:00</span>
+      </div>
+
+      <!-- WARM-UP -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#128293;</span>
+          <h3>Warm-Up</h3>
+          <span class="category-note">Activate the back and get the hips moving.</span>
+        </div>
+        <div class="exercise-list">
+          <div class="exercise-card" data-id="d3-w1">
+            <div class="exercise-check"><input type="checkbox" id="d3-w1-check"><label for="d3-w1-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Wrist CARS</h4>
+              <p class="exercise-details">2 each wrist</p>
+              <p class="exercise-cue">Cue: Make a fist. Full circles in both directions, then flip palm up and down slowly.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d3-w2">
+            <div class="exercise-check"><input type="checkbox" id="d3-w2-check"><label for="d3-w2-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Prone Y-T-W</h4>
+              <p class="exercise-details">1 &times; 8 each position</p>
+              <p class="exercise-cue">Cue: Face down. Y = arms overhead thumbs up. T = arms out to sides. W = elbows bent, rotate hands up. Light, slow, squeeze at the top.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d3-w3">
+            <div class="exercise-check"><input type="checkbox" id="d3-w3-check"><label for="d3-w3-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Bodyweight Squat (Tempo)</h4>
+              <p class="exercise-details">2 &times; 8</p>
+              <p class="exercise-cue">Cue: 4 seconds down, 1 second up. Go as deep as you can with a tall chest. This is about control, not speed.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d3-w4">
+            <div class="exercise-check"><input type="checkbox" id="d3-w4-check"><label for="d3-w4-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Bear Crawl (Static Hold)</h4>
+              <p class="exercise-details">2 &times; 20s</p>
+              <p class="exercise-cue">Cue: Hands under shoulders, knees under hips. Lift knees 1 inch off the ground. Hold. Breathe. If you're shaking, good.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d3-w5">
+            <div class="exercise-check"><input type="checkbox" id="d3-w5-check"><label for="d3-w5-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Single-Leg Balance (Short Foot)</h4>
+              <p class="exercise-details">2 &times; 20s each foot</p>
+              <p class="exercise-cue">Cue: Stand on one foot. Pull the ball of your foot back toward your heel to build the arch. Hold it. Eyes forward, breathe.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d3-w6">
+            <div class="exercise-check"><input type="checkbox" id="d3-w6-check"><label for="d3-w6-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Max Height Skips</h4>
+              <p class="exercise-details">3 &times; 5 each leg</p>
+              <p class="exercise-cue">Cue: Skip as HIGH as you can. Drive the knee up, fire the opposite arm. Be explosive. Land soft.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN WORK -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#128170;</span>
+          <h3>Main Work</h3>
+        </div>
+        <div class="exercise-list">
+          <div class="superset-group" data-group="A">
+            <div class="superset-label">Superset A</div>
+            <div class="exercise-card" data-id="d3-a1">
+              <div class="exercise-check"><input type="checkbox" id="d3-a1-check"><label for="d3-a1-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Single-Arm DB Row (Bench-Supported)</h4>
+                <p class="exercise-details">3 &times; 10 each arm</p>
+                <p class="exercise-cue">Cue: One knee and hand on the bench. Row the DB to your hip, squeeze the shoulder blade at the top. Go heavier here &mdash; this is your primary pull.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d3-a2">
+              <div class="exercise-check"><input type="checkbox" id="d3-a2-check"><label for="d3-a2-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>B-Stance Hip Thrust</h4>
+                <p class="exercise-details">3 &times; 10 each side</p>
+                <p class="exercise-cue">Cue: Back on bench, one foot plants and drives, other heel rests lightly for balance. Drive hips to full lockout. Squeeze the glute HARD at the top.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+          </div>
+          <div class="superset-group" data-group="B">
+            <div class="superset-label">Superset B</div>
+            <div class="exercise-card" data-id="d3-b1">
+              <div class="exercise-check"><input type="checkbox" id="d3-b1-check"><label for="d3-b1-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Lat Pulldown</h4>
+                <p class="exercise-details">3 &times; 12</p>
+                <p class="exercise-cue">Cue: Pull your shoulder blades DOWN first, then bend the elbows and pull the bar to your upper chest. Control the return. No swinging.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d3-b2">
+              <div class="exercise-check"><input type="checkbox" id="d3-b2-check"><label for="d3-b2-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Single-Leg RDL &mdash; DB (Contralateral)</h4>
+                <p class="exercise-details">3 &times; 8 each leg</p>
+                <p class="exercise-cue">Cue: DB in the opposite hand from the standing leg. Hinge forward, reach the free leg back. The DB pulls you into rotation &mdash; resist it. Your core is working as hard as your hamstring.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCESSORY -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#9889;</span>
+          <h3>Accessory</h3>
+        </div>
+        <div class="exercise-list">
+          <div class="superset-group giant" data-group="C">
+            <div class="superset-label">Giant Set C</div>
+            <div class="exercise-card" data-id="d3-c1">
+              <div class="exercise-check"><input type="checkbox" id="d3-c1-check"><label for="d3-c1-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Cable Row (Seated, Single-Arm)</h4>
+                <p class="exercise-details">2 &times; 12 each arm</p>
+                <p class="exercise-cue">Cue: One arm at a time. Squeeze the shoulder blade back, control the return. Constant tension the whole time.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d3-c2">
+              <div class="exercise-check"><input type="checkbox" id="d3-c2-check"><label for="d3-c2-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Face Pull (Cable)</h4>
+                <p class="exercise-details">2 &times; 15</p>
+                <p class="exercise-cue">Cue: Pull to face, elbows high, rotate hands out at the end. Rear delts and rotator cuff. This is daily maintenance for healthy shoulders.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d3-c3">
+              <div class="exercise-check"><input type="checkbox" id="d3-c3-check"><label for="d3-c3-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>DB Bicep Curl</h4>
+                <p class="exercise-details">2 &times; 12</p>
+                <p class="exercise-cue">Cue: No swinging. Elbows pinned. Slow up, slower down. Strong biceps protect the elbows.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FINISHER -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#127937;</span>
+          <h3>Finisher</h3>
+        </div>
+        <div class="exercise-list">
+          <div class="exercise-card" data-id="d3-f1">
+            <div class="exercise-check"><input type="checkbox" id="d3-f1-check"><label for="d3-f1-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Farmer Carry (Heavy)</h4>
+              <p class="exercise-details">2 &times; 40yd</p>
+              <p class="exercise-cue">Cue: Heavy DBs or KBs, both hands. Walk tall, squeeze the handles, own every step. Grip, traps, core &mdash; everything works.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="finish-workout-btn" data-day="day3" style="display:none;">Finish Workout</button>
     </section>
 
-    <!-- REHAB / PREHAB -->
-    <section class="program-section" id="section-rehab">
+    <!-- ========== DAY 4: FULL BODY PUSH (Lower Body Bias) ========== -->
+    <section class="program-section" id="section-day4">
       <div class="section-header">
         <div class="section-number">04</div>
-        <h2>Rehab / Prehab</h2>
-        <p class="section-desc">Injury prevention, joint stability, and movement quality.</p>
+        <h2>Push Day &mdash; Lower Body Bias</h2>
+        <p class="section-desc">Squat patterns. Core-loaded pressing. Finish strong.</p>
       </div>
 
-      <!-- ADD CATEGORY BLOCKS + EXERCISES HERE (data-id prefix: rp-) -->
+      <button class="start-workout-btn" data-day="day4">Start Workout</button>
+      <div class="workout-timer" id="timer-day4" style="display:none;">
+        <span class="timer-icon">&#9201;</span> <span class="timer-value">0:00</span>
+      </div>
+
+      <!-- WARM-UP -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#128293;</span>
+          <h3>Warm-Up</h3>
+          <span class="category-note">Open the hips, brace the core, prime the legs.</span>
+        </div>
+        <div class="exercise-list">
+          <div class="exercise-card" data-id="d4-w1">
+            <div class="exercise-check"><input type="checkbox" id="d4-w1-check"><label for="d4-w1-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Hip CARS (Quadruped)</h4>
+              <p class="exercise-details">2 each hip</p>
+              <p class="exercise-cue">Cue: Hands and knees. Lift the knee out to the side, rotate it through the biggest circle you can, reverse. Slow and controlled.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d4-w2">
+            <div class="exercise-check"><input type="checkbox" id="d4-w2-check"><label for="d4-w2-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>90/90 Stretch (Passive Hold)</h4>
+              <p class="exercise-details">2 &times; 30s each side</p>
+              <p class="exercise-cue">Cue: Sit with both legs at 90 degrees. Lean into the front hip. Breathe and sink into it. Don't force it &mdash; just let gravity work.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d4-w3">
+            <div class="exercise-check"><input type="checkbox" id="d4-w3-check"><label for="d4-w3-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Glute Bridge (Single-Leg Tap)</h4>
+              <p class="exercise-details">2 &times; 8 each side</p>
+              <p class="exercise-cue">Cue: Bridge up on both feet, then lift one foot an inch off the ground, tap it back down. The glute on the planted side has to hold you up.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d4-w4">
+            <div class="exercise-check"><input type="checkbox" id="d4-w4-check"><label for="d4-w4-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Bird-Dog</h4>
+              <p class="exercise-details">2 &times; 8 each side</p>
+              <p class="exercise-cue">Cue: Opposite arm and leg extend at the same time. Slow. Don't let your hips shift or your back arch. Core stability from the ground up.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d4-w5">
+            <div class="exercise-check"><input type="checkbox" id="d4-w5-check"><label for="d4-w5-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Push-Up (Tempo)</h4>
+              <p class="exercise-details">2 &times; 5</p>
+              <p class="exercise-cue">Cue: 4 seconds down, 1 second up. Quality over quantity. Core stays tight the whole time.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+          <div class="exercise-card" data-id="d4-w6">
+            <div class="exercise-check"><input type="checkbox" id="d4-w6-check"><label for="d4-w6-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Squat Jump to Stick</h4>
+              <p class="exercise-details">3 &times; 3</p>
+              <p class="exercise-cue">Cue: Squat down, jump up, land soft, FREEZE for 3 seconds. Quiet feet. The landing is the test.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN WORK -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#128170;</span>
+          <h3>Main Work</h3>
+        </div>
+        <div class="exercise-list">
+          <div class="superset-group" data-group="A">
+            <div class="superset-label">Superset A</div>
+            <div class="exercise-card" data-id="d4-a1">
+              <div class="exercise-check"><input type="checkbox" id="d4-a1-check"><label for="d4-a1-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Goblet Squat (Heel Elevated)</h4>
+                <p class="exercise-details">3 &times; 10</p>
+                <p class="exercise-cue">Cue: Heels on a plate or wedge. KB at chest. 3 seconds down, go as deep as your mobility allows. Tall chest, ribs down.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d4-a2">
+              <div class="exercise-check"><input type="checkbox" id="d4-a2-check"><label for="d4-a2-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Single-Arm DB Bench Press</h4>
+                <p class="exercise-details">3 &times; 10 each arm</p>
+                <p class="exercise-cue">Cue: One DB, full bench. Your core has to fight to keep you from rolling off &mdash; that's the point. Press up, control down. Squeeze everything.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+          </div>
+          <div class="superset-group" data-group="B">
+            <div class="superset-label">Superset B</div>
+            <div class="exercise-card" data-id="d4-b1">
+              <div class="exercise-check"><input type="checkbox" id="d4-b1-check"><label for="d4-b1-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Bulgarian Split Squat (Iso Hold &rarr; Reps)</h4>
+                <p class="exercise-details">3 &times; 6 each leg</p>
+                <p class="exercise-cue">Cue: Rear foot on bench. Set 1: hold the bottom for 15 seconds. Sets 2-3: slow reps. This is new and it's supposed to be hard. Own the position before you rush through it.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d4-b2">
+              <div class="exercise-check"><input type="checkbox" id="d4-b2-check"><label for="d4-b2-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Landmine Press (Iso Lunge Stance)</h4>
+                <p class="exercise-details">3 &times; 8 each arm</p>
+                <p class="exercise-cue">Cue: Hold a lunge, press the landmine with one arm. Your legs hold the position while your arm does the work. Core is fighting everything &mdash; that's the design.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCESSORY -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#9889;</span>
+          <h3>Accessory</h3>
+        </div>
+        <div class="exercise-list">
+          <div class="superset-group" data-group="C">
+            <div class="superset-label">Superset C</div>
+            <div class="exercise-card" data-id="d4-c1">
+              <div class="exercise-check"><input type="checkbox" id="d4-c1-check"><label for="d4-c1-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Swiss Ball Hamstring Curl</h4>
+                <p class="exercise-details">2 &times; 10</p>
+                <p class="exercise-cue">Cue: Heels on the ball, hips up. Curl the ball toward your butt, extend back out. Hips stay up the entire time &mdash; if they drop, you lost it.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+            <div class="exercise-card" data-id="d4-c2">
+              <div class="exercise-check"><input type="checkbox" id="d4-c2-check"><label for="d4-c2-check" class="checkmark"></label></div>
+              <div class="exercise-info">
+                <h4>Cable/Band Chest Fly</h4>
+                <p class="exercise-details">2 &times; 12</p>
+                <p class="exercise-cue">Cue: Light weight. Arms slightly bent, bring the handles together in front of your chest. Squeeze. Control the return.</p>
+              </div>
+              <button class="exercise-note-btn" title="Add note">&#128221;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FINISHER -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#127937;</span>
+          <h3>Finisher</h3>
+        </div>
+        <div class="exercise-list">
+          <div class="exercise-card" data-id="d4-f1">
+            <div class="exercise-check"><input type="checkbox" id="d4-f1-check"><label for="d4-f1-check" class="checkmark"></label></div>
+            <div class="exercise-info">
+              <h4>Cross-Body Carry (Rack + Suitcase)</h4>
+              <p class="exercise-details">2 &times; 30yd each setup</p>
+              <p class="exercise-cue">Cue: One KB in rack (at your shoulder), one DB at your side. Walk tall. Two different forces pulling you in two directions &mdash; your core solves the puzzle. Swap sides, repeat.</p>
+            </div>
+            <button class="exercise-note-btn" title="Add note">&#128221;</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="finish-workout-btn" data-day="day4" style="display:none;">Finish Workout</button>
     </section>
 
     <!-- STATS -->
