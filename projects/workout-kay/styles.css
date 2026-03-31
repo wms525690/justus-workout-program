@@ -1519,3 +1519,213 @@ body.app-locked #modalSave {
 .pin-submit:hover {
   background: var(--red-dark);
 }
+
+/* ---------- Superset Grouping ---------- */
+.superset-group {
+  position: relative;
+  border-left: 3px solid var(--accent-purple, var(--red));
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding-left: 1rem;
+  margin-bottom: 1.25rem;
+  background: rgba(184, 169, 232, 0.03);
+}
+
+.superset-group.giant {
+  border-left-color: var(--accent-sage, var(--success));
+  background: rgba(168, 197, 160, 0.03);
+}
+
+.superset-label {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-purple, var(--red));
+  padding: 0.4rem 0 0.25rem;
+}
+
+.superset-group.giant .superset-label {
+  color: var(--accent-sage, var(--success));
+}
+
+.superset-group .exercise-card {
+  border-left: none;
+  border-radius: var(--radius-md);
+}
+
+.superset-group .exercise-card + .exercise-card {
+  margin-top: 0.5rem;
+}
+
+/* ---------- Category Note (warm-up subtitle) ---------- */
+.category-note {
+  font-size: 0.75rem;
+  color: var(--gray-400);
+  font-style: italic;
+  margin-left: auto;
+}
+
+/* ---------- Start / Finish Workout Buttons ---------- */
+.start-workout-btn,
+.finish-workout-btn {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 1.25rem auto;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.start-workout-btn {
+  background: var(--red);
+  color: var(--white);
+}
+
+.start-workout-btn:hover {
+  background: var(--red-dark);
+  transform: translateY(-1px);
+}
+
+.start-workout-btn.active {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--gray-400);
+  pointer-events: none;
+}
+
+.finish-workout-btn {
+  background: var(--accent-sage, var(--success));
+  color: var(--gray-900);
+}
+
+.finish-workout-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
+/* ---------- Workout Timer ---------- */
+.workout-timer {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-purple, var(--red));
+  padding: 0.5rem 0 1rem;
+  letter-spacing: 0.05em;
+}
+
+.timer-icon {
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+
+/* ---------- Finish Workout Difficulty Modal ---------- */
+.finish-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.75);
+  align-items: center;
+  justify-content: center;
+}
+
+.finish-overlay.open {
+  display: flex;
+}
+
+.finish-dialog {
+  background: var(--gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  width: 320px;
+  text-align: center;
+}
+
+.finish-dialog h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+}
+
+.finish-dialog .finish-time {
+  font-size: 0.9rem;
+  color: var(--accent-purple, var(--red));
+  margin-bottom: 1.25rem;
+}
+
+.finish-dialog .difficulty-label {
+  font-size: 0.85rem;
+  color: var(--gray-300);
+  margin-bottom: 0.75rem;
+}
+
+.difficulty-slider-wrap {
+  padding: 0 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.difficulty-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to right, var(--accent-sage) 0%, var(--accent-yellow) 50%, var(--red) 100%);
+  outline: none;
+}
+
+.difficulty-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--red);
+  cursor: pointer;
+}
+
+.difficulty-value {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0.5rem 0 1rem;
+}
+
+.difficulty-scale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.65rem;
+  color: var(--gray-400);
+  margin-top: 0.25rem;
+}
+
+.finish-save-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--accent-sage, var(--success));
+  color: var(--gray-900);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.finish-save-btn:hover {
+  filter: brightness(1.1);
+}
