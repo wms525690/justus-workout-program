@@ -145,8 +145,8 @@ body {
   inset: 0;
   z-index: 2;
   background:
-    linear-gradient(to bottom, rgba(15, 18, 25, 0.4) 0%, rgba(15, 18, 25, 0.2) 40%, rgba(15, 18, 25, 0.6) 100%),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="g" patternUnits="userSpaceOnUse" width="20" height="20"><circle cx="10" cy="10" r="0.5" fill="white" opacity="0.05"/></pattern></defs><rect fill="url(%23g)" width="100" height="100"/></svg>');
+    linear-gradient(to bottom, rgba(15, 18, 25, 0.3) 0%, rgba(15, 18, 25, 0.1) 40%, rgba(15, 18, 25, 0.7) 100%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="g" patternUnits="userSpaceOnUse" width="20" height="20"><circle cx="10" cy="10" r="0.5" fill="white" opacity="0.03"/></pattern></defs><rect fill="url(%23g)" width="100" height="100"/></svg>');
   pointer-events: none;
 }
 
