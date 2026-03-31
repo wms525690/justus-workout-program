@@ -1520,6 +1520,35 @@ body.app-locked #modalSave {
   background: var(--red-dark);
 }
 
+/* ---------- Section Subtitle + Coaching Tips ---------- */
+.section-subtitle {
+  color: var(--gray-300);
+  font-size: 0.92rem;
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+.coaching-tips {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 3px solid var(--accent-purple, var(--red));
+  border-radius: 0 8px 8px 0;
+}
+
+.coaching-tips p {
+  color: var(--gray-300);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0.3rem 0;
+}
+
+.coaching-tips p:first-child {
+  color: var(--white);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
 /* ---------- Superset Grouping ---------- */
 .superset-group {
   position: relative;
