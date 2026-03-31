@@ -5,12 +5,12 @@
 
 /* ---------- Design Tokens ---------- */
 :root {
-  --red: #E84393;
-  --red-dark: #C2185B;
-  --red-glow: rgba(232, 67, 147, 0.3);
-  --blue: #1A1A2E;
-  --blue-dark: #0F0F1A;
-  --blue-light: #16213E;
+  --red: #89CFF0;
+  --red-dark: #5FB3E0;
+  --red-glow: rgba(137, 207, 240, 0.3);
+  --blue: #0A0A0A;
+  --blue-dark: #050505;
+  --blue-light: #1A1A1A;
   --white: #FFFFFF;
   --gray-50: #F8F9FA;
   --gray-100: #F0F1F3;
