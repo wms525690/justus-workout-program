@@ -193,7 +193,7 @@ body {
   position: absolute;
   inset: -6px;
   border-radius: 50%;
-  border: 2px solid rgba(232, 67, 147, 0.3);
+  border: 2px solid rgba(137, 207, 240, 0.4);
   animation: ringPulse 3s ease-in-out infinite;
 }
 
