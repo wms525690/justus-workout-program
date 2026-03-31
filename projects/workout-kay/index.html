@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kay | Soccer &amp; Volleyball Training Program</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="app-locked">
+
+  <!-- ========== HERO SECTION — EDIT ALL OF THIS ========== -->
+  <header class="hero">
+    <div class="hero-bg">
+      <!-- EDIT: Background image path -->
+      <img src="../assets-images/BACKGROUND_IMAGE.jpg" alt="" class="hero-bg-img">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <!-- EDIT: Badge text -->
+      <div class="hero-badge">TEAM / SCHOOL NAME</div>
+      <div class="hero-photo">
+        <!-- EDIT: Athlete photo path -->
+        <img src="../assets-images/ATHLETE_PHOTO.jpg" alt="Athlete Name" id="heroPhoto">
+        <div class="hero-photo-ring"></div>
+      </div>
+      <!-- EDIT: Athlete name -->
+      <h1 class="hero-name">ATHLETE NAME</h1>
+      <!-- EDIT: Position and subtitle -->
+      <p class="hero-subtitle">Position &middot; Training Program</p>
+      <!-- EDIT: Motivational tagline -->
+      <p class="hero-tagline">Your tagline here.<br>Make it <strong>PERSONAL</strong>.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value" id="weekNumber">1</span>
+          <span class="stat-label">Current Week</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="completionRate">0%</span>
+          <span class="stat-label">This Week</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="streakCount">0</span>
+          <span class="stat-label">Day Streak</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll to start</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
+
+  <!-- ========== NAVIGATION — EDIT TAB NAMES / ADD / REMOVE ========== -->
+  <!-- data-section values must match section IDs below (section-{value}) -->
+  <!-- Also update sectionMap and getSectionKey() in app.js if you change these -->
+  <nav class="program-nav" id="programNav">
+    <div class="nav-inner">
+      <button class="nav-btn active" data-section="big3">
+        <span class="nav-icon">&#9679;</span>
+        The Big 3
+      </button>
+      <button class="nav-btn" data-section="mobility">
+        <span class="nav-icon">&#9679;</span>
+        Mobility
+      </button>
+      <button class="nav-btn" data-section="armcare">
+        <span class="nav-icon">&#9679;</span>
+        Arm Care
+      </button>
+      <button class="nav-btn" data-section="rehab">
+        <span class="nav-icon">&#9679;</span>
+        Rehab / Prehab
+      </button>
+      <button class="nav-btn" data-section="stats">
+        <span class="nav-icon">&#9679;</span>
+        Stats
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== PROGRAM SECTIONS ========== -->
+  <main class="program-content">
+
+    <!--
+      ============================================================
+      EXERCISE SECTIONS — BUILD YOUR PROGRAM BELOW
+      ============================================================
+
+      RULES:
+      - Each section id must be "section-{data-section from nav}"
+      - Exercise card data-id prefixes determine stats grouping:
+          b3-   = The Big 3
+          mob-  = Mobility
+          ac-   = Arm Care
+          rp-   = Rehab / Prehab
+        (update getSectionKey() in app.js if you change these)
+      - Checkbox id must match data-id + "-check"
+      - Copy the exercise card template below for each exercise
+
+      EXERCISE CARD TEMPLATE:
+      ========================
+      <div class="exercise-card" data-id="PREFIX-ID">
+        <div class="exercise-check">
+          <input type="checkbox" id="PREFIX-ID-check">
+          <label for="PREFIX-ID-check" class="checkmark"></label>
+        </div>
+        <div class="exercise-info">
+          <h4>Exercise Name</h4>
+          <p class="exercise-details">Sets &middot; Reps &middot; Instructions</p>
+          <p class="exercise-cue">Cue: Coaching cues here.</p>
+          <a href="https://youtube.com/..." class="video-link" target="_blank" rel="noopener noreferrer">&#9654; Watch video</a>
+        </div>
+        <button class="exercise-note-btn" title="Add note">&#128221;</button>
+      </div>
+      ========================
+    -->
+
+    <!-- THE BIG 3 CHECKLIST -->
+    <section class="program-section active" id="section-big3">
+      <div class="section-header">
+        <div class="section-number">01</div>
+        <h2>The Big 3 Checklist</h2>
+        <p class="section-desc">Master these three fundamentals. Every session starts here.</p>
+      </div>
+
+      <!-- Category: Foot Position -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#128099;</span>
+          <h3>Foot Position / Mechanics</h3>
+        </div>
+        <div class="exercise-list">
+          <!-- ADD EXERCISES HERE (data-id prefix: b3-f) -->
+        </div>
+      </div>
+
+      <!-- Category: Bracing / Breathing -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#129516;</span>
+          <h3>Bracing / Breathing</h3>
+        </div>
+        <div class="exercise-list">
+          <!-- ADD EXERCISES HERE (data-id prefix: b3-br) -->
+        </div>
+      </div>
+
+      <!-- Category: Set the Scap and Neck -->
+      <div class="category-block">
+        <div class="category-title">
+          <span class="category-icon">&#128170;</span>
+          <h3>Set the Scap and Neck</h3>
+        </div>
+        <div class="exercise-list">
+          <!-- ADD EXERCISES HERE (data-id prefix: b3-n) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MOBILITY -->
+    <section class="program-section" id="section-mobility">
+      <div class="section-header">
+        <div class="section-number">02</div>
+        <h2>Mobility</h2>
+        <p class="section-desc">CARS, active end-range strength, and balance integration.</p>
+      </div>
+
+      <!-- ADD CATEGORY BLOCKS + EXERCISES HERE (data-id prefix: mob-) -->
+    </section>
+
+    <!-- ARM CARE -->
+    <section class="program-section" id="section-armcare">
+      <div class="section-header">
+        <div class="section-number">03</div>
+        <h2>Arm Care</h2>
+        <p class="section-desc">Rotator cuff health, scapular control, and throwing longevity.</p>
+      </div>
+
+      <!-- ADD CATEGORY BLOCKS + EXERCISES HERE (data-id prefix: ac-) -->
+    </section>
+
+    <!-- REHAB / PREHAB -->
+    <section class="program-section" id="section-rehab">
+      <div class="section-header">
+        <div class="section-number">04</div>
+        <h2>Rehab / Prehab</h2>
+        <p class="section-desc">Injury prevention, joint stability, and movement quality.</p>
+      </div>
+
+      <!-- ADD CATEGORY BLOCKS + EXERCISES HERE (data-id prefix: rp-) -->
+    </section>
+
+    <!-- STATS -->
+    <section class="program-section" id="section-stats">
+      <div class="section-header">
+        <div class="section-number">05</div>
+        <h2>Weekly Stats</h2>
+        <p class="section-desc">Your training data, tracked automatically.</p>
+      </div>
+
+      <!-- Week Navigation -->
+      <div class="stats-week-nav">
+        <button class="stats-week-btn" id="statsPrevWeek">&#9664;</button>
+        <span class="stats-week-label" id="statsWeekLabel">This Week</span>
+        <button class="stats-week-btn" id="statsNextWeek">&#9654;</button>
+      </div>
+
+      <!-- Weekly Summary Cards -->
+      <div class="stats-summary">
+        <div class="stats-card">
+          <div class="stats-card-value" id="statsDaysActive">0</div>
+          <div class="stats-card-label">Days Active</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-card-value" id="statsTotalChecks">0%</div>
+          <div class="stats-card-label">Exercises Touched</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-card-value" id="statsAvgCompletion">0%</div>
+          <div class="stats-card-label">Target Pace</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-card-value" id="statsCurrentStreak">0</div>
+          <!-- EDIT: Customize the streak label -->
+          <div class="stats-card-label">Total Work Days</div>
+        </div>
+      </div>
+
+      <!-- Weekly Targets -->
+      <div class="stats-weekly-targets">
+        <h3 class="stats-section-title">Weekly Targets</h3>
+        <div class="stats-targets" id="statsWeeklyTargets"></div>
+      </div>
+
+      <!-- Daily Breakdown -->
+      <div class="stats-daily-breakdown">
+        <h3 class="stats-section-title">Daily Breakdown</h3>
+        <div class="stats-day-grid" id="statsDayGrid"></div>
+      </div>
+
+      <!-- Difficulty Trends -->
+      <div class="stats-difficulty">
+        <h3 class="stats-section-title">Difficulty Ratings This Week</h3>
+        <div class="stats-rating-summary" id="statsRatingSummary"></div>
+      </div>
+
+      <!-- Pain/Discomfort Flags -->
+      <div class="stats-flags">
+        <h3 class="stats-section-title">Pain / Discomfort Flags</h3>
+        <div class="stats-flag-list" id="statsFlagList">
+          <p class="stats-empty">No pain flags this week. Keep it up.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== NOTES MODAL (no edits needed) ========== -->
+  <div class="modal-overlay" id="notesModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modalTitle">Exercise Notes</h3>
+        <button class="modal-close" id="modalClose">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-actual">
+          <label>What did you actually complete?</label>
+          <div class="sets-grid">
+            <div class="set-column">
+              <span class="set-label">Set 1</span>
+              <input type="number" class="set-reps" data-set="0" min="0" placeholder="--">
+              <span class="set-unit">reps</span>
+              <input type="number" class="set-time" data-set="0" min="0" placeholder="--">
+              <span class="set-unit">sec</span>
+            </div>
+            <div class="set-column">
+              <span class="set-label">Set 2</span>
+              <input type="number" class="set-reps" data-set="1" min="0" placeholder="--">
+              <span class="set-unit">reps</span>
+              <input type="number" class="set-time" data-set="1" min="0" placeholder="--">
+              <span class="set-unit">sec</span>
+            </div>
+            <div class="set-column">
+              <span class="set-label">Set 3</span>
+              <input type="number" class="set-reps" data-set="2" min="0" placeholder="--">
+              <span class="set-unit">reps</span>
+              <input type="number" class="set-time" data-set="2" min="0" placeholder="--">
+              <span class="set-unit">sec</span>
+            </div>
+            <div class="set-column">
+              <span class="set-label">Set 4</span>
+              <input type="number" class="set-reps" data-set="3" min="0" placeholder="--">
+              <span class="set-unit">reps</span>
+              <input type="number" class="set-time" data-set="3" min="0" placeholder="--">
+              <span class="set-unit">sec</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-rating">
+          <span>Difficulty:</span>
+          <div class="rating-buttons">
+            <button class="rating-btn" data-rating="easy">Easy</button>
+            <button class="rating-btn" data-rating="right">Just Right</button>
+            <button class="rating-btn" data-rating="hard">Hard</button>
+            <button class="rating-btn" data-rating="pain">Pain/Discomfort</button>
+          </div>
+        </div>
+        <label for="modalNoteInput">Any pain, tightness, or questions about exercise?</label>
+        <textarea id="modalNoteInput" rows="3" placeholder="Type your notes here..."></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-save" id="modalSave">Save Note</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER — EDIT ========== -->
+  <footer class="site-footer">
+    <!-- EDIT: Athlete name and team -->
+    <p>Built for ATHLETE NAME &middot; TEAM &middot; 2026</p>
+    <p class="footer-small">Program by Max Sherwin</p>
+  </footer>
+
+  <!-- ========== PIN LOCK (no edits needed — PIN is in app.js) ========== -->
+  <button class="pin-lock-btn" id="pinLockBtn" title="Unlock editing">&#128274;</button>
+  <div class="pin-overlay" id="pinOverlay">
+    <div class="pin-dialog">
+      <h3>Enter PIN to Edit</h3>
+      <input type="password" id="pinInput" maxlength="6" placeholder="PIN" inputmode="numeric" autocomplete="off">
+      <p class="pin-error" id="pinError">Incorrect PIN</p>
+      <div class="pin-actions">
+        <button class="pin-cancel" id="pinCancel">Cancel</button>
+        <button class="pin-submit" id="pinSubmit">Unlock</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/12.11.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.11.0/firebase-firestore-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
