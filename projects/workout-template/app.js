@@ -68,13 +68,7 @@
   }
 
   // ---------- State ----------
-  var STORAGE_KEY = 'justus-workout-program';
-
-  // One-time data reset — fresh start 2026-03-30 (Firestore wiped server-side)
-  if (!localStorage.getItem('jw-reset-v4')) {
-    localStorage.removeItem(STORAGE_KEY);
-    localStorage.setItem('jw-reset-v4', '1');
-  }
+  var STORAGE_KEY = ATHLETE_DOC + '-workout';  // auto-generated from athlete name
   var needsFirestoreReset = false;
 
   function emptyDay() {
