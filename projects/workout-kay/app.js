@@ -443,17 +443,17 @@
 
   // Section metadata for breakdown
   var sectionMap = {
-    'b3': 'The Big 3',
-    'mob': 'Mobility',
-    'ac': 'Arm Care',
-    'rp': 'Rehab / Prehab'
+    'd1': 'Day 1 — Pull / Lower',
+    'd2': 'Day 2 — Push / Upper',
+    'd3': 'Day 3 — Pull / Upper',
+    'd4': 'Day 4 — Push / Lower'
   };
 
   function getSectionKey(exerciseId) {
-    if (exerciseId.startsWith('b3-')) return 'b3';
-    if (exerciseId.startsWith('mob-')) return 'mob';
-    if (exerciseId.startsWith('ac-')) return 'ac';
-    if (exerciseId.startsWith('rp-')) return 'rp';
+    if (exerciseId.startsWith('d1-')) return 'd1';
+    if (exerciseId.startsWith('d2-')) return 'd2';
+    if (exerciseId.startsWith('d3-')) return 'd3';
+    if (exerciseId.startsWith('d4-')) return 'd4';
     return 'other';
   }
 
