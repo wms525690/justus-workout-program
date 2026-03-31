@@ -792,7 +792,7 @@
   });
 
   // ---------- PIN Lock ----------
-  var PIN_CODE = '5222';
+  var PIN_CODE = '2009';
   var PIN_SESSION_KEY = 'jw-pin-unlocked';
 
   var pinLockBtn = document.getElementById('pinLockBtn');
