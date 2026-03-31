@@ -443,10 +443,10 @@
 
   // Section metadata for breakdown
   var sectionMap = {
-    'd1': 'Day 1 — Pull / Lower',
-    'd2': 'Day 2 — Push / Upper',
-    'd3': 'Day 3 — Pull / Upper',
-    'd4': 'Day 4 — Push / Lower'
+    'd1': 'Day 1 — Pull / Lower Focus',
+    'd2': 'Day 2 — Push / Upper Focus',
+    'd3': 'Day 3 — Pull / Upper Focus',
+    'd4': 'Day 4 — Push / Lower Focus'
   };
 
   function getSectionKey(exerciseId) {
