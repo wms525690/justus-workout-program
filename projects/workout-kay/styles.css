@@ -772,10 +772,10 @@ body {
   transition: width 0.4s ease;
 }
 
-.stats-day-bar-fill.section-b3 { background: var(--red, #ba1c21); }
-.stats-day-bar-fill.section-mob { background: #4a9eff; }
-.stats-day-bar-fill.section-ac { background: #f5a623; }
-.stats-day-bar-fill.section-rp { background: #7ed321; }
+.stats-day-bar-fill.section-b3 { background: var(--red); }
+.stats-day-bar-fill.section-mob { background: var(--accent-purple); }
+.stats-day-bar-fill.section-ac { background: var(--accent-yellow); }
+.stats-day-bar-fill.section-rp { background: var(--accent-sage); }
 
 .stats-day-pct {
   font-size: 0.72rem;
