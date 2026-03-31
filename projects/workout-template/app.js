@@ -791,7 +791,7 @@
   });
 
   // ---------- PIN Lock ----------
-  var PIN_CODE = '6969';
+  var PIN_CODE = '0000';  // CHANGE THIS — athlete's editing PIN
   var PIN_SESSION_KEY = 'jw-pin-unlocked';
 
   var pinLockBtn = document.getElementById('pinLockBtn');
