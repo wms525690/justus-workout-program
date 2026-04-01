@@ -566,10 +566,26 @@
     var expectedByNow = Math.round(totalTarget * weekFraction);
     var onPacePct = expectedByNow > 0 ? Math.round((totalDone / expectedByNow) * 100) : (totalDone > 0 ? 100 : 0);
 
+    // Count finished workouts this week
+    var finishedWorkouts = 0;
+    var totalDuration = 0;
+    weekDays.forEach(function (dayStr) {
+      var dayData = allState[dayStr];
+      if (dayData && dayData.workouts) {
+        Object.values(dayData.workouts).forEach(function (w) {
+          if (w && w.completedAt) { finishedWorkouts++; totalDuration += (w.duration || 0); }
+        });
+      }
+    });
+    var avgDuration = finishedWorkouts > 0 ? Math.round(totalDuration / finishedWorkouts) : 0;
+    var avgMins = Math.floor(avgDuration / 60);
+    var avgSecs = avgDuration % 60;
+    var avgTimeStr = finishedWorkouts > 0 ? avgMins + ':' + (avgSecs < 10 ? '0' : '') + avgSecs : '—';
+
     // Update summary cards
-    setEl('statsDaysActive', daysActive + '/7');
+    setEl('statsDaysActive', Math.min(finishedWorkouts, 4) + '/3');
     setEl('statsTotalChecks', touchedPct + '%');
-    setEl('statsAvgCompletion', Math.min(onPacePct, 999) + '%');
+    setEl('statsAvgCompletion', avgTimeStr);
     setEl('statsCurrentStreak', calcStreak());
 
     // Daily breakdown grid — per-tab bars for each day
