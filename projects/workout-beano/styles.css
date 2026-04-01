@@ -105,7 +105,11 @@ body {
 }
 
 .hero-bg-img {
-  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: kenBurns 25s ease-in-out infinite alternate;
+  filter: brightness(0.3);
 }
 
 @keyframes auroraShift {
@@ -1383,6 +1387,7 @@ body.app-locked .exercise-note-btn {
 }
 
 body.app-locked .rating-btn,
+body.app-locked .set-weight,
 body.app-locked .set-reps,
 body.app-locked .set-time,
 body.app-locked #modalNoteInput,
