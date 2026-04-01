@@ -85,9 +85,9 @@ body {
   position: absolute;
   inset: -50%;
   background:
-    radial-gradient(circle at 25% 35%, rgba(184, 169, 232, 0.12) 0%, transparent 40%),
-    radial-gradient(circle at 75% 65%, rgba(232, 145, 178, 0.1) 0%, transparent 40%),
-    radial-gradient(circle at 50% 15%, rgba(168, 197, 160, 0.08) 0%, transparent 35%);
+    radial-gradient(circle at 25% 35%, rgba(43, 122, 120, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 75% 65%, rgba(58, 175, 169, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 50% 15%, rgba(76, 175, 130, 0.08) 0%, transparent 35%);
   animation: auroraDrift 18s ease-in-out infinite alternate-reverse;
 }
 
