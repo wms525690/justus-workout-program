@@ -18,15 +18,15 @@
 
   // ============ ATHLETE CONFIG — EDIT THESE ============
   var firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT.firebaseapp.com",
-    projectId: "YOUR_PROJECT",
-    storageBucket: "YOUR_PROJECT.firebasestorage.app",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyDuD9sL5mkmBKExepL0UZ_vpEH7J9ChocE",
+    authDomain: "justus-workout-program.firebaseapp.com",
+    projectId: "justus-workout-program",
+    storageBucket: "justus-workout-program.firebasestorage.app",
+    messagingSenderId: "704428705442",
+    appId: "1:704428705442:web:6fb1c8262925068732b9fb"
   };
 
-  var ATHLETE_DOC = 'athlete-name';  // Firestore: athletes/{this}
+  var ATHLETE_DOC = 'beano';  // Firestore: athletes/beano
   // ============ END ATHLETE CONFIG ============
 
   firebase.initializeApp(firebaseConfig);
