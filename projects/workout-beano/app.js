@@ -563,7 +563,7 @@
 
     var totalTarget = 0;
     var totalDone = 0;
-    var sectionOrder = ['d1', 'd2', 'd3', 'd4'];
+    var sectionOrder = ['b3', 'd1', 'd2', 'd3', 'd4'];
     sectionOrder.forEach(function (sk) {
       totalTarget += Math.ceil((sectionExCounts[sk] || 0) * (weeklyTargetMultipliers[sk] || 2));
       totalDone += (sectionTotals[sk] || 0);
@@ -616,7 +616,7 @@
         div.className = 'stats-day-card' + (isToday ? ' today' : '') + (isFuture ? ' future' : '');
 
         var barsHtml = '<div class="stats-day-name">' + formatDate(day.date) + '</div>';
-        var sectionOrder = ['d1', 'd2', 'd3', 'd4'];
+        var sectionOrder = ['b3', 'd1', 'd2', 'd3', 'd4'];
         sectionOrder.forEach(function (sk) {
           var done = daySectionDone[sk] || 0;
           var total = sectionExCounts[sk] || 0;
@@ -638,7 +638,7 @@
     var targetsEl = document.getElementById('statsWeeklyTargets');
     if (targetsEl) {
       targetsEl.innerHTML = '';
-      var sectionOrder = ['d1', 'd2', 'd3', 'd4'];
+      var sectionOrder = ['b3', 'd1', 'd2', 'd3', 'd4'];
       sectionOrder.forEach(function (sk) {
         var exCount = sectionExCounts[sk] || 0;
         var target = Math.ceil(exCount * (weeklyTargetMultipliers[sk] || 2));
