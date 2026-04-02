@@ -543,7 +543,7 @@
 
     // Target pace: what % of weekly targets should be done by now vs what's actually done
     // EDIT THESE — times per week each section's exercises should be completed
-    var weeklyTargetMultipliers = { d1: 1, d2: 1, d3: 1, d4: 1 };
+    var weeklyTargetMultipliers = { b3: 3.5, d1: 1, d2: 1, d3: 1, d4: 1 };
     var sectionExCounts = {};
     checkboxes.forEach(function (cb) {
       var card = cb.closest('.exercise-card');
