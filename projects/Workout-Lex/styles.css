@@ -1562,7 +1562,7 @@ body.app-locked #modalSave {
 
 .superset-group.giant {
   border-left-color: var(--accent-sage, var(--success));
-  background: rgba(168, 197, 160, 0.03);
+  background: rgba(100, 116, 139, 0.03);
 }
 
 .superset-label {
