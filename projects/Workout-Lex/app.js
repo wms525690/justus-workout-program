@@ -71,9 +71,9 @@
   var STORAGE_KEY = ATHLETE_DOC + '-workout';  // auto-generated from athlete name
 
   // One-time data reset — clean slate on deploy
-  if (!localStorage.getItem('kay-reset-v1')) {
+  if (!localStorage.getItem('lex-reset-v1')) {
     localStorage.removeItem(STORAGE_KEY);
-    localStorage.setItem('kay-reset-v1', '1');
+    localStorage.setItem('lex-reset-v1', '1');
   }
   var needsFirestoreReset = false;
 
@@ -821,7 +821,7 @@
   });
 
   // ---------- PIN Lock ----------
-  var PIN_CODE = '2009';
+  var PIN_CODE = '3825';
   var PIN_SESSION_KEY = 'jw-pin-unlocked';
 
   var pinLockBtn = document.getElementById('pinLockBtn');
