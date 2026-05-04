@@ -73,10 +73,10 @@ body {
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(ellipse at 15% 50%, rgba(232, 145, 178, 0.14) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(184, 169, 232, 0.14) 0%, transparent 50%),
-    radial-gradient(ellipse at 40% 85%, rgba(168, 197, 160, 0.1) 0%, transparent 50%),
-    radial-gradient(ellipse at 70% 55%, rgba(245, 230, 163, 0.08) 0%, transparent 40%);
+    radial-gradient(ellipse at 15% 50%, rgba(139, 92, 246, 0.18) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(167, 139, 250, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 40% 85%, rgba(100, 116, 139, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 55%, rgba(109, 40, 217, 0.12) 0%, transparent 40%);
   animation: auroraShift 12s ease-in-out infinite alternate;
 }
 
@@ -85,9 +85,9 @@ body {
   position: absolute;
   inset: -50%;
   background:
-    radial-gradient(circle at 25% 35%, rgba(184, 169, 232, 0.12) 0%, transparent 40%),
-    radial-gradient(circle at 75% 65%, rgba(232, 145, 178, 0.1) 0%, transparent 40%),
-    radial-gradient(circle at 50% 15%, rgba(168, 197, 160, 0.08) 0%, transparent 35%);
+    radial-gradient(circle at 25% 35%, rgba(167, 139, 250, 0.14) 0%, transparent 40%),
+    radial-gradient(circle at 75% 65%, rgba(139, 92, 246, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 50% 15%, rgba(148, 163, 184, 0.1) 0%, transparent 35%);
   animation: auroraDrift 18s ease-in-out infinite alternate-reverse;
 }
 
